@@ -1,45 +1,82 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Hiking at Södertörn
 
-Welcome USER_NAME,
+A live version of the website can be viewed here
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Images of site 
 
-## Gitpod Reminders
+Description of site
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+__Business and client goals__
 
-`python3 -m http.server`
+The business goals of this website is to (?):
 
-A blue button should appear to click: *Make Public*,
+The clients goal of this website is to:
 
-Another blue button should appear to click: *Open Browser*.
+* Easily get information about where to find hiking paths and their starting points on Södertörn
+* Easily get information about the length of different hiking paths
+* Easily get information about communication means accessible to get to the different hiking paths
+* Easily get information about important services provided on hiking paths, such as prepared fireplaces and toilets
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+## UX
 
-Another blue button should appear to click: *Open Browser*.
+__Ideal client__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The ideal client for this website is:
 
-## Updates Since The Instructional Video
+- Swedish speaking
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Lives near or on Södertörn or is thinking of visiting Södertörn
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Has an interest in hiking
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Visitors to this website are looking for: 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Finding hiking paths on Södertörn, and their starting points
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Finding information about different hiking paths on Södertörn, such as their length, how to get to them and what services are provided on them
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+This project is the best way to help them achieve this because:
 
---------
+- It provides an interactive map of Södertörn with starting points of hiking paths marked out and easy to find
 
-Happy coding!
+- It provides quick access to crucial information such as prepared fireplaces and toilets, accessed with just a click from the user
+
+- It provides information about how to get to the different hiking paths, easily accessible for the user with just a few clicks
+
+- It provides easily accessible information about the length of different hiking paths
+
+- It has a clear and well-structured design and good readability, making it easy for the user to get an overview of the site and its information
+
+
+__User stories__
+
+- As a first time visitor, I want to quickly get an overview of the site to see if it contains the information I am looking for
+
+Mobile:
+
+![Wireframe of mobile landing page](./assets/images/mobile-landing-page.png)
+
+Tablet:
+
+![Wireframe of tablet landing page](./assets/images/tablet-landing-page.png)
+
+Screen: 
+
+![Wireframe of full-screen landing page](./assets/images/full-screen-landing-page.png)
+
+
+
+
+
+- As a user, I want to be able to easily navigate to the information I am looking for about where to find hiking parts in the area of Södertörn
+
+- As a user, I want to easily find the information I need to decide which hiking path to choose depending on my needs, for example access to prepared fire places or toilets
+
+- As a user, I want to easily find information about how to get to the different hiking paths so that I can decide where to go depending on the travel time and need for having access to a car or not
+
+- As a user, I want all of the above information to be presented in a way that makes it easy to get an overview of it so that I can take in all different aspects about each hiking path at the same time, because this facilitates my decision-making when deciding on where to go hiking
+
+- As a returning visitor, I want to… ?
