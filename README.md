@@ -81,15 +81,15 @@ Screen:
 
 Mobile:
 
-![Wireframe of mobile landing page](./assets/images/mobile-landing-page.png)
+![Wireframe of mobile map page](./assets/images/mobile-map-page.png)
 
 Tablet:
 
-![Wireframe of tablet landing page](./assets/images/tablet-landing-page.png)
+![Wireframe of tablet map page](./assets/images/tablet-map-page.png)
 
 Screen: 
 
-![Wireframe of full-screen landing page](./assets/images/full-screen-landing-page.png)
+![Wireframe of full-screen map page](./assets/images/full-screen-map-page.png)
 
 
 
@@ -101,10 +101,23 @@ Screen:
  5. Hiking trails with a length that is suitable for my childrens age and stamina
  
 ![Wireframe of info alert box](./assets/images/info-alert-box.png)
+
+![Wireframe of info alert box page 2, trail length info](./assets/images/info-alert-box-trails.png)
  
 
 - As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children and get them interested in going there
 
+Mobile:
 
+ 
+![Wireframe of mobile info page](./assets/images/mobile-info-page.png)
+
+Tablet:
+
+![Wireframe of tablet info page](./assets/images/tablet-info-page.png)
+
+Full-screen:
+
+![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
 
