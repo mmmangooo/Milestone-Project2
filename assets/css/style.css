@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+.landing-container {
+    height: 100vh;
+    background-image: url("../images/close-up-trail.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.landing-button {
+    margin-top: 7.5rem;
+}
