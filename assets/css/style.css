@@ -2,6 +2,27 @@ body {
     text-align: center;
 }
 
+/*--------------------------------Headings*/
+h1, h2 {
+    color: darkslategray;
+}
+
+p {
+    color: darkslategray;
+    font-size: 0.9rem;
+}
+.heading {
+    font-size: 1.5rem;
+    margin-top: 4.5rem;
+}
+
+.map-info-heading {
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+/*------------------------------Landing page*/
+
 .landing-container {
     height: 100vh;
     background-image: url("../images/close-up-trail.jpg"); 
