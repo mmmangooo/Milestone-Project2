@@ -121,3 +121,6 @@ Full-screen:
 ![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
 
+## Acceptance Criteria
+
+

@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body id="map-page">
     <header>
       <h1 class="heading">Vandra med barn på Södertörn</h1>
       <!--Used Bootstrap navigation bar because it is an easy way to obtain clean, functioning and responsive navigation-->
@@ -43,7 +43,7 @@
               <a class="nav-link" href="paradiset.html">Paradiset</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="annan.html">Annan</a>
+              <a class="nav-link" href="rudan.html">Rudan</a>
             </li>
           </ul>
         </div>
@@ -55,6 +55,10 @@
         Klicka på knappnålarna för att se vad som finns i anslutning till de
         olika startplatserna
       </h2>
+
+      <div id="map" class="box-shadow">
+      </div>
+
       <div class="icon-container">
       <h3 class="map-info-heading">Teckenförklaring:</h3>
         <img src="https://img.icons8.com/ios-glyphs/30/000000/campfire.png" />
@@ -70,9 +74,10 @@
       </div>
     </section>
 
-    <section id="map">'</section>
+    <section id="map-section"></section>
 
     <footer>
+    <p>This site is for educational purposes only</p>
       <a href="https://icons8.com/">Icons by Icons8</a>
     </footer>
 
@@ -86,5 +91,9 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7bC_9GSWkrNeebMKno7y3_ksId8xuNck&callback=initMap">
+</script>
+<script src="script.js"></script>
   </body>
 </html>
