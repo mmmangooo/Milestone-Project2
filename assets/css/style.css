@@ -5,6 +5,7 @@ body {
 /*--------------------------------Headings*/
 h1, h2 {
     color: darkslategray;
+    margin-bottom: 6rem;
 }
 
 p {
@@ -40,4 +41,41 @@ p {
 #map {
     width: 100%;
     height: 70rem;
+}
+
+/*-----------------------------Info pages*/
+
+.info-images {
+    height: 18rem;
+    margin: 2% 3%;
+    padding: 0;
+}
+
+/*-----------------------------Media queries*/
+
+@media (min-width: 576px) {
+    .info-images {
+        height: 16rem;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info-images {
+        
+}
+
+@media screen and (min-width: 992px) {
+.info-images {
+    height: 12rem;
+    margin: 0;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+.info-images {
+    height: 16rem;
+    margin: 0;
+}
 }
