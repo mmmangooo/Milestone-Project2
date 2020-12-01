@@ -1,5 +1,7 @@
 # Hiking at Södertörn
 
+This site is built for educational purposes only. It is the Milestone Project 2 for the Software Development Diploma course at Code Institute, and it is aimed to display my understanding of Javascript and how it can be used to build interactive websites.
+
 A live version of the website can be viewed here
 
 Images of site 
@@ -124,3 +126,34 @@ Full-screen:
 ## Acceptance Criteria
 
 
+## Credits
+
+
+### Content
+
+* The content of the information pages for the starting points (Tyresta By, Paradiset and Rudan) is borrowed from the following websites:
+
+https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd
+
+https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-friluftsomraden/rudans-friluftsomrade-och-naturreservat/
+
+ https://sv.wikipedia.org/wiki/Tyresta_nationalpark#Tyresta_by
+
+ https://www.haninge.se/uppleva-och-gora/besok-och-upplev-haninge/platser-att-besoka/tyresta/
+
+ https://sv.wikipedia.org/wiki/Paradisets_naturreservat
+
+ http://www.paradiset-hanveden.se/sti.html
+
+ ### Media
+
+ * The images displayed on the info pages for the starting points (Tyresta By, Paradiset and Rudan) have been borrowed from the sites listed above, and from:
+
+ https://sv.wikipedia.org/wiki/Nedre_Rudasj%C3%B6n
+
+ * 
+
+ 
+### Code
+
+The Google API:s on the site have been implemented with support from a tutorial made by Eamon_lead
