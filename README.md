@@ -156,4 +156,13 @@ https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-fri
  
 ### Code
 
-The Google API:s on the site have been implemented with support from a tutorial made by Eamon_lead
+The Google API:s on the site have been implemented with support from Google Maps API tutorial
+
+
+
+
+## Debugging
+
+Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
+having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
+effect to fade the overlay div out, showing the map page underneath.
