@@ -24,7 +24,7 @@ p {
 
 /*------------------------------Landing page*/
 
-.landing-container-overlay {
+.landing-overlay {
     height: 100vh;
     width: 100%;
     background-image: url("../images/close-up-trail.jpg"); 
@@ -36,8 +36,12 @@ p {
     z-index: 3;
 }
 
-.hide-landing {
+.hide-overlay {
     display: none;
+}
+
+.landing-content {
+   padding: 20rem 0;
 }
 
 .landing-button {

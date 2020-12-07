@@ -1,4 +1,5 @@
 $('#map-link').click(function() {
-    $('.landing-container-overlay').fadeOut(2000);
-    $('.landing-container-overlay').addClass('hide-landing');
+    $('.landing-overlay').fadeOut(2000, function() {
+        $('.landing-overlay').addClass('hide-overlay');
+    });
 })
