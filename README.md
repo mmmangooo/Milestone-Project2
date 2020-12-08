@@ -122,8 +122,40 @@ Full-screen:
 
 ![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
+### Design
+
+### Differences to original design
+
 
 ## Acceptance Criteria
+
+
+## Features
+
+## Technologies used
+
+* This project uses HTML, CSS ans JavaScript programming languages
+* [GitPod](https://www.gitpod.io/) GitPod - The developer used GitPod for their IDE while building the website
+* [GitHub](http://github.com)GitHub - This project uses GitHub to store the projects code after being pushed from Git.
+* [Git](https://git-scm.com/) Git - The project uses Git for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [BootstrapCDN](https://getbootstrap.com/) BootstrapCDN - The project uses Bootstrap for simplified process of structuring the website, facilitate in making it responsive and for adding certain elements. It also uses Bootstrap to provide javascript needed for the carousel and the nav bar.
+* [Google Fonts](https://fonts.google.com/)Google Fonts - The project uses Google Fonts for styling fonts.
+* [Icons8](https://icons8.com/)Icons8 - The project uses Icons8 for icons.
+* [Balsamiq](https://balsamiq.com/) Balsamiq - This project uses Balsamiq for creating the wireframes during the design process.
+* [GoogleMaps Styling Wizard](https://mapstyle.withgoogle.com/)Google map in this project is styled using Google Maps Styling wizard.
+
+
+## Testing
+
+### Known bugs
+
+Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
+having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
+effect to fade the overlay div out, showing the map page underneath.
+
+
+
+## Deployment
 
 
 ## Credits
@@ -133,36 +165,33 @@ Full-screen:
 
 * The content of the information pages for the starting points (Tyresta By, Paradiset and Rudan) is borrowed from the following websites:
 
-https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd
+[Rudans gård, Wikipedia](https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd)
 
-https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-friluftsomraden/rudans-friluftsomrade-och-naturreservat/
+[Haninge municipality's webpage, visit Rudan](https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-friluftsomraden/rudans-friluftsomrade-och-naturreservat/)
 
- https://sv.wikipedia.org/wiki/Tyresta_nationalpark#Tyresta_by
+[Tyresta nationalpark, Tyresta By, Wikipedia](https://sv.wikipedia.org/wiki/Tyresta_nationalpark#Tyresta_by)
 
- https://www.haninge.se/uppleva-och-gora/besok-och-upplev-haninge/platser-att-besoka/tyresta/
+[Haninge municipality's webpage, visit Tyresta](https://www.haninge.se/uppleva-och-gora/besok-och-upplev-haninge/platser-att-besoka/tyresta/)
 
- https://sv.wikipedia.org/wiki/Paradisets_naturreservat
+[Paradiset, Wikipedia](https://sv.wikipedia.org/wiki/Paradisets_naturreservat)
 
- http://www.paradiset-hanveden.se/sti.html
+[Civil organization Paradiset-Hanveden's webpage](http://www.paradiset-hanveden.se/sti.html)
 
  ### Media
 
  * The images displayed on the info pages for the starting points (Tyresta By, Paradiset and Rudan) have been borrowed from the sites listed above, and from:
 
- https://sv.wikipedia.org/wiki/Nedre_Rudasj%C3%B6n
+ [Nedre Rudasjön, Wikipedia](https://sv.wikipedia.org/wiki/Nedre_Rudasj%C3%B6n)
 
  * 
 
  
 ### Code
 
-The Google API:s on the site have been implemented with support from Google Maps API tutorial
+The Google API:s on the site have been implemented with support from Google Maps API tutorial and 
+[tutorial made by Code Institute student Eamonn_lead:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
 
 
 
 
-## Debugging
 
-Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
-having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
-effect to fade the overlay div out, showing the map page underneath.
