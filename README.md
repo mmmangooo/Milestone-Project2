@@ -189,7 +189,7 @@ effect to fade the overlay div out, showing the map page underneath.
 ### Code
 
 The Google API:s on the site have been implemented with support from Google Maps API tutorial and 
-[tutorial made by Code Institute student Eamonn_lead:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
+[tutorial made by Code Institute student Eamonn Smyth:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
 
 
 
