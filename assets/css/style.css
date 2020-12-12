@@ -102,6 +102,14 @@ p {
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2)
 }
 
+.info-window {
+    padding: 2rem;
+}
+
+.back-link {
+    padding: 2rem;
+}
+
 /*-----------------------------Info pages*/
 
 .info-images {

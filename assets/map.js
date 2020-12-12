@@ -21,20 +21,17 @@ let locations = [
         lat: 59.16166454309989,
         lng: 18.02274289457959,
         name: "Paradiset",
-        information: "<div><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/></div>",
-        linktoback: "<img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/>",
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div class='back-link'><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>",
         infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
-        link: "<img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='paradiset.html'>Mer information om Paradiset</a>"
+        
     },
   
     {
         lat: 59.170135557673994,
         lng: 18.235728632254503,
         name: "Tyresta By",
-        information: "<div><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/></div>",
-        linktoback: "<img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/>",
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div class='back-link'><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
         infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
-        link: "<img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='tyresta-by.html'>Mer information om Tyresta By</a>"
     },
                 
         
@@ -42,10 +39,8 @@ let locations = [
         lat: 59.16488292914418,
         lng: 18.132294280597314,
         name: "Rudan",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/></div>",     
-        linktoback: "<img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/>",
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div class='back-link><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div><img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a></div></div>",     
         infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
-        link: "<img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a>"
     }
 ];
 
@@ -59,7 +54,7 @@ let infoObjBack=[];
 // Iterates through the locations, adding a marker and its info to each location//
 
     for (let i = 0; i < locations.length; i++) {
-        let contentString = '<h3>' + locations[i].name + '</h3>'+ locations[i].information + locations[i].linktoback + locations[i].link;
+        let contentString = '<h3>' + locations[i].name + '</h3>'+ locations[i].information;
 
     /*Adds marker */
         let marker = new google.maps.Marker({
@@ -104,7 +99,7 @@ let infoObjBack=[];
            content: contentBackString
            });
 
-           let backlink = locations.linktoback[i];
+           let backlink = document.getElementById('back-link');
 
            backlink("click", function() {
             closeOtherInfo();
