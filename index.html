@@ -10,24 +10,24 @@
 
     </head>
     <body>
-   <div class="landing-overlay">
-                <div class="landing-content">
-                    <h1>Vandra med barn på Södertörn</h1>
-                    <p>Hitta barnvänliga vandringsleder snabbt och enkelt</p>
-                    <a id="map-link">
-                        <h2>Börja upptäcka!</h2>
-                        <img src="./assets/images/hiking-icon.png" alt="Icon of little girl hiking">
-                    </a>
-                </div>
+        <div class="landing-overlay">
+            <div class="landing-content">
+                <h1>Vandra med barn på Södertörn</h1>
+                <a id="map-link">
+                    <h2>Börja upptäcka!</h2>
+                    <img src="./assets/images/hiking-icon.png" alt="Icon of little girl hiking">
+                </a>
             </div>
+        </div>
 
         <div id="map-page">
             <header>
                 <h1 class="heading">Vandra med barn på Södertörn</h1>
                 <!--Used Bootstrap navigation bar because it is an easy way to obtain clean, functioning and responsive navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light ml-auto fixed-top">
-                    <div class="container-fluid nav-logo-container mt-2">
-                        <a class="navbar-brand" href="index.html">  <img class="nav-icon" src="./assets/images/hiking-icon.png" alt="Icon of hiking girl"></a>
+                    <div class="container-fluid nav-logo-container mt-1">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="nav-icon" src="./assets/images/hiking-icon.png" alt="Icon of hiking girl"></a>
                     </div>
                     <button class="navbar-toggler fixed-top ml-auto mr-2 mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -54,42 +54,59 @@
                 </nav>
             </header>
 
+            <div class="description-container">
+                <h2 class="map-info-heading">
+                    Klicka på knappnålarna för att se vad som finns vid varje startpunkt
+                </h2>
+                <div class="icon-container container description-icon-text">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/campfire.png"/>
+                            <p>Eldningsplats</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://img.icons8.com/ios-glyphs/28/000000/pavilion.png"/>
+                            <p>Vindskydd</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://img.icons8.com/ios/30/000000/outdoor-toilet.png"/>
+                            <p>Toalett/bajamaja</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://img.icons8.com/windows/32/000000/stroller.png"/>
+                            <p>Barnvagnsslinga</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://img.icons8.com/fluent-systems-regular/28/000000/playground.png"/>
+                            <p>Lekplats</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://img.icons8.com/pastel-glyph/32/000000/route--v1.png"/>
+                            <p>Vandringsleder</p>
+                        </div>
 
-            <h2 class="map-info-heading">
-                Klicka på knappnålarna för att se vad som finns i anslutning till de
-                                                        olika startplatserna
-            </h2>
+                    </div>
+                </div>
+            </div>
 
             <div id="map"></div>
 
-            <div class="icon-container">
-                <h3 class="map-info-heading">Teckenförklaring:</h3>
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/campfire.png"/>
-                <p>Förberedd eldningsplats</p>
-                <img src="https://img.icons8.com/ios-glyphs/28/000000/pavilion.png"/>
-                <p>Vindskydd</p>
-                <img src="https://img.icons8.com/ios/30/000000/outdoor-toilet.png"/>
-                <p>Toalett/bajamaja</p>
-                <img src="https://img.icons8.com/windows/32/000000/stroller.png"/>
-                <p>Barnvagnsvänlig slinga</p>
-                <img src="https://img.icons8.com/pastel-glyph/32/000000/route--v1.png"/>
-                <p>Vandringsledernas längd och svårighetsgrad</p>
 
+            <footer>
+                <p>This site is for educational purposes only</p>
+                <a href="https://icons8.com/">Icons by Icons8</a>
+                Icons made by
+                <a href="https://www.flaticon.com/authors/skyclick" title="Skyclick">Skyclick</a>
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
-                <footer>
-                    <p>This site is for educational purposes only</p>
-                    <a href="https://icons8.com/">Icons by Icons8</a>
-                    Icons made by <a href="https://www.flaticon.com/authors/skyclick" title="Skyclick">Skyclick</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </footer>
 
-                </footer>
-            </div>
         </div>
-        
-         
-        
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVYN0-4Q7k1n0Jbi6FdVCGOkJxXnJF5EA&map_ids=b17fffddf0f2c07c&callback=initMap"></script>
-        <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 
         <script src="./assets/script.js"></script>
         <script src="./assets/map.js"></script>

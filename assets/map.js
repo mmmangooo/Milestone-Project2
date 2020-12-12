@@ -42,7 +42,7 @@ let locations = [
         lat: 59.16488292914418,
         lng: 18.132294280597314,
         name: "Rudan",
-        information: "<div><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/></div>",     
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/></div>",     
         linktoback: "<img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/>",
         infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
         link: "<img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a>"
