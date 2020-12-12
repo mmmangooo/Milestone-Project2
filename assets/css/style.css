@@ -2,6 +2,26 @@ body {
     text-align: center;
 }
 
+/*--------------------------------- Navbar*/
+
+.navbar {
+    float: right;
+}
+
+.nav-logo-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav-icon {
+    width: 30%;
+}
+
+.navbar-collapse {
+    text-align: right;
+}
+
 /*--------------------------------Headings*/
 h1, h2 {
     color: darkslategray;
@@ -94,5 +114,6 @@ p {
 .info-images {
     height: 16rem;
     margin: 0;
+}
 }
 }
