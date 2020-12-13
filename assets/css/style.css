@@ -5,10 +5,7 @@ body {
 
 /*--------------------------------- Navbar*/
 
-.navbar {
-    float: right;
-    
-}
+
 
 .nav-logo-container {
     position: absolute;
@@ -21,11 +18,17 @@ body {
 }
 
 .nav-link {
-color: #946006;
+color: #946006 !important;
+font-weight: bold;
 }
 
 .navbar-collapse {
     text-align: right;
+    margin-top: 4rem;
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 /*--------------------------------Headings*/
@@ -42,10 +45,6 @@ h2 {
 p {
     color: #496840;
     font-size: 0.9rem;
-}
-.heading {
-    font-size: 1.5rem;
-    margin-top: 4.5rem;
 }
 
 .map-info-heading {
@@ -70,14 +69,17 @@ p {
 .hide-overlay {
     display: none;
 }
+  
 
 .landing-content {
-   padding: 20rem 0;
+   padding: 7rem 0;
 }
 
 .landing-button {
     margin-top: 7.5rem;
 }
+
+
 
 /*-----------------------------Map page*/
 
@@ -90,23 +92,19 @@ p {
     margin: 0 2rem;
 }
 
-.description-container p, img {
+.description-container p {
     font-size: 0.8rem;
 }
 
 
 #map {
     width: 100%;
-    height: 70rem;
+    height: 80vh;
     border: 2px solid #946006;
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2)
 }
 
 .info-window {
-    padding: 2rem;
-}
-
-.back-link {
     padding: 2rem;
 }
 
@@ -133,6 +131,10 @@ p {
 }*/
 
 @media screen and (min-width: 992px) {
+.navbar-collapse {
+    margin-top: 0;
+}
+
 .info-images {
     height: 12rem;
     margin: 0;

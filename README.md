@@ -1,14 +1,21 @@
 # Hiking at Södertörn
 
-This site is built for educational purposes only. It is the Milestone Project 2 for the Software Development Diploma course at Code Institute, and it is aimed to display my understanding of Javascript and how it can be used to build interactive websites.
+This site is built for educational purposes only. It is the Milestone Project 2 for the Software Development Diploma course at Code Institute, and it is 
+aimed to display my understanding of Javascript and how it can be used to build interactive websites.
 
 A live version of the website can be viewed here
 
 Images of site 
 
-This is an interactive website built for people hiking with children. The primary goal for this website is to make it easy for hikers with children to find information about available services and length of hiking trails for different starting points in the area of Södertörn. The purpose of this is to encourage parents and other adults to go hiking with their children and experiencing nature together, while also getting fresh air and physical exercise at the same time. Experiencing nature close-up in childhood is known to strengthen childrens relationship with nature even into adulthood. This enhances the probability of engaging in protecting nature and our environment and making life-style choices reflecting this engagement. Hiking together is also a great way of strengthening the relationship between parent and child, bonding around the mutual experiences, which is important for every child's mental health.
+This is an interactive website built for people hiking with children. The primary goal for this website is to make it easy for hikers with children to find 
+information about available services and length of hiking trails for different starting points in the area of Södertörn. The purpose of this is to encourage 
+parents and other adults to go hiking with their children and experiencing nature together, while also getting fresh air and physical exercise at the same time. 
+Experiencing nature close-up in childhood is known to strengthen childrens relationship with nature even into adulthood. This enhances the probability of engaging 
+in protecting nature and our environment and making life-style choices reflecting this engagement. Hiking together is also a great way of strengthening the 
+relationship between parent and child, bonding around the mutual experiences, which is important for every child's mental health.
 
-This site contains interactive elements such as on click animations, on click alert box and geographical information provides through google maps API. All parts of the site is mobile friendly and responsive.
+This site contains interactive elements such as on click animations, on click alert box and geographical information provides through google maps API. 
+All parts of the site is mobile friendly and responsive.
 
 
 __Business and client goals__
@@ -131,6 +138,42 @@ Full-screen:
 
 
 ## Features
+
+Every page contains a navigation bar and a logo with link to start page, which both are fixed to the top to stay visible if user scrolls the page. 
+The purpose of these features is to provide easily accessible navigation regardless of where the user is on the site. The navigation bar collapses to hamburger 
+menu on smaller screens to ensure responsiveness. Each page also contains a footer with copyright information.
+
+### Home 
+
+The home page features an overlay with a background imgage of children walking on a forest path, chosen to create an immediate emotional connection 
+to the purpose of the site (which is to encourage people to go hiking with children) through this visual impression of a hiking activity. In the middle of
+the landing overlay is the name of the site, to immediately tell the user what this site is. Below the name is an invite to enter the page, with a colorful logo 
+of a child hiking. The purpose of this is to create a welcoming feeling, and the icon is chosen to enhance the impression of this site as being aimed at parents 
+and families with children, as well as creating a feeling of playfulness. When this inviting link is clicked, the overlay fades and uncovers the actual starting page.
+
+The starting page features a map of Södertörn, with pins visible at a few hiking starting points. The map takes up most of this page, which is because it constitutes
+the most part of the purpose and functionality of this site, and therefore should also immideately catch the viewers attention. On the top left of the page is a logo,
+the same logo that is shown on the landing overlay, which is made to create a feeling of familiarness and act as a reminder of the purpose of the site (hiking with children).
+Since humans (in most western cultures, which is what this site is aimed for) reads from left to right, the logo on the top left is going to draw the viewers attention 
+after the map, and the next thing that catches the eyes is the navigation bar on the top right. After reading the top 'line', the viewer's eyes will move down to the 
+left to find the next 'line' to read, where they find the text and icons explaining the functionality of the map. This design is aimed at making the site intuitively
+easy to understand for the user.
+
+### Info windows
+
+When a user clicks a pin on the map, an information window appears. This window contains icons representing the services available on the location clicked, for example
+prepared fireplaces or toilets. This is made so that the user can get an immediate overview of the services available at each location just by clicking one time, thus 
+facilitating the user's decision-making on where to go hiking. The infowindows also contains two links - one that when clicked changes the content of the info-window
+to instead display an overview of the different hiking-trails available from that location and one that takes the user to a page with more detailed information about 
+that particular location. This is made to provide the user with more in-depth information if needed, without passing to much information in to the first displayed 
+info-window and deteriorate its purpose of being easy to overview.
+
+### Information pages
+
+There are one information page for each location (starting point) on the map, and these pages are accessible both from the link in the info window described above
+and from the navigation menu. The information pages contain more in-depth information about the different locations, and a few pictures aimed at showing what the sites
+look like. The purpose of this is to provide more information if needed to make a decision about where to go, but also to help create an interest in both the adult and
+the child/-ren to visit the location. 
 
 ## Technologies used
 
