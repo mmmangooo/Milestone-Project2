@@ -129,9 +129,19 @@ Full-screen:
 
 ![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
+As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
+starting point to be added to the site.
+
+
+
 ### Design
 
 ### Differences to original design
+
+In the original design, the info windows had the functionality of a link that when clicked activated an animation of a card flipping over, 
+and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
+However, this proved to be too difficult to achieve (see more details in "known bugs"-section). The design was therefor changed, so that the information
+about the hiking trails available from each starting point is instead displayed in the info pages about the locations.
 
 
 ## Acceptance Criteria
@@ -163,17 +173,18 @@ easy to understand for the user.
 
 When a user clicks a pin on the map, an information window appears. This window contains icons representing the services available on the location clicked, for example
 prepared fireplaces or toilets. This is made so that the user can get an immediate overview of the services available at each location just by clicking one time, thus 
-facilitating the user's decision-making on where to go hiking. The infowindows also contains two links - one that when clicked changes the content of the info-window
-to instead display an overview of the different hiking-trails available from that location and one that takes the user to a page with more detailed information about 
+facilitating the user's decision-making on where to go hiking. The infowindows also contains a link that takes the user to a page with more detailed information about 
 that particular location. This is made to provide the user with more in-depth information if needed, without passing to much information in to the first displayed 
 info-window and deteriorate its purpose of being easy to overview.
 
 ### Information pages
 
 There are one information page for each location (starting point) on the map, and these pages are accessible both from the link in the info window described above
-and from the navigation menu. The information pages contain more in-depth information about the different locations, and a few pictures aimed at showing what the sites
+and from the navigation menu. The information pages contain information about the length and terrain-difficulty of the hiking trails available, more in-depth information about the different locations, and a few pictures aimed at showing what the sites
 look like. The purpose of this is to provide more information if needed to make a decision about where to go, but also to help create an interest in both the adult and
 the child/-ren to visit the location. 
+
+### Contact page
 
 ## Technologies used
 
@@ -192,9 +203,17 @@ the child/-ren to visit the location.
 
 ### Known bugs
 
-Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
-having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
-effect to fade the overlay div out, showing the map page underneath.
+* Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
+  having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
+  effect to fade the overlay div out, showing the map page underneath.
+
+* The functionality of the user clicking a link inside the info window and by that triggering a function exchanging the content in the info window displayed
+  did not work because the id of the link was not possible to obtain and add to an event listener, since it does not exist prior to the info window 
+  being loaded. After several attempts of solving this, and a lengthy contact with to different people on tutor support, not being able to find a solution
+  to work around this issue, I decided to opt out of this functionality altogether in favor of being able to focus on implementing other functions and
+  design and finish this project on time. 
+
+
 
 
 
