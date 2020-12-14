@@ -155,8 +155,8 @@ menu on smaller screens to ensure responsiveness. Each page also contains a foot
 
 ### Home 
 
-The home page features an overlay with a background imgage of children walking on a forest path, chosen to create an immediate emotional connection 
-to the purpose of the site (which is to encourage people to go hiking with children) through this visual impression of a hiking activity. In the middle of
+The home page features an overlay with a background imgage of a family walking on a forest road, chosen to create an immediate emotional connection 
+to the purpose of the site (which is to encourage people to go hiking with children) through this visual impression of a hiking activity together. In the middle of
 the landing overlay is the name of the site, to immediately tell the user what this site is. Below the name is an invite to enter the page, with a colorful logo 
 of a child hiking. The purpose of this is to create a welcoming feeling, and the icon is chosen to enhance the impression of this site as being aimed at parents 
 and families with children, as well as creating a feeling of playfulness. When this inviting link is clicked, the overlay fades and uncovers the actual starting page.
@@ -197,6 +197,8 @@ the child/-ren to visit the location.
 * [Icons8](https://icons8.com/)Icons8 - The project uses Icons8 for icons.
 * [Balsamiq](https://balsamiq.com/) Balsamiq - This project uses Balsamiq for creating the wireframes during the design process.
 * [GoogleMaps Styling Wizard](https://mapstyle.withgoogle.com/)Google map in this project is styled using Google Maps Styling wizard.
+* [PicResize](https://picresize.com/) was used to resize large images.
+* [Resize Image.net](https://resizeimage.net/) was also used to resize large images.
 
 
 ## Testing
@@ -245,7 +247,7 @@ the child/-ren to visit the location.
 
  [Nedre Rudasjön, Wikipedia](https://sv.wikipedia.org/wiki/Nedre_Rudasj%C3%B6n)
 
- * 
+ * The background image displayed on the landing page is from [Unsplash](https://unsplash.com) and the photographer's name is Juliane Liebermann.
 
  
 ### Code
