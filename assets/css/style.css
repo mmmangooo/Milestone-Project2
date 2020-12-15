@@ -110,6 +110,9 @@ p {
 
 /*-----------------------------Info pages*/
 
+
+
+
 .info-images {
     height: 18rem;
     margin: 2% 3%;
@@ -125,19 +128,20 @@ p {
     }
 }
 
-/*@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .info-images {
-        
-}*/
+        padding: 1rem 0.5rem;
+    } 
+}
 
 @media screen and (min-width: 992px) {
 .navbar-collapse {
     margin-top: 0;
 }
-
 .info-images {
-    height: 12rem;
+    height: 14rem;
     margin: 0;
+    padding: 1rem;
 }
 }
 
@@ -150,8 +154,8 @@ p {
 }    
 
 .info-images {
-    height: 16rem;
-    margin: 0;
+    height: 18rem;
+    margin: 0; 
 }
 }
 
