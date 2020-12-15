@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Montserrat+Alternates:wght@300;400&family=Neucha&display=swap');
+
+
 body {
     text-align: center;
     background-color: #fcf9edde;
 }
 
+
 /*--------------------------------- Navbar*/
-
-
 
 .nav-logo-container {
     position: absolute;
@@ -19,6 +21,7 @@ body {
 
 .nav-link {
 color: #946006 !important;
+font-family: "M PLUS Rounded 1C", sans-serif;;
 font-weight: bold;
 }
 
@@ -31,15 +34,18 @@ font-weight: bold;
     border: none;
 }
 
-/*--------------------------------Headings*/
-h1{
+
+/*--------------------------------Headings and text*/
+h1, h2 {
     color: #428130;
     margin: 7rem 1rem 5rem;
+    font-family: "M PLUS Rounded 1C", sans-serif;
+    font-size: 2rem;
 }
 
 h2 {
-    color: #496840;
     margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 
 p {
@@ -47,10 +53,6 @@ p {
     font-size: 0.9rem;
 }
 
-.map-info-heading {
-    font-size: 0.9rem;
-    margin-top: 3rem;
-}
 
 /*------------------------------Landing page*/
 
@@ -69,10 +71,20 @@ p {
 .hide-overlay {
     display: none;
 }
-  
 
-.landing-content {
-   padding: 7rem 0;
+.landing-content { 
+   padding: 2rem;
+   width: 50%;
+   height: 50%;
+   background-image: url("../images/leaf-bg.jpg");
+   background-size: cover;
+   margin: 20rem auto;
+   border-radius: 50%;
+}
+
+.landing-header {
+    margin: 0 0 2rem;
+    color: #eea24a;
 }
 
 .landing-button {
@@ -88,8 +100,8 @@ p {
     z-index: -1;
 }
 
-.description-container {
-    margin: 0 2rem;
+.map-container {
+    margin: 6rem 2rem 2rem;
 }
 
 .description-container p {
@@ -99,13 +111,35 @@ p {
 
 #map {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     border: 2px solid #946006;
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2)
 }
 
 .info-window {
     padding: 2rem;
+}
+
+.icon-container {
+    margin-top: 4rem;
+}
+
+
+/*--------------------- Contact modal */
+
+#contact-modal {
+    display: none;
+    z-index: 1030;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+#modal-content {
+   width: 80%;
+   background-color: #fefefe;
+
 }
 
 /*-----------------------------Info pages*/
@@ -149,7 +183,7 @@ p {
 @media screen and (min-width: 1200px) {
 
 #map {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }    
 

@@ -5,7 +5,7 @@
 // Initializes showing the map on the page, setting appropriate zoom and coordinates to show the area of Södertörn
 function initMap() {
     let map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
+        zoom: 11,
         center: {
             lat: 59.12630249180509,
             lng: 18.12316825393977
@@ -22,7 +22,7 @@ let locations = [
         lng: 18.02274289457959,
         name: "Paradiset",
         information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div class='back-link'><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>",
-        infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
+        
         
     },
   
@@ -31,7 +31,6 @@ let locations = [
         lng: 18.235728632254503,
         name: "Tyresta By",
         information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div class='back-link'><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
-        infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
     },
                 
         
@@ -40,7 +39,7 @@ let locations = [
         lng: 18.132294280597314,
         name: "Rudan",
         information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div class='back-link><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div><img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a></div></div>",     
-        infobackside: "<div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div>",
+       
     }
 ];
 
@@ -48,7 +47,6 @@ let locations = [
 
 //Holds the information showed in each infowindow//
 let infoObj= [];
-let infoObjBack=[];
 
 
 // Iterates through the locations, adding a marker and its info to each location//
@@ -86,7 +84,7 @@ let infoObjBack=[];
      }
 
 
-      
+      /*
 
      // This is where I try to add code for showing another content in the infowindow when a link (backsidelink in locations object) is clicked
     
@@ -115,7 +113,7 @@ let infoObjBack=[];
              infoObjBack[0].length = 0;
          }
         }
-    }
+    }*/
      
 
      
