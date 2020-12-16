@@ -6,7 +6,6 @@ body {
     background-color: #fcf9edde;
 }
 
-
 /*--------------------------------- Navbar*/
 
 .nav-logo-container {
@@ -56,6 +55,7 @@ p {
 }
 
 
+
 /*------------------------------Landing page*/
 
 .landing-overlay {
@@ -83,22 +83,12 @@ p {
    width: 14rem;
    height: 14rem;
    background-color: #fcf9edde;
-   /*background-image: url("../images/leaf-bg.jpg");
-   background-size: cover;*/
    border-radius: 50%;
    overflow: hidden;
    padding: 2.5rem;
    box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
    border: 2px groove #946006;
 }
-
-.landing-header {
-    margin: 0.5rem 0 2rem;
-    color: #946006;
-    font-style: italic;
-    font-weight: normal;
-}
-
 
 /*-----------------------------Map page*/
 
@@ -135,16 +125,20 @@ p {
 
 /*--------------------- Contact modal */
 
-/* Credit for code for styling modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
+
 
 .contact-btn {
    position: fixed;
    bottom: 2rem;
    left: 1.6rem;
    border: none;
-   background-color: transparent;
+   background-color: #fcf9edde;
    font-weight: bold;
+   border-radius: 100%;
+   padding: 1rem;
 }
+
+/* Credit for code for styling and positioning modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
 
 .contact-modal {
     display: none;
@@ -240,12 +234,39 @@ p {
 
 /*-----------------------------Info pages*/
 
+.wrapping-trail-info {
+    display: inline-block;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+.trail-info {
+    border-radius: 50%;
+    height: 16rem;;
+    width: 16rem;
+    border: 2px solid #946006;
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
+}
 
 .info-images {
     max-width: 100%;
     height: auto;
 }
 
+
+/*-----------------------------Footer*/
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #946006;
+    margin-top: 4rem;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #946006;
+}
 /*-----------------------------Media queries*/
 
 @media (min-width: 576px) {
