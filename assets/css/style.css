@@ -88,6 +88,7 @@ p {
    overflow: hidden;
    padding: 2.5rem;
    box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
+   border: 2px groove #946006;
 }
 
 .landing-header {
@@ -115,7 +116,7 @@ p {
 }
 
 
-#map {
+.map {
     width: 100%;
     height: 60vh;
     border: 2px solid #946006;
@@ -135,31 +136,97 @@ p {
 
 /* Credit for code for styling modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
 
+.contact-btn {
+   position: fixed;
+   bottom: 2rem;
+   left: 2rem;
+   border-radius: 50%;
+}
+
 .contact-modal {
     display: none;
-    z-index: 4;
-    max-height: 80%;
-    max-width: 80%;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10%;
-    border: 2px solid #946006;
-    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
-    background-color: #fcf9edde;
+    z-index: 10;
+    
 }
 
 .modal-content {
-   width: 80%;
-   margin: 20% auto;
-   background-color: #fcf9edde;
+    width: 28rem;
+    height: 28rem;
+   position: relative;
+   margin: 0 auto;
+   border-radius: 50%;
+   background-image: url("../images/leaf-bg.jpg");
+   background-size: contain;
    border: none;
-
+   background-size: cover;
+   overflow: hidden;
+   border: 2px groove #946006;
+   box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
+   padding: 4rem 4rem 5rem;
 }
 
+.modal-content p {
+    color: #ebe154c4 ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-control {
+    height: 2rem;
+    background-color: #fcf9edde;
+}
+
+/* Send button created with, and its code copied from, this tool: https://cssbuttoncreator.com/ */
+
+.form-send-btn {
+   margin: 1rem 0 2rem;
+   background: #946006;
+   background-image: -webkit-linear-gradient(top, #946006, #5E410F);
+   background-image: -moz-linear-gradient(top, #946006, #5E410F);
+   background-image: -ms-linear-gradient(top, #946006, #5E410F);
+   background-image: -o-linear-gradient(top, #946006, #5E410F);
+   background-image: -webkit-gradient(to bottom, #946006, #5E410F);
+   -webkit-border-radius: 39px;
+   -moz-border-radius: 39px;
+   border-radius: 39px;
+   color: #ebe154c4 ;
+   font-family: sans-serif;
+   font-size: 1rem;
+   font-weight: 100;
+   padding: 0.8rem;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: groove #946006 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+  .form-send-btn:hover {
+   border: groove #ebe154 1px;
+   background: #d3d146;
+   background-image: -webkit-linear-gradient(top, #ebe154, #d3d146);
+   background-image: -moz-linear-gradient(top, #ebe154, #d3d146);
+   background-image: -ms-linear-gradient(top, #ebe154, #d3d146);
+   background-image: -o-linear-gradient(top, #ebe154, #d3d146);
+   background-image: -webkit-gradient(to bottom, #ebe154, #d3d146);
+   -webkit-border-radius: 39px;
+   -moz-border-radius: 39px;
+   border-radius: 39px;
+   text-decoration: none;
+}
+
+    
+
 .close-btn {
-    float: right;
+    color: #ebe154;
    }
 
 .modal-overlay {
@@ -170,7 +237,7 @@ p {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #b3aeaee3;
+    background-color: #4f504de3;
    }
 
 
