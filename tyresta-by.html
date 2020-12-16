@@ -65,9 +65,10 @@
 
 
 
-<section class="info-page container">
+<section class="info-page container-fluid">
 
     <h1 class="heading">Tyresta By</h1>
+    <div class="row">
 <!-------------------The information text below is borrowed from wikipedia: https://sv.wikipedia.org/wiki/Tyresta_nationalpark#Tyresta_by and from Haninge municipality's webpage: https://www.haninge.se/uppleva-och-gora/besok-och-upplev-haninge/platser-att-besoka/tyresta/-->
 <p class="info-text"> I Tyresta nationalpark samt i dess omgivande naturreservat finns stora areal med orörd urskog, höglänta hällmarker, vilda våtmarker och mossar, 
 samt flera större eller mindre insjöar. Ett flertal välmarkerade vandringsleder cirkulerar inom området, varav en är anpassad för barnvagnar och 
@@ -76,18 +77,41 @@ flera av vandringslederna och även vid Tyresta By. Vid Tyresta By finns också 
 kan titta på gårdens djur. På helgerna erbjuds det ponnyridning för barnen. Tyresta by når man lättast från Handen, Svartbäcken eller Brandbergen, 
 med buss, bil, cykel eller till fots. Även vid Åva i områdets sydöstra del finns en parkering. </p>
 
-<div class="row align-items-center">
-
-<img class="info-images col-sm-6" src="./assets/images/tyresta-by.jpg" alt="Tyresta old village with red barn and houses"/>
-
-<img class="info-images col-sm-6" src="./assets/images/tyresta-trail.jpg" alt="Walking trail seen through tree branches with sun coming down between them"/>
 
 
-<img class="info-images d-none d-sm-block col-sm-6" src="./assets/images/tyresta-stream.jpg" alt="Stream in forest, seen from above"/>
-<img class="info-images d-none d-sm-block col-sm-6" src="./assets/images/tyresta-naturum.jpg" alt="Tyresta nature and history museum, 'Naturum'"/>
+<img class="info-images col-lg-6" src="./assets/images/tyresta-by.jpg" alt="Tyresta old village with red barn and houses"/>
+
+
+<img class="info-images d-none d-lg-block col-lg-6" src="./assets/images/tyresta-stream.jpg" alt="Stream in forest, seen from above"/>
+<img class="info-images d-none d-lg-block col-lg-6" src="./assets/images/tyresta-naturum.jpg" alt="Tyresta nature and history museum, 'Naturum'"/>
 </div>
 
 </section>
+
+<section id="contact-section">
+                <button class="contact-btn" id="contact-open">Kontakta oss</button>
+
+                <div class="contact-modal" id="contact-modal">
+
+
+                    <div class="modal-content" id="modal-content">
+                        <span class="close-btn" id="close-btn">&times</span>
+
+                        
+                        <p>Välkommen att kontakta oss med tips, frågor eller feedback!</p>
+                        <form onsubmit="return sendMail(this);"><input type="text" name="name" id="fullname" class="form-control" placeholder="Ditt namn" required>
+                            <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Din mailadress" required>
+                            <textarea rows="6" name="message" id="message" class="form-control" placeholder="Meddelande" required></textarea>
+                            <button type="submit" class="form-send-btn">Skicka!</button>
+                        </form>
+                        <div id="success-alert" style="display:none">Ditt email har skickats!</div>
+                        <div id="error-alert" style="display:none">Något gick fel, ditt email skickades inte.</div>
+                    </div>
+
+  <div class="modal-overlay"></div>
+                </div>
+
+            </section>
 
 
 

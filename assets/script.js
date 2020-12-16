@@ -51,13 +51,16 @@ let modal = document.getElementById('contact-modal');
 
 let btn = document.getElementById('contact-open');
 
+let overlay = document.getElementById('modal-overlay');
+
 let span = document.getElementById('close-btn');
 
 btn.onclick = function() {
     modal.style.display = 'block';
-    console.log('success');
+    overlay.style.display = 'block';
 };
 
 span.onclick = function() {
     modal.style.display = 'none';
+    overlay.style.display = 'none';
 };

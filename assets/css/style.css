@@ -17,11 +17,13 @@ body {
 
 .nav-icon {
     width: 40%;
+    margin-top: 0.5rem;
 }
 
 .nav-link {
 color: #946006 !important;
-font-family: "M PLUS Rounded 1C", sans-serif;;
+font-family: "M PLUS Rounded 1C", sans-serif;
+font-size: 1.2rem;
 font-weight: bold;
 }
 
@@ -72,32 +74,36 @@ p {
     display: none;
 }
 
+.landing-content-bg {
+   margin: 20rem 0;
+   display: inline-block;
+}
+
 .landing-content { 
-   padding: 2rem;
-   width: 50%;
-   height: 50%;
+   width: 14rem;
+   height: 14rem;
    background-image: url("../images/leaf-bg.jpg");
    background-size: cover;
-   margin: 20rem auto;
    border-radius: 50%;
+   overflow: hidden;
+   padding: 2.5rem;
+   box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
 }
 
 .landing-header {
-    margin: 0 0 2rem;
-    color: #eea24a;
+    margin: 0.5rem 0 2rem;
+    color: #ebe154;
+    font-style: italic;
+    font-weight: normal;
 }
-
-.landing-button {
-    margin-top: 7.5rem;
-}
-
 
 
 /*-----------------------------Map page*/
 
-.map-page {
+#map-page {
     position: absolute;
     z-index: -1;
+    width: 100%;
 }
 
 .map-container {
@@ -113,7 +119,7 @@ p {
     width: 100%;
     height: 60vh;
     border: 2px solid #946006;
-    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2)
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
 }
 
 .info-window {
@@ -127,39 +133,62 @@ p {
 
 /*--------------------- Contact modal */
 
-#contact-modal {
+/* Credit for code for styling modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
+
+.contact-modal {
     display: none;
-    z-index: 1030;
-    overflow: auto;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
+    z-index: 4;
+    max-height: 80%;
+    max-width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    border: 2px solid #946006;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
+    background-color: #fcf9edde;
 }
 
-#modal-content {
+.modal-content {
    width: 80%;
-   background-color: #fefefe;
+   margin: 20% auto;
+   background-color: #fcf9edde;
+   border: none;
 
 }
+
+.close-btn {
+    float: right;
+   }
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #b3aeaee3;
+   }
+
 
 /*-----------------------------Info pages*/
 
 
-
-
 .info-images {
-    height: 18rem;
-    margin: 2% 3%;
-    padding: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 /*-----------------------------Media queries*/
 
 @media (min-width: 576px) {
-    .info-images {
+   /* .info-images {
         height: 16rem;
         margin: 0;
-    }
+    }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -169,13 +198,18 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+
+.landing-content {
+    width: 16rem;
+    height: 16rem;
+    padding: 3.5rem;
+}   
+
+.landing-header {
+    margin: 1rem 0;
+}
 .navbar-collapse {
     margin-top: 0;
-}
-.info-images {
-    height: 14rem;
-    margin: 0;
-    padding: 1rem;
 }
 }
 
@@ -186,10 +220,5 @@ p {
     width: 70%;
     margin: 0 auto;
 }    
-
-.info-images {
-    height: 18rem;
-    margin: 0; 
-}
 }
 

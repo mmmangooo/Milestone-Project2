@@ -205,6 +205,8 @@ the child/-ren to visit the location.
 
 ### Known bugs
 
+#### During development
+
 * Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
   having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
   effect to fade the overlay div out, showing the map page underneath.
@@ -249,11 +251,17 @@ the child/-ren to visit the location.
 
  * The background image displayed on the landing page is from [Unsplash](https://unsplash.com) and the photographer's name is Juliane Liebermann.
 
+ * The background image displayed behind the content on the landing page (leaf) is also from [Unsplash](https://unsplash.com) and the photographer's name is 
+   Vivaan Trivedii.
+
  
 ### Code
 
-The Google API:s on the site have been implemented with support from Google Maps API tutorial and 
+* The Google API:s on the site have been implemented with support from Google Maps API tutorial and 
 [tutorial made by Code Institute student Eamonn Smyth:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
+
+* Contact modal have been set up and style with guidance from [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp) and 
+ [CSS-tricks](https://css-tricks.com/considerations-styling-modal/)
 
 
 

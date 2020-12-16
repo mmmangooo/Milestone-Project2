@@ -65,8 +65,11 @@
 
 
 
-<section class="info-page container">
+<section class="info-page container-fluid">
     <h1 class="heading">Paradiset</h1>
+    <div class="row">
+        <div class="col">
+    
 <!-------------------The information text below is borrowed from wikipedia: https://sv.wikipedia.org/wiki/Paradisets_naturreservat and from the organization 'Paradiset-Hanvedens vänner' webpage: http://www.paradiset-hanveden.se/sti.html-->
 <p class="info-text">Paradisets skogar är Huddinge kommuns största sammanhängande skogsområde. Delar av området har varit i stort sett opåverkade under flera årtionden. 
 Dessa skogar utgör också ett av de tystaste områden i Huddinge kommun. Skogarna fortsätter över kommungränsen i söder, in i Haninge kommun. 
@@ -76,15 +79,41 @@ lämningar finns utmärkta att titta på längs vandringslederna. Vandring i Par
 Raststuga och utomhustoaletter finns vid torpet Paradiset och det finns iordningsställda eldplatser och vindskydd på flera ställen längs lederna. 
 På sommaren går det bra att bada i någon av sjöarna och i närheten av torpet finns sandstrand med brygga.
  </p>
+</div>
 
-<div class="row align-items-center">
 
-<img class="info-images col-sm-6" src="./assets/images/paradiset-croft.jpg" alt="Photo of old croft at Paradiset."/>
-<img class="info-images col-sm-6" src="./assets/images/paradiset-family.jpg" alt="Family walking on a trail, seen from behind. Dad with child on his back'."/>
- <img class="info-images d-none d-sm-block col-sm-6" src="./assets/images/paradiset-lake.jpg" alt="Lake in autumn forest."/>
- <img class="info-images d-none d-sm-block col-sm-6" src="./assets/images/paradiset-winter.jpg" alt="Lake in winter."/>
+<img class="info-images col-lg-6" src="./assets/images/paradiset-croft.jpg" alt="Photo of old croft at Paradiset."/>
+<img class="info-images col-lg-6" src="./assets/images/paradiset-family.jpg" alt="Family walking on a trail, seen from behind. Dad with child on his back'."/>
+ <img class="info-images d-none d-lg-block col-lg-6" src="./assets/images/paradiset-lake.jpg" alt="Lake in autumn forest."/>
  </div>
+ 
 </section>
+
+<section id="contact-section">
+                <button class="contact-btn" id="contact-open">Kontakta oss</button>
+
+                <div class="contact-modal" id="contact-modal">
+
+
+                    <div class="contact-modal" id="modal-content">
+                        <span class="close-btn" id="close-btn">&times</span>
+
+                        
+                        <p>Välkommen att kontakta oss med tips, frågor eller feedback!</p>
+                        <form onsubmit="return sendMail(this);"><input type="text" name="name" id="fullname" class="form-control" placeholder="Ditt namn" required>
+                            <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Din mailadress" required>
+                            <textarea rows="6" name="message" id="message" class="form-control" placeholder="Meddelande" required></textarea>
+                            <button type="submit" class="form-send-btn">Skicka!</button>
+                        </form>
+                        <div id="success-alert" style="display:none">Ditt email har skickats!</div>
+                        <div id="error-alert" style="display:none">Något gick fel, ditt email skickades inte.</div>
+                    </div>
+                    <div class="modal-overlay"></div>
+
+
+                </div>
+
+            </section>
 
 <footer>
     <p>This site is for educational purposes only</p>

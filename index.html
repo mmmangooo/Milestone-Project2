@@ -19,19 +19,20 @@
 
         <div class="landing-overlay">
 
-            <div class="landing-bg">
+            <div class="landing-content-bg">
                 <div class="landing-content">
 
                     <a id="map-link">
-                        <h2 class="landing-header">Börja upptäcka!</h2>
+
                         <img src="./assets/images/hiking-icon.png" alt="Icon of little girl hiking">
+                        <h2 class="landing-header">Börja upptäcka!</h2>
                     </a>
                 </div>
             </div>
         </div>
 
 
-        <div id="map-page">
+        <section id="map-page">
             <header>
                 <h1 class="heading">Vandra med barn på Södertörn</h1>
                 <!--Used Bootstrap navigation bar because it is an easy way to obtain clean, functioning and responsive navigation-->
@@ -61,18 +62,18 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Hem
+                                <a class="nav-link" href="index.html/#map-page">Hem
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="tyresta-by.html">Tyresta by</a>
+                                <a class="nav-link" href="/tyresta-by.html">Tyresta by</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="paradiset.html">Paradiset</a>
+                                <a class="nav-link" href="/paradiset.html">Paradiset</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="rudan.html">Rudan</a>
+                                <a class="nav-link" href="/rudan.html">Rudan</a>
                             </li>
                         </ul>
                     </div>
@@ -121,15 +122,15 @@
             </section>
 
             <section id="contact-section">
-                <button id="contact-open">Kontakta oss</button>
+                <button class="contact-btn" id="contact-open">Kontakta oss</button>
 
-                <div id="contact-modal">
+                <div class="contact-modal" id="contact-modal">
 
 
-                    <div id="modal-content">
-                        <span id="close-btn">&times</span>
+                    <div class="modal-content" id="modal-content">
+                        <span class="close-btn" id="close-btn">&times</span>
 
-                        <p>Om du har tips på fler platser som passar för att vandra med barn eller om du vill lämna feedback på hur sidan fungerar, välkommen att kontakta oss!</p>
+                        <p>Välkommen att kontakta oss med tips, frågor eller feedback!</p>
                         <form onsubmit="return sendMail(this);"><input type="text" name="name" id="fullname" class="form-control" placeholder="Ditt namn" required>
                             <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Din mailadress" required>
                             <textarea rows="6" name="message" id="message" class="form-control" placeholder="Meddelande" required></textarea>
@@ -138,10 +139,10 @@
                         <div id="success-alert" style="display:none">Ditt email har skickats!</div>
                         <div id="error-alert" style="display:none">Något gick fel, ditt email skickades inte.</div>
                     </div>
-
+                    
 
                 </div>
-
+<div class="modal-overlay" id="modal-overlay"></div>
             </section>
 
 
@@ -155,7 +156,7 @@
 
             </footer>
 
-        </div>
+        </section>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
