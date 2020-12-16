@@ -234,18 +234,21 @@ p {
 
 /*-----------------------------Info pages*/
 
-.wrapping-trail-info {
-    display: inline-block;
-    overflow: hidden;
-    padding: 3rem;
-}
+
 
 .trail-info {
-    border-radius: 50%;
-    height: 16rem;;
     width: 16rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 5%;
     border: 2px solid #946006;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+.trail-sign {
+    width: 2rem;
+    height: 2rem;
 }
 
 .info-images {
