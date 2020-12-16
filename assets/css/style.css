@@ -82,8 +82,9 @@ p {
 .landing-content { 
    width: 14rem;
    height: 14rem;
-   background-image: url("../images/leaf-bg.jpg");
-   background-size: cover;
+   background-color: #fcf9edde;
+   /*background-image: url("../images/leaf-bg.jpg");
+   background-size: cover;*/
    border-radius: 50%;
    overflow: hidden;
    padding: 2.5rem;
@@ -93,7 +94,7 @@ p {
 
 .landing-header {
     margin: 0.5rem 0 2rem;
-    color: #ebe154;
+    color: #946006;
     font-style: italic;
     font-weight: normal;
 }
@@ -139,45 +140,39 @@ p {
 .contact-btn {
    position: fixed;
    bottom: 2rem;
-   left: 2rem;
-   border-radius: 50%;
+   left: 1.6rem;
+   border: none;
+   background-color: transparent;
+   font-weight: bold;
 }
 
 .contact-modal {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 1%;
     z-index: 10;
     
 }
 
 .modal-content {
-    width: 28rem;
-    height: 28rem;
-   position: relative;
-   margin: 0 auto;
-   border-radius: 50%;
-   background-image: url("../images/leaf-bg.jpg");
-   background-size: contain;
-   border: none;
-   background-size: cover;
-   overflow: hidden;
+   border-radius: 5%;
+   background-color: #fcf9ed;
    border: 2px groove #946006;
    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
-   padding: 4rem 4rem 5rem;
+   padding: 2rem 1rem;
 }
 
 .modal-content p {
-    color: #ebe154c4 ;
+    color: #946006;
     font-size: 1rem;
-    font-weight: bold;
+    margin-top: 3rem;
 }
 
 .form-control {
-    height: 2rem;
     background-color: #fcf9edde;
+    margin: 1rem 0;
+    border: 0.08rem solid #946006;
 }
 
 /* Send button created with, and its code copied from, this tool: https://cssbuttoncreator.com/ */
@@ -193,15 +188,15 @@ p {
    -webkit-border-radius: 39px;
    -moz-border-radius: 39px;
    border-radius: 39px;
-   color: #ebe154c4 ;
+   color: #fcf9ed ;
    font-family: sans-serif;
    font-size: 1rem;
    font-weight: 100;
    padding: 0.8rem;
    -webkit-box-shadow: 1px 1px 20px 0 #000000;
    -moz-box-shadow: 1px 1px 20px 0 #000000;
-   box-shadow: 1px 1px 20px 0 #000000;
-   text-shadow: 1px 1px 20px #000000;
+   box-shadow: 1px 1px 15px 0 #000000;
+   text-shadow: 1px 1px 15px #000000;
    border: groove #946006 0;
    text-decoration: none;
    display: inline-block;
@@ -210,8 +205,8 @@ p {
 }
 
   .form-send-btn:hover {
-   border: groove #ebe154 1px;
-   background: #d3d146;
+   border: groove #e7e189 1px;
+   background: #d3ee5d;
    background-image: -webkit-linear-gradient(top, #ebe154, #d3d146);
    background-image: -moz-linear-gradient(top, #ebe154, #d3d146);
    background-image: -ms-linear-gradient(top, #ebe154, #d3d146);
@@ -226,7 +221,9 @@ p {
     
 
 .close-btn {
-    color: #ebe154;
+    color: #946006 ;
+    position: fixed;
+    right: 1rem;
    }
 
 .modal-overlay {
@@ -252,10 +249,18 @@ p {
 /*-----------------------------Media queries*/
 
 @media (min-width: 576px) {
-   /* .info-images {
-        height: 16rem;
-        margin: 0;
-    }*/
+
+    .contact-modal {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.modal-content {
+   position: relative;
+   margin: 0 auto;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -283,7 +288,7 @@ p {
 
 @media screen and (min-width: 1200px) {
 
-#map {
+.map {
     width: 70%;
     margin: 0 auto;
 }    

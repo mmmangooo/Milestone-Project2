@@ -132,16 +132,17 @@ Full-screen:
 As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
 starting point to be added to the site.
 
+![Wireframe of modal with contact form](./assets/images/contact-modal.png)
 
 
 ### Design
 
 ### Differences to original design
 
-In the original design, the info windows had the functionality of a link that when clicked activated an animation of a card flipping over, 
-and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
-However, this proved to be too difficult to achieve (see more details in "known bugs"-section). The design was therefor changed, so that the information
-about the hiking trails available from each starting point is instead displayed in the info pages about the locations.
+* In the original design, the info windows had the functionality of a link that when clicked activated an animation of a card flipping over, 
+  and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
+  However, this proved to be too difficult to achieve (see more details in "known bugs"-section). The design was therefor changed, so that the information
+  about the hiking trails available from each starting point is instead displayed in the info page of each location. 
 
 
 ## Acceptance Criteria
