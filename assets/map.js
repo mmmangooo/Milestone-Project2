@@ -21,7 +21,7 @@ let locations = [
         lat: 59.16166454309989,
         lng: 18.02274289457959,
         name: "Paradiset",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><div><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div class='back-link'><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>",
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><div class='back-link'><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>",
         
         
     },
@@ -30,7 +30,7 @@ let locations = [
         lat: 59.170135557673994,
         lng: 18.235728632254503,
         name: "Tyresta By",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div class='back-link'><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
     },
                 
         
@@ -38,7 +38,7 @@ let locations = [
         lat: 59.16488292914418,
         lng: 18.132294280597314,
         name: "Rudan",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div class='back-link><img src='https://img.icons8.com/pastel-glyph/32/000000/route--v1.png'/></div><div><img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a></div></div>",     
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a></div></div>",     
        
     }
 ];

@@ -20,7 +20,7 @@ body {
 }
 
 .nav-link {
-color: #946006 !important;
+color: #f18386 !important;
 font-family: "M PLUS Rounded 1C", sans-serif;
 font-size: 1.2rem;
 font-weight: bold;
@@ -38,8 +38,8 @@ font-weight: bold;
 
 /*--------------------------------Headings and text*/
 h1, h2 {
-    color: #428130;
-    margin: 7rem 1rem 5rem;
+    color: #f18386;
+    margin: 7rem 1rem 2rem;
     font-family: "M PLUS Rounded 1C", sans-serif;
     font-size: 2rem;
 }
@@ -50,11 +50,14 @@ h2 {
 }
 
 p {
-    color: #496840;
+    color: #946006;
     font-size: 0.9rem;
 }
 
-
+.map-info-heading {
+    color: #946006;
+    font-size: 1rem;
+}
 
 /*------------------------------Landing page*/
 
@@ -116,10 +119,15 @@ p {
 
 .info-window {
     padding: 2rem;
+    
 }
 
 .icon-container {
     margin-top: 4rem;
+}
+
+.icon-container p {
+    color: #444343;
 }
 
 
@@ -158,7 +166,7 @@ p {
 }
 
 .modal-content p {
-    color: #946006;
+    color: #f5797d;
     font-size: 1rem;
     margin-top: 3rem;
 }
@@ -166,7 +174,7 @@ p {
 .form-control {
     background-color: #fcf9edde;
     margin: 1rem 0;
-    border: 0.08rem solid #946006;
+    border: 0.1rem solid #946006;
 }
 
 /* Send button created with, and its code copied from, this tool: https://cssbuttoncreator.com/ */
@@ -199,13 +207,13 @@ p {
 }
 
   .form-send-btn:hover {
-   border: groove #e7e189 1px;
-   background: #d3ee5d;
-   background-image: -webkit-linear-gradient(top, #ebe154, #d3d146);
-   background-image: -moz-linear-gradient(top, #ebe154, #d3d146);
-   background-image: -ms-linear-gradient(top, #ebe154, #d3d146);
-   background-image: -o-linear-gradient(top, #ebe154, #d3d146);
-   background-image: -webkit-gradient(to bottom, #ebe154, #d3d146);
+   border: groove #f18386 1px;
+   background: #f18386;
+   background-image: -webkit-linear-gradient(top, #f3a1a4, #f18386);
+   background-image: -moz-linear-gradient(top, #f3a1a4, #f18386);
+   background-image: -ms-linear-gradient(top, #f3a1a4, #f18386);
+   background-image: -o-linear-gradient(top, #f3a1a4, #f18386);
+   background-image: -webkit-gradient(to bottom, #f3a1a4, #f18386);
    -webkit-border-radius: 39px;
    -moz-border-radius: 39px;
    border-radius: 39px;
@@ -238,22 +246,32 @@ p {
 
 .trail-info {
     width: 16rem;
-    height: 20rem;
-    padding: 1rem;
+    padding: 1rem 1rem;
     border-radius: 5%;
     border: 2px solid #946006;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-    margin: 0 auto;
+    margin: 4rem auto;
+    line-height: 1rem;
 }
 
 .trail-sign {
     width: 2rem;
     height: 2rem;
+    margin: 2rem;
+}
+
+.info-text-container {
+    padding: 2rem;
+}
+
+.info-text-container p {
+    margin-top: 5%;
 }
 
 .info-images {
     max-width: 100%;
     height: auto;
+    margin: 1.5rem;
 }
 
 
@@ -288,6 +306,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+
+    .trail-info {
+        margin: 6rem auto 4rem;
+    }
     .info-images {
         padding: 1rem 0.5rem;
     } 
@@ -306,6 +328,16 @@ p {
 }
 .navbar-collapse {
     margin-top: 0;
+}
+
+.trail-info {
+    margin: 8rem auto;
+}
+
+.info-images {
+    max-width: 50%;
+    height: auto;
+    margin: 1rem 0;
 }
 }
 
