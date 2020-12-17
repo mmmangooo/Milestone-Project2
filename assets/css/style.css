@@ -38,7 +38,7 @@ font-weight: bold;
 
 
 /*--------------------------------Headings and text*/
-h1, h2 {
+h1, h2, h3 {
     color: #f18386;
     margin: 7rem 1rem 2rem;
     font-family: "M PLUS Rounded 1C", sans-serif;
@@ -48,6 +48,11 @@ h1, h2 {
 h2 {
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+
+h3 {
+    margin: 2rem 1rem 1rem;
+    font-size: 1rem;
 }
 
 p {
