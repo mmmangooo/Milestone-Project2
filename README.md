@@ -3,7 +3,7 @@
 This site is built for educational purposes only. It is the Milestone Project 2 for the Software Development Diploma course at Code Institute, and it is 
 aimed to display my understanding of Javascript and how it can be used to build interactive websites.
 
-A live version of the website can be viewed here
+[A live version of the website can be viewed here](https://mmmangooo.github.io/Milestone-Project2/)
 
 Images of site 
 
