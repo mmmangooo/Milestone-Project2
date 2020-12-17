@@ -59,19 +59,20 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
 <section class="info-page container-fluid">
     <h1 class="heading">Rudan</h1>
-    <div class="trail-info">
-   
-    
+
+    <div class="row">
+    <div class="trail-info col-lg-6 align-self-center">
         <img class="trail-sign" src="./assets/images/sign.png" alt="icon of trail-sign">
         <p>Motionsspår 2,3 km och 5km</p>
         <p>Vandringsleder 1,6 km och 1,7 km</p>
         <p>Kulturstig 3,4 km</p>
         <p>Handikapp/barnvagns-anpassad slinga, lätt terräng</p>
     </div>
+        <img class="info-images col-lg-6 mx-auto" src="./assets/images/rudan-gard.jpg" alt="Photo of old buildings called 'Rudans gård'."/>
     
-    <div class="row">
-        <div class="info-text-container col-lg-4">
-<!-------------------The information text below is borrowed from wikipedia:https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd and from Haninge municipality's webpage: https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-friluftsomraden/rudans-friluftsomrade-och-naturreservat/-->
+<img class="info-images col-lg-6 mx-auto" src="./assets/images/rudan-trees.jpg" alt="Lake Rudan visible through forest, sunlight coming down in between the trees."/>
+        <div class="info-text-container col-lg-6">
+<!--The information text below is borrowed from wikipedia:https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd and from Haninge municipality's webpage: https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-friluftsomraden/rudans-friluftsomrade-och-naturreservat/-->
 <p>Rudans gård som ligger intill Handens pendeltågsstation är en central byggnad inom Rudans friluftsområde och utgör en 
 viktig hållpunkt utmed Sörmlandsleden. Leden går vidare in i Hanveden som erbjuder allt från branta berg och gammelskog, 
 till våtmarker med träsk och blanka småsjöar. Vintertid finns utmärkta skidspår anlagda i varierande sträckor i skogsområdet 
@@ -83,9 +84,7 @@ hinderbana för barn och nyrenoverad lekplats. Här finns även toaletter och up
 
 
 
-<img class="info-images d-none d-lg-block col-lg-4 mx-auto" src="./assets/images/rudan-ice.jpg" alt="Lake Rudan in winter, frozen."/>
-<img class="info-images col-lg-4 mx-auto" src="./assets/images/rudan-gard.jpg" alt="Photo of old buildings called 'Rudans gård'."/>
-<img class="info-images col-lg-4 mx-auto" src="./assets/images/rudan-trees.jpg" alt="Lake Rudan visible through forest, sunlight coming down in between the trees."/>
+
 
 
 </div>
@@ -100,7 +99,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
 
                     <div class="modal-content" id="modal-content">
-                        <span class="close-btn" id="close-btn">&times</span>
+                        <span class="close-btn" id="close-btn">&times;</span>
 
                         <h3>Välkommen att kontakta oss med tips, frågor eller feedback!</h3>
                         <form onsubmit="return sendMail(this);"><input type="text" name="name" id="fullname" class="form-control" placeholder="Ditt namn" required>

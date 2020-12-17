@@ -6,43 +6,14 @@ body {
     background-color: #fcf9edde;
 }
 
-/*--------------------------------- Navbar*/
-
-.nav-logo-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 12rem;
-}
-
-.nav-icon {
-    width: 40%;
-    margin-top: 0.5rem;
-}
-
-.nav-link {
-color: #f18386 !important;
-font-family: "M PLUS Rounded 1C", sans-serif;
-font-size: 1.2rem;
-font-weight: bold;
-}
-
-.navbar-collapse {
-    text-align: right;
-    margin-top: 4rem;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
 
 /*--------------------------------Headings and text*/
 h1, h2, h3 {
     color: #f18386;
-    margin: 7rem 1rem 2rem;
+    margin: 7rem 1rem 3rem;
     font-family: "M PLUS Rounded 1C", sans-serif;
     font-size: 2rem;
+    letter-spacing: 0.05rem;
 }
 
 h2 {
@@ -63,6 +34,7 @@ p {
 .map-info-heading {
     color: #946006;
     font-size: 1rem;
+    margin: 2rem;
 }
 
 /*------------------------------Landing page*/
@@ -99,6 +71,37 @@ p {
    border: 2px groove #946006;
 }
 
+/*--------------------------------- Navbar*/
+
+.nav-logo-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12rem;
+}
+
+.nav-icon {
+    width: 40%;
+    margin-top: 0.5rem;
+}
+
+.nav-link {
+color: #f18386 !important;
+font-family: "M PLUS Rounded 1C", sans-serif;
+font-size: 1.2rem;
+letter-spacing: 0.03rem;
+}
+
+.navbar-collapse {
+    text-align: right;
+    margin-top: 4rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
 /*-----------------------------Map page*/
 
 #map-page {
@@ -115,7 +118,6 @@ p {
     font-size: 0.8rem;
 }
 
-
 .map {
     width: 100%;
     height: 60vh;
@@ -125,7 +127,7 @@ p {
 
 .info-window {
     padding: 2rem;
-    
+
 }
 
 .icon-container {
@@ -138,7 +140,6 @@ p {
 
 
 /*--------------------- Contact modal */
-
 
 
 .contact-btn {
@@ -160,7 +161,6 @@ p {
     top: 20%;
     left: 1%;
     z-index: 10;
-    
 }
 
 .modal-content {
@@ -226,8 +226,6 @@ p {
    text-decoration: none;
 }
 
-    
-
 .close-btn {
     color: #946006 ;
     position: fixed;
@@ -248,22 +246,21 @@ p {
 
 /*-----------------------------Info pages*/
 
-
-
 .trail-info {
-    width: 16rem;
+    max-width: 16rem;
+    max-height: 24rem;
     padding: 1rem 1rem;
     border-radius: 5%;
     border: 2px solid #946006;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-    margin: 4rem auto;
+    margin: 4rem auto 0;
     line-height: 1rem;
 }
 
 .trail-sign {
     width: 2rem;
     height: 2rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .info-text-container {
@@ -283,17 +280,21 @@ p {
 
 /*-----------------------------Footer*/
 
+footer {
+    margin-top: 8rem;
+}
+
 .footer-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     color: #946006;
-    margin-top: 4rem;
 }
 
 .footer-text a {
     text-decoration: none;
     color: #946006;
 }
+
 /*-----------------------------Media queries*/
 
 @media (min-width: 576px) {
@@ -323,36 +324,45 @@ p {
 
 @media screen and (min-width: 992px) {
 
-.landing-content {
+    h1 {
+        margin-bottom: 8rem;
+    }
+
+    p {
+    font-size: 1rem;
+    }
+
+   .landing-content {
     width: 16rem;
     height: 16rem;
     padding: 3.5rem;
-}   
+    }   
 
-.landing-header {
+   .landing-header {
     margin: 1rem 0;
-}
-.navbar-collapse {
+   }
+
+   .navbar-collapse {
     margin-top: 0;
-}
+  }
 
-.trail-info {
-    margin: 8rem auto;
-}
+   .map {
+    width: 70%;
+    margin: 2rem 4rem 2rem 8rem;
+  }    
 
-.info-images {
+  .map-info-heading {
+      margin-left: -6rem;
+  }
+
+  .info-text-container {
+    padding: 6rem;
+   }
+
+  .info-images {
     max-width: 50%;
     height: auto;
-    margin: 1rem 0;
-}
-}
-
-
-@media screen and (min-width: 1200px) {
-
-.map {
-    width: 70%;
-    margin: 0 auto;
-}    
-}
+    margin: 0;
+  }
+  }
 
