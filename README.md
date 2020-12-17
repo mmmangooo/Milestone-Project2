@@ -218,6 +218,35 @@ the child/-ren to visit the location.
   to work around this issue, I decided to opt out of this functionality altogether in favor of being able to focus on implementing other functions and
   design and finish this project on time. 
 
+* Links in navigation bar in not collapsed mode (full screen) became uncklickable at some point during development. Tried finding the error by comparing the navbar code with previously commited
+  code, while the navbar links worked. Also compared code to bootstrap documentation and didn't find the issue. After some help from tutor support, the issue was found to be the nav logo 
+  container overflowing the navbar links. This was solved by setting a fixed width to the nav logo container. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+''
+
 
 
 
