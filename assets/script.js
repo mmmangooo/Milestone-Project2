@@ -1,15 +1,28 @@
-/* Landing page */
-
-//jQuery code for fading out the 'landing page'-overlay in index.html, and showing the content hidden under it//
-
-$('#map-link').click(function() {
-    $('.landing-overlay').fadeOut(2000, function() {
-        $('.landing-overlay').addClass('hide-overlay');
-    });
-})
 
 
 
+/* Contact modal */
+// Credit for modal code https://www.w3schools.com/howto/howto_css_modals.asp
+
+
+
+let modal = document.getElementById('contact-modal');
+
+let btn = document.getElementById('contact-open');
+
+let overlay = document.getElementById('modal-overlay');
+
+let span = document.getElementById('close-btn');
+
+btn.onclick = function() {
+    modal.style.display = 'block';
+    overlay.style.display = 'block';
+};
+
+span.onclick = function() {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+};
 
 /* Contact form */
 
@@ -39,28 +52,3 @@ emailjs.send('default_service', 'template_hhpfrte', {
 return false;
     
 }
-
-
-
-/* Contact modal */
-// Credit for modal code https://www.w3schools.com/howto/howto_css_modals.asp
-
-
-
-let modal = document.getElementById('contact-modal');
-
-let btn = document.getElementById('contact-open');
-
-let overlay = document.getElementById('modal-overlay');
-
-let span = document.getElementById('close-btn');
-
-btn.onclick = function() {
-    modal.style.display = 'block';
-    overlay.style.display = 'block';
-};
-
-span.onclick = function() {
-    modal.style.display = 'none';
-    overlay.style.display = 'none';
-};

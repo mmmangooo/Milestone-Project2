@@ -1,6 +1,6 @@
 # Hiking at Södertörn
 
-This site is built for educational purposes only. It is the Milestone Project 2 for the Software Development Diploma course at Code Institute, and it is 
+This site is the Milestone Project 2 for the Software Development Diploma course at Code Institute, and it is 
 aimed to display my understanding of Javascript and how it can be used to build interactive websites.
 
 [A live version of the website can be viewed here](https://mmmangooo.github.io/Milestone-Project2/)
@@ -129,8 +129,8 @@ Full-screen:
 
 ![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
-As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
-starting point to be added to the site.
+* As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
+  starting point to be added to the site.
 
 ![Wireframe of modal with contact form](./assets/images/contact-modal.png)
 
@@ -143,6 +143,9 @@ starting point to be added to the site.
   and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
   However, this proved to be too difficult to achieve (see more details in "known bugs"-section). The design was therefor changed, so that the information
   about the hiking trails available from each starting point is instead displayed in the info page of each location. 
+* The contact-button for opening contact form was originally placed in bottom-left corner to create F-shaped reading pattern on the page, and it was fixed to the 
+  screen to follow the user when scrolling. However, this proved to clutter the pages, particularly on smaller screens, and hide the important content on page.
+  Therefore the contact-button was moved to the footer and staying at the bottom while user scrolls.
 
 
 ## Acceptance Criteria
@@ -154,21 +157,22 @@ Every page contains a navigation bar and a logo with link to start page, which b
 The purpose of these features is to provide easily accessible navigation regardless of where the user is on the site. The navigation bar collapses to hamburger 
 menu on smaller screens to ensure responsiveness. Each page also contains a footer with copyright information.
 
-### Home 
+### Index/landing
+The index/landing page features a background image of a family walking on a forest road, chosen to create an immediate emotional connection to the purpose of the site 
+(which is to encourage people to go hiking with children) through this visual impression of a hiking activity together. In the middle of
+the landing overlay is the name of the site and a short sentence explaining the functionality of the site, to immediately tell the user what this site is.
+Below the name is an invite to enter the page, with a colorful logo of a child hiking. The purpose of this is to create a welcoming feeling, and the icon is chosen 
+to enhance the impression of this site as being aimed at parents and families with children, as well as creating a feeling of playfulness. When this link is clicked, 
+the user is taken to the home/map page.
 
-The home page features an overlay with a background imgage of a family walking on a forest road, chosen to create an immediate emotional connection 
-to the purpose of the site (which is to encourage people to go hiking with children) through this visual impression of a hiking activity together. In the middle of
-the landing overlay is the name of the site, to immediately tell the user what this site is. Below the name is an invite to enter the page, with a colorful logo 
-of a child hiking. The purpose of this is to create a welcoming feeling, and the icon is chosen to enhance the impression of this site as being aimed at parents 
-and families with children, as well as creating a feeling of playfulness. When this inviting link is clicked, the overlay fades and uncovers the actual starting page.
-
-The starting page features a map of Södertörn, with pins visible at a few hiking starting points. The map takes up most of this page, which is because it constitutes
+### Home/map 
+The home/map page features a map of Södertörn, with pins visible at a few hiking starting points. The map takes up most of this page, which is because it constitutes
 the most part of the purpose and functionality of this site, and therefore should also immideately catch the viewers attention. On the top left of the page is a logo,
 the same logo that is shown on the landing overlay, which is made to create a feeling of familiarness and act as a reminder of the purpose of the site (hiking with children).
 Since humans (in most western cultures, which is what this site is aimed for) reads from left to right, the logo on the top left is going to draw the viewers attention 
 after the map, and the next thing that catches the eyes is the navigation bar on the top right. After reading the top 'line', the viewer's eyes will move down to the 
-left to find the next 'line' to read, where they find the text and icons explaining the functionality of the map. This design is aimed at making the site intuitively
-easy to understand for the user.
+left to find the next 'line' to read, where they find the text explaining how to use the map. This design is aimed at making the site intuitively easy to understand 
+for the user.
 
 ### Info windows
 
@@ -185,7 +189,11 @@ and from the navigation menu. The information pages contain information about th
 look like. The purpose of this is to provide more information if needed to make a decision about where to go, but also to help create an interest in both the adult and
 the child/-ren to visit the location. 
 
-### Contact page
+### Contact modal
+
+A contact modal accessible through a contact button is placed in the footer of all pages that has a footer (i e all except from index page). In the contact modal there
+is a form when filled out sends an email to the site owner through EmailJS email service. This functionality is included to provide the user with a quick way of 
+contacting the site owner with questions, feedback on the site's functionality or tips on other hiking startpoints to add to the site.
 
 ## Technologies used
 
@@ -200,6 +208,7 @@ the child/-ren to visit the location.
 * [GoogleMaps Styling Wizard](https://mapstyle.withgoogle.com/)Google map in this project is styled using Google Maps Styling wizard.
 * [PicResize](https://picresize.com/) was used to resize large images.
 * [Resize Image.net](https://resizeimage.net/) was also used to resize large images.
+* [EmailJS](https://www.emailjs.com/) is used on this site to provide the funcitonality of sending emails through the contact form.
 
 
 ## Testing
@@ -259,7 +268,7 @@ the child/-ren to visit the location.
 
 ### Content
 
-* The content of the information pages for the starting points (Tyresta By, Paradiset and Rudan) is borrowed from the following websites:
+* The information in the information pages for the starting points (Tyresta By, Paradiset and Rudan) has been found on the following websites:
 
 [Rudans gård, Wikipedia](https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd)
 
@@ -281,8 +290,6 @@ the child/-ren to visit the location.
 
  * The background image displayed on the landing page is from [Unsplash](https://unsplash.com) and the photographer's name is Juliane Liebermann.
 
- * The background image displayed behind the content on the landing page (leaf) is also from [Unsplash](https://unsplash.com) and the photographer's name is 
-   Vivaan Trivedii.
 
  
 ### Code
