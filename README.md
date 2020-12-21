@@ -284,11 +284,23 @@ contacting the site owner with questions, feedback on the site's functionality o
 
  ### Media
 
- * The images displayed on the info pages for the starting points (Tyresta By, Paradiset and Rudan) have been borrowed from the sites listed above, and from:
+* All images are from [Unsplash](https://unsplash.com) and the photograpers are:
 
- [Nedre Rudasjön, Wikipedia](https://sv.wikipedia.org/wiki/Nedre_Rudasj%C3%B6n)
+ * The background image displayed on the landing page: Juliane Liebermann.
 
- * The background image displayed on the landing page is from [Unsplash](https://unsplash.com) and the photographer's name is Juliane Liebermann.
+ * Image of red cottage window on info-page for Paradiset: Andreas Eriksson.
+
+ * Image of kids in a swing on info-page for Rudan: Rashid Sadykov.
+
+ * Image of lake with bridge on info-page for Rudan: Aaron Burden. 
+
+ * Image of girl kissing horse on info-page for Tyresta: Lucie Hosova.
+
+ * Image of red cottage by lake on info-pages for Paradiset: Ines d'Anselme.
+
+ * Image of autumn lake on info-page for Tyresta: Oscar Helgstrand.
+
+
 
 
  

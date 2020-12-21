@@ -255,7 +255,7 @@ letter-spacing: 0.03rem;
     max-height: 24rem;
     padding: 1rem 1rem;
     border-radius: 5%;
-    border: 2px solid #946006;
+    border: 0.15rem solid #946006;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
     margin: 4rem auto 0;
     line-height: 1rem;
@@ -278,7 +278,9 @@ letter-spacing: 0.03rem;
 .info-images {
     max-width: 100%;
     height: auto;
-    margin: 1.5rem;
+    margin: 3rem;
+    border-radius: 5%;
+    border: 0.15rem solid #946006;
 }
 
 
