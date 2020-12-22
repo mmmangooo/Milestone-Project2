@@ -46,6 +46,11 @@ p {
     margin: 1rem;
 }
 
+.info-window-heading {
+    color: #946006;
+    margin: 0;
+}
+
 /*------------------------------Landing page*/
 
 .landing-body {
@@ -109,15 +114,6 @@ letter-spacing: 0.03rem;
 
 /*-----------------------------Map page*/
 
-#map-page {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-}
-
-.map-container {
-    margin: 6rem 2rem 2rem;
-}
 
 .map {
     width: 100%;
@@ -127,8 +123,7 @@ letter-spacing: 0.03rem;
 }
 
 .info-window {
-    padding: 1.5rem;
-    overflow: hidden;
+    padding: 1rem;
 }
 
 .info-window img {
@@ -150,11 +145,18 @@ letter-spacing: 0.03rem;
 
 
 .contact-btn {
-   border: none;
+   border: 0.15rem solid #946006;
+   border-radius: 100%;
+   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);;
+   padding: 2rem 2.5rem;
    background-color: #fcf9edde;
    font-weight: bold;
-   border-radius: 100%;
-   padding: 1rem;
+}
+
+.contact-btn-text {
+    
+    margin: 0.7rem 0 0;
+    color: #f5797d;
 }
 
 /* Credit for code for styling and positioning modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
@@ -271,16 +273,18 @@ letter-spacing: 0.03rem;
     padding: 2rem;
 }
 
-.info-text-container p {
+.info-text{
     margin-top: 5%;
+    color: #946006;
 }
 
 .info-images {
     max-width: 100%;
     height: auto;
-    margin: 3rem;
-    border-radius: 5%;
+    margin: 2rem 0;
+    border-radius: 2rem;
     border: 0.15rem solid #946006;
+    padding: 0;
 }
 
 
@@ -295,11 +299,13 @@ footer p {
     font-size: 0.8rem;
     color: #946006;
     line-height: 0.5rem;
+    margin: 3rem 0 1rem;
 }
 
-footer a {
+footer span, a {
     text-decoration: none;
     color: #946006;
+    font-size: 0.75rem;
 }
 
 /*-----------------------------Media queries*/
@@ -349,7 +355,7 @@ footer a {
 
    .map {
     width: 70%;
-    margin: 1rem;
+    margin: 0 3rem 4rem;
   }    
 
   .map-info-heading {
@@ -372,7 +378,7 @@ footer a {
   .info-images {
     max-width: 50%;
     height: auto;
-    margin: 0;
   }
   }
+
 

@@ -296,9 +296,9 @@ contacting the site owner with questions, feedback on the site's functionality o
 
  * Image of girl kissing horse on info-page for Tyresta: Lucie Hosova.
 
- * Image of red cottage by lake on info-pages for Paradiset: Ines d'Anselme.
+ * Image of autumn tree on info-pages for Paradiset: Malin (last name unknown).
 
- * Image of autumn lake on info-page for Tyresta: Oscar Helgstrand.
+ * Image of forest path on info-page for Tyresta: Malin (last name unknown).
 
 
 
