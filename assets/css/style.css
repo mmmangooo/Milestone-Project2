@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Montserrat+Alternates:wght@300;400&family=Neucha&display=swap');
 
+* {
+    cursor: pointer;
+}
 
 body {
     text-align: center;
@@ -156,7 +159,7 @@ letter-spacing: 0.03rem;
 .contact-btn-text {
     
     margin: 0.7rem 0 0;
-    color: #f5797d;
+    color: #04d600;
 }
 
 /* Credit for code for styling and positioning modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
@@ -350,7 +353,11 @@ footer span, a {
     }
 
    .navbar-collapse {
-    margin-top: 0;
+    margin-top: 0.5rem;
+  }
+
+  .nav-icon {
+      width: 70%;
   }
 
    .map {
