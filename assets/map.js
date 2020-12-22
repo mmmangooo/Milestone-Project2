@@ -30,7 +30,7 @@ let locations = [
         lat: 59.170135557673994,
         lng: 18.235728632254503,
         name: "<h3 class='info-window-heading'>Tyresta By</h3>",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
+        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img  src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
     },
                 
         

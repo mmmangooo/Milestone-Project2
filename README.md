@@ -232,7 +232,7 @@ contacting the site owner with questions, feedback on the site's functionality o
   container overflowing the navbar links. This was solved by setting a fixed width to the nav logo container. 
 
 * Cursor for links had an arrow insted of a pointer on hover on all pages except for index.html. Since index.html doesn't have any links to script files, I concluded
-  that the code responsible for this error must be in the script files and not in css file. The error was solved by adding a general rule (using *) in style.css with
+  that the code responsible for this error must be in the script files and not in css file. The error was solved by adding a general rule (using a:hover) in style.css with
   attribute cursor and value pointer.
 
 

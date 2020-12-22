@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Montserrat+Alternates:wght@300;400&family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300&family=Poppins:wght@200;300;400');
 
-* {
+a:hover {
     cursor: pointer;
 }
 
@@ -13,46 +13,65 @@ body {
 /*--------------------------------Headings and text*/
 h1, h2, h3 {
     color: #04d600;
-    margin: 3rem 1rem 3rem;
-    font-family: "M PLUS Rounded 1C", sans-serif;
+    font-family: "Cabin", sans-serif;
     font-size: 1.8rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 4rem 0 3rem;
+    letter-spacing: 0.15rem;
 }
 
 h2 {
-    /*margin-bottom: 2rem;*/
     font-size: 1.2rem;
 }
 
 h3 {
-    /*margin: 2rem 1rem 1rem;*/
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 p {
     color: #946006;
     font-size: 0.9rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 0;
 }
 
 .landing-header {
     font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .landing-circle-header {
    color: #f18386;
+   margin: 0.2rem;
+   font-size: 1rem;
 }
 
-.map-info-heading {
+.map-info-header {
     color: #946006;
     font-size: 0.9rem;
-    margin: 1rem;
+    margin: 1.2rem;
 }
 
 .info-window-heading {
     color: #946006;
     margin: 0;
 }
+
+.icon-container-header {
+    margin: 1rem 0;
+}
+
+.contact-header {
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem;
+}
+
 
 /*------------------------------Landing page*/
 
@@ -61,19 +80,17 @@ p {
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
+   padding: 25% 5%;
+   text-align: center;
 }
 
-.landing-container {
-    display: inline-block;
-}
 
 .landing-circle { 
-   width: 14rem;
-   height: 14rem;
+   width: 13rem;
+   height: 13rem;
    background-color: #fcf9edde;
    border-radius: 50%;
-   overflow: hidden;
-   padding: 2.5rem;
+   padding: 2rem 2.5rem 2.5rem;
    box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
    border: 0.2rem solid #04d600;
    margin: 0 auto;
@@ -126,7 +143,7 @@ letter-spacing: 0.03rem;
 }
 
 .info-window {
-    padding: 1rem;
+    padding: 0;
 }
 
 .info-window img {
@@ -139,8 +156,14 @@ letter-spacing: 0.03rem;
     background-color: #fffffff3;
 }
 
-.icon-container h3, p {
+.icon-container-header {
+    font-size: 1rem;
     color: #444343;
+}
+
+.icon-container p {
+    color: #444343;
+    font-size: 0.8rem;
 }
 
 
@@ -151,37 +174,40 @@ letter-spacing: 0.03rem;
    border: 0.15rem solid #946006;
    border-radius: 100%;
    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);;
-   padding: 2rem 2.5rem;
+   padding: 2rem 2.7rem;
    background-color: #fcf9edde;
    font-weight: bold;
+   margin: 4rem 0 0;
 }
 
 .contact-btn-text {
-    
     margin: 0.7rem 0 0;
-    color: #04d600;
+    color: #946006;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
 }
 
 /* Credit for code for styling and positioning modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
 
 .contact-modal {
     display: none;
+    z-index: 1030;
     position: absolute;
-    top: 20%;
-    left: 1%;
-    z-index: 10;
+    bottom: -40rem;
+    
+
 }
 
 .modal-content {
-   border-radius: 5%;
+   border-radius: 2rem;
    background-color: #fcf9ed;
    border: 2px groove #946006;
    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
-   padding: 2rem 1rem;
+   padding: 2rem 1rem
+   
 }
 
 .modal-content p {
-    color: #f5797d;
     font-size: 1rem;
     margin-top: 3rem;
 }
@@ -235,10 +261,17 @@ letter-spacing: 0.03rem;
    text-decoration: none;
 }
 
+.contact-response {
+    color: #04d600;
+}
+
 .close-btn {
     color: #946006 ;
-    position: fixed;
-    right: 1rem;
+    font-size: 2rem;
+    position: relative;
+    right: -1%;
+    display: inline-block;
+    padding: 0;
    }
 
 .modal-overlay {
@@ -262,14 +295,13 @@ letter-spacing: 0.03rem;
     border-radius: 5%;
     border: 0.15rem solid #946006;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-    margin: 4rem auto 0;
-    line-height: 1rem;
+    margin: 3rem auto 2rem;
 }
 
 .trail-sign {
     width: 2rem;
     height: 2rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .info-text-container {
@@ -298,9 +330,7 @@ footer {
 }
 
 footer p {
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
-    color: #946006;
     line-height: 0.5rem;
     margin: 3rem 0 1rem;
 }
@@ -315,30 +345,33 @@ footer span, a {
 
 @media (min-width: 576px) {
 
-    .contact-modal {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+.info-window {
+    padding: 1rem;
 }
 
-.modal-content {
-   position: relative;
-   margin: 0 auto;
+.info-window img {
+    margin: 0.5rem 1rem 1rem;
 }
+
+.contact-modal {
+    bottom: -10rem;
+  left: 50%;
+    transform: translateX(-50%);
+}
+
 }
 
 @media screen and (min-width: 768px) {
 
     .landing-header {
-     font-size: 2rem;
+     font-size: 1.8rem;
    }
     .trail-info {
         margin: 6rem auto 4rem;
     }
     .info-images {
         padding: 1rem 0.5rem;
-    } 
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -350,6 +383,14 @@ footer span, a {
 
     p {
     font-size: 1rem;
+    }
+
+    .landing-body {
+        padding: 15% 5%;
+    }
+
+    .landing-header {
+        font-size: 2rem;
     }
 
    .navbar-collapse {
