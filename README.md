@@ -71,7 +71,7 @@ This project is the best way to help them achieve this because:
 
 __User stories__
 
-- As a first time user, I want to quickly get an overview of what this site is for 
+1. As a first time user, I want to quickly get an overview of what this site is for 
 
 Mobile:
 
@@ -86,7 +86,7 @@ Screen:
 ![Wireframe of full-screen landing page](./assets/images/full-screen-landing-page.png)
 
 
-- As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
+2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
 
 Mobile:
 
@@ -102,19 +102,19 @@ Screen:
 
 
 
-- As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
- 1. Prepared fireplaces so I can make warm food for myself and the children
- 2. Toilets or portable toilets
- 3. Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
- 4. Hiking rails that you can walk with a child in stroller
- 5. Hiking trails with a length that is suitable for my childrens age and stamina
+3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
+ * Prepared fireplaces so I can make warm food for myself and the children
+ * Toilets or portable toilets
+ * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
+ * Hiking rails that you can walk with a child in stroller
+ * Hiking trails with a length that is suitable for my childrens age and stamina
  
 ![Wireframe of info alert box](./assets/images/info-alert-box.png)
 
 ![Wireframe of info alert box page 2, trail length info](./assets/images/info-alert-box-trails.png)
  
 
-- As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children and get them interested in going there
+4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children and get them interested in going there
 
 Mobile:
 
@@ -129,7 +129,7 @@ Full-screen:
 
 ![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
-* As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
+5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
   starting point to be added to the site.
 
 ![Wireframe of modal with contact form](./assets/images/contact-modal.png)
@@ -137,7 +137,21 @@ Full-screen:
 
 ### Design
 
-### Differences to original design
+* Color scheme: The purpose of the chosen colors are to create both a harmonious impression with colors and contrast that are easy on the eye and 
+  provide good readability, and to give a feeling of happiness and playfulness, as well as relating to the nature and outdoors theme of the website. 
+  To achieve this, the color #fcf9edde was chosen for the backgrounds and #946006 for text element. The two colors together create a warm impression, 
+  as well as relating to the nature team of the site. For contrast, the colors #f18386 and #04d600 were chosen to create a feeling of playfulness 
+  that goes along with the theme of this site being aimed at families with children.
+
+* Typography: The intention behind the chosen fonts is to create an impression of friendliness, playfulness and a 'lightness' that signals youth,
+  because the site is aimed at parents and their children. The font used for headers - 'Cabin' - is easy to read, straighforward and uncomplicated 
+  and gives a slightly 'childish' and friendly impression. The font used for text elements - 'Poppins' gives an impression of friendliness and 
+  provides good readability.
+
+* Imagery: Images on this site mainly playes the role of engaging the user's emotions and trigger a lust to go hiking with their children. The images
+  are chosen to display feelings of connectedness, enjoying nature and being together.
+
+#### Differences to original design
 
 * In the original design, the info windows had the functionality of a link that when clicked activated an animation of a card flipping over, 
   and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
