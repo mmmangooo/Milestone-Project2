@@ -84,7 +84,7 @@ p {
 
 .landing-body {
    /*background-image: url("../images/family-hiking.jpg"); */
-   background-size: cover;
+   /*background-size: cover;*/
    background-repeat: no-repeat;
    height: 100vh;
    padding: 25% 5%;
