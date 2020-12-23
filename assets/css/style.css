@@ -49,8 +49,8 @@ p {
 }
 
 .landing-header {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
 }
 
 .landing-circle-header {
@@ -90,12 +90,13 @@ p {
    height: 100vh;
    padding: 25% 5%;
    text-align: center;
+   overflow: hidden;
 }
 
 
 .landing-circle { 
-   width: 13rem;
-   height: 13rem;
+   width: 12rem;
+   height: 12rem;
    background-color: #fcf9edde;
    border-radius: 50%;
    padding: 2rem 2.5rem 2.5rem;
@@ -161,7 +162,7 @@ letter-spacing: 0.03rem;
 }
 
 .icon-container {
-    margin-top: 4rem;
+    margin: 4rem 1rem 0;
     border: 0.05rem solid #946006;
     background-color: #fffffff3;
     max-width: 100vw;
@@ -301,7 +302,7 @@ letter-spacing: 0.03rem;
     border: 0.15rem solid #946006;
     -webkit-box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
             box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-    margin: 3rem auto 2rem;
+    margin: 2rem auto 4rem;
 }
 
 .trail-sign {
@@ -320,7 +321,10 @@ letter-spacing: 0.03rem;
 }
 
 .info-images {
+    width: 95%;
+    max-width: 500px;
     height: auto;
+    max-height: 27rem;
     margin: 2rem 0;
     border-radius: 2rem;
     border: 0.15rem solid #946006;
@@ -350,12 +354,22 @@ footer span, a {
 
 @media (min-width: 576px) {
 
+.landing-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 .info-window {
     padding: 1rem;
 }
 
 .info-window img {
     margin: 0.5rem 1rem 1rem;
+}
+
+.info-images {
+    margin: 3rem;
+    height: auto;
 }
 
 .contact-modal {
@@ -370,6 +384,10 @@ footer span, a {
 
 @media screen and (min-width: 768px) {
 
+    .landing-body {
+        padding: 30% 5%;
+    }
+
     .landing-header {
      font-size: 1.8rem;
    }
@@ -378,6 +396,7 @@ footer span, a {
     }
     .info-images {
         padding: 1rem 0.5rem;
+        max-width: 500px;
     }
 }
 
@@ -431,8 +450,7 @@ footer span, a {
    }
 
   .info-images {
-    max-width: 50%;
-    height: auto;
+    max-width: 30rem;
   }
   }
 

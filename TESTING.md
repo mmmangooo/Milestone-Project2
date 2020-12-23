@@ -102,11 +102,16 @@ The page has been manually tested on the functionality of the following:
 * While testing the site on mobile device issues with how the site was displaying on Iphone6S and IphoneX where discovered: Both these models had previously been tested for responsiveness
   in the dev tools in Chrome web browser without issues. The following was tried for fixing the issue:
 
-   - Setting meta content value in html head to maximal-scale=1.0 instead of initial-scale=1.0
+   * Setting meta content value in html head to maximal-scale=1.0 instead of initial-scale=1.0
    
-   - Removing meta content value width and only having initial-scale=1.0 as the value for content
+   * Removing meta content value width and only having initial-scale=1.0 as the value for content
 
-   - Removing background-image on landing body in CSS, and removing background-size: cover on the same element
+   * Removing background-image on landing body in CSS, and removing background-size: cover on the same element
+
+   * The problem was solved by resizing info-pages images again and setting maximum height on images on small screens. For landing page the issue was solved by shrinking all content
+     on small screens, adding less vertical padding and setting overflow hidden. 
+
+
 
 * When the HTML code was first run through the validator, it showed an error message on the page for Tyresta-By saying that the page seemed to be in swedish, but the language attribute
   on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.
