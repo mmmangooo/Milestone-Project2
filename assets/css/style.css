@@ -83,7 +83,7 @@ p {
 /*------------------------------Landing page*/
 
 .landing-body {
-   background-image: url("../images/family-hiking.jpg"); 
+   /*background-image: url("../images/family-hiking.jpg"); */
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;

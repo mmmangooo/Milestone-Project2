@@ -271,7 +271,7 @@ contacting the site owner with questions, feedback on the site's functionality o
 
 ## Testing
 
-Information about testing is provided in separate file, that can be found here: [](/TESTING.md/)
+Information about testing is provided in separate file, [that can be found here:](/TESTING.md/)
 
 
 ## Deployment

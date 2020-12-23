@@ -4,6 +4,30 @@
 
 [View live website](https://mmmangooo.github.io/Milestone-Project2/)
 
+## Testing
+
+The page has been manually tested on the functionality of the following:
+
+* Link from landing page to map page
+
+* Links in navigation menu, including logo link to the left in navigation bar
+
+* 
+
+
+
+
+### User stories testing
+
+
+### Further testing
+
+* HTML code has been validated using the [W3C Markup Validation](https://validator.w3.org/) with the following result:
+
+* CSS code has been validated using the [W3C CSS Validaton - Jigsaw](https://jigsaw.w3.org/css-validator/) with the following result:
+
+* Javascript code has been validated using [JSHint](https://jshint.com/) with the following result:
+
 ### Known bugs
 
 #### During development
