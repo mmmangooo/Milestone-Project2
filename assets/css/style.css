@@ -83,8 +83,9 @@ p {
 /*------------------------------Landing page*/
 
 .landing-body {
-   /*background-image: url("../images/family-hiking.jpg"); */
-   /*background-size: cover;*/
+   background-image: url("../images/family-hiking.jpg");
+   background-size: cover;
+   background-attachment: scroll;
    background-repeat: no-repeat;
    height: 100vh;
    padding: 25% 5%;
@@ -432,6 +433,3 @@ footer span, a {
   }
   }
 
-@supports (-webkit-overflow-scrolling: touch) { 
-    body * {background-attachment: scroll;} 
-}

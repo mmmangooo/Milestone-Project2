@@ -14,7 +14,7 @@ Experiencing nature close-up in childhood is known to strengthen childrens relat
 in protecting nature and our environment and making life-style choices reflecting this engagement. Hiking together is also a great way of strengthening the 
 relationship between parent and child, bonding around the mutual experiences, which is important for every child's mental health.
 
-This site contains interactive elements such as on click animations, on click alert box and geographical information provides through google maps API. 
+This site contains interactive elements such as on click showed elements, geographical information provided through google maps API and email sending through email service. 
 All parts of the site is mobile friendly and responsive.
 
 
@@ -166,42 +166,6 @@ Full-screen:
   Therefore the contact-button was moved to the footer and staying at the bottom while user scrolls.
 
 
-## Acceptance Criteria for each user story
-
- 1.  As a first time user, I want to quickly get an overview of what this site is for 
-
-* The first page the user enters displays easily understandable information about the purpose of the site
-
- 2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn 
-
-* Map clearly displayed on map page, easy for the user to find
-* Pins clearly displayed on the map
-* Information about each location displayed on click on the pins on the map
-
- 3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
- * Prepared fireplaces so I can make warm food for myself and the children
- * Toilets or portable toilets
- * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
- * Hiking trails that you can walk with a child in stroller
- * Hiking trails with a length that is suitable for my childrens age and stamina
-
-* Infowindows that open when the user clicks the map displays icon showing if the location provides access to prepared fireplaces, toilets, wind shelters and trails that you can 
-  walk with a stroller
-* Infowindows contain link to info page where the user gets information about the lengths of the hiking trails available from that location
-
- 4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
-  and spark their interest in going there
-
-* The info pages for each location shows more in-depth information about the location, and images
-* The info pages are available both from the navigation bar accessible from all pages except landing page, and from link in infowindow
-
- 5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
-  starting point to be added to the site.
-
-* A contact button is available in the footer on all pages except for landing page
-* Clicking the contact button opens up a modal containing a contact form that when user fills it out and clicks send, it sends an email to the site owner
-
-
 
 ## Features
 
@@ -345,6 +309,12 @@ now be created locally on your machine.
 * Send button created with, and its code copied from, [CSS Button creator](https://cssbuttoncreator.com/)
 
 
+
+### Acknowledgements
+
+* Thanks to tutor support for helpful guidance with debugging issues
+
+* 
 
 
 

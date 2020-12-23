@@ -27,14 +27,50 @@ The page has been manually tested on the functionality of the following:
 
 ### User stories testing
 
-1 
+1. As a first time user, I want to quickly get an overview of what this site is for 
+    * The landing page displays an image showing an adult and several children walking in nature, and the heading on this page tells that ypu can find places to hike with your children
+      with the help from this site
+
+2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
+    * The map page provides a map showing the area of Södertörn with pins marking different locations from where the user can access hiking trails in this area
+    * When the user clicks a pin on the map an info window appears and shows an overview of what services are accessible on that location, providing the user with information aiding 
+      in a decision about what hiking trail might be suitable
+
+3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
+ * Prepared fireplaces so I can make warm food for myself and the children
+ * Toilets or portable toilets
+ * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
+ * Hiking rails that you can walk with a child in stroller
+ * Hiking trails with a length that is suitable for my childrens age and stamina
+     * The info windows that appear when the user clicks on a pin on the map contains icons that show if each of the above services are available from the location. The meaning of
+       the icons are explained in a text box next to the map.
+     * The info pages about the locations contains information about the length of the trails available from each location
+  
+
+4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
+   and spark their interest in going there
+     * The info pages about each location contains in-depth information and images of that location
+     * The information provided is of a suitable length to be read to children without them losing their interest
+     * There are only two images on each page and they are chosen to show some the characteristics of the location that could be of interest to a child
+
+5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
+   starting point to be added to the site
+     * All pages except for the landing page contains a contact button above the footer. By clicking the contact button the user gets access to a contact form which sends emails
+       directly to the site administrator
+
+       
 
 
 ### Further testing
 
 * HTML code has been validated using the [W3C Markup Validation](https://validator.w3.org/) with the following result:
 
+
+
 * CSS code has been validated using the [W3C CSS Validaton - Jigsaw](https://jigsaw.w3.org/css-validator/) with the following result:
+
+![Result from CSS validator](./assets/images/CSS-validation.PNG)
+
 
 * Javascript code has been validated using [JSHint](https://jshint.com/) with the following result:
 
@@ -71,3 +107,11 @@ The page has been manually tested on the functionality of the following:
    - Removing meta content value width and only having initial-scale=1.0 as the value for content
 
    - Removing background-image on landing body in CSS, and removing background-size: cover on the same element
+
+* When the HTML code was first run through the validator, it showed an error message on the page for Tyresta-By saying that the page seemed to be in swedish, but the language attribute
+  on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.
+
+
+### Out of scope
+
+* Automated testing is not a requirement for the Milestone Project 2
