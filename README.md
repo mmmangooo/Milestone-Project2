@@ -86,6 +86,7 @@ Screen:
 ![Wireframe of full-screen landing page](./assets/images/full-screen-landing-page.png)
 
 
+
 2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
 
 Mobile:
@@ -102,6 +103,7 @@ Screen:
 
 
 
+
 3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
  * Prepared fireplaces so I can make warm food for myself and the children
  * Toilets or portable toilets
@@ -114,7 +116,8 @@ Screen:
 ![Wireframe of info alert box page 2, trail length info](./assets/images/info-alert-box-trails.png)
  
 
-4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children and get them interested in going there
+4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
+  and spark their interest in going there
 
 Mobile:
 
@@ -157,24 +160,60 @@ Full-screen:
   and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
   However, this proved to be too difficult to achieve (see more details in "known bugs"-section). The design was therefor changed, so that the information
   about the hiking trails available from each starting point is instead displayed in the info page of each location. 
+
 * The contact-button for opening contact form was originally placed in bottom-left corner to create F-shaped reading pattern on the page, and it was fixed to the 
   screen to follow the user when scrolling. However, this proved to clutter the pages, particularly on smaller screens, and hide the important content on page.
   Therefore the contact-button was moved to the footer and staying at the bottom while user scrolls.
 
 
-## Acceptance Criteria
+## Acceptance Criteria for each user story
+
+ 1.  As a first time user, I want to quickly get an overview of what this site is for 
+
+* The first page the user enters displays easily understandable information about the purpose of the site
+
+ 2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn 
+
+* Map clearly displayed on map page, easy for the user to find
+* Pins clearly displayed on the map
+* Information about each location displayed on click on the pins on the map
+
+ 3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
+ * Prepared fireplaces so I can make warm food for myself and the children
+ * Toilets or portable toilets
+ * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
+ * Hiking trails that you can walk with a child in stroller
+ * Hiking trails with a length that is suitable for my childrens age and stamina
+
+* Infowindows that open when the user clicks the map displays icon showing if the location provides access to prepared fireplaces, toilets, wind shelters and trails that you can 
+  walk with a stroller
+* Infowindows contain link to info page where the user gets information about the lengths of the hiking trails available from that location
+
+ 4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
+  and spark their interest in going there
+
+* The info pages for each location shows more in-depth information about the location, and images
+* The info pages are available both from the navigation bar accessible from all pages except landing page, and from link in infowindow
+
+ 5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
+  starting point to be added to the site.
+
+* A contact button is available in the footer on all pages except for landing page
+* Clicking the contact button opens up a modal containing a contact form that when user fills it out and clicks send, it sends an email to the site owner
+
 
 
 ## Features
 
-Every page contains a navigation bar and a logo with link to start page, which both are fixed to the top to stay visible if user scrolls the page. 
-The purpose of these features is to provide easily accessible navigation regardless of where the user is on the site. The navigation bar collapses to hamburger 
-menu on smaller screens to ensure responsiveness. Each page also contains a footer with copyright information.
+Every page contains a navigation bar and a logo with link to start page, which both stays at the top of the page when user scrolls, as not to be in the way of the content on page
+or make it hard for the user to access the map. Since the pages aren't very long, the user still has easy access to navigation. The navigation bar collapses to hamburger 
+menu on smaller screens to ensure responsiveness. Each page (apart from landing page) also contains a footer with copyright information and a contact button which on click opens 
+contact modal.
 
 ### Index/landing
 The index/landing page features a background image of a family walking on a forest road, chosen to create an immediate emotional connection to the purpose of the site 
 (which is to encourage people to go hiking with children) through this visual impression of a hiking activity together. In the middle of
-the landing overlay is the name of the site and a short sentence explaining the functionality of the site, to immediately tell the user what this site is.
+the landing overlay is the name of the site and a short sentence explaining the functionality of the site, to immediately tell the user what this site is for.
 Below the name is an invite to enter the page, with a colorful logo of a child hiking. The purpose of this is to create a welcoming feeling, and the icon is chosen 
 to enhance the impression of this site as being aimed at parents and families with children, as well as creating a feeling of playfulness. When this link is clicked, 
 the user is taken to the home/map page.
@@ -186,7 +225,7 @@ the same logo that is shown on the landing overlay, which is made to create a fe
 Since humans (in most western cultures, which is what this site is aimed for) reads from left to right, the logo on the top left is going to draw the viewers attention 
 after the map, and the next thing that catches the eyes is the navigation bar on the top right. After reading the top 'line', the viewer's eyes will move down to the 
 left to find the next 'line' to read, where they find the text explaining how to use the map. This design is aimed at making the site intuitively easy to understand 
-for the user.
+for the user and ensure that the user immediatly finds the functionality they are looking for.
 
 ### Info windows
 
@@ -205,9 +244,14 @@ the child/-ren to visit the location.
 
 ### Contact modal
 
-A contact modal accessible through a contact button is placed in the footer of all pages that has a footer (i e all except from index page). In the contact modal there
+A contact modal accessible through a contact button is placed in the footer of all pages (except from landing page). In the contact modal there
 is a form when filled out sends an email to the site owner through EmailJS email service. This functionality is included to provide the user with a quick way of 
 contacting the site owner with questions, feedback on the site's functionality or tips on other hiking startpoints to add to the site.
+
+### Features left to implement
+
+* The originally intended flip card-animation on info windows may be implemented when the developer has gained more experience in javascript and has the time to solve the issue
+* More locations can be added to the site in the future
 
 ## Technologies used
 
@@ -217,7 +261,6 @@ contacting the site owner with questions, feedback on the site's functionality o
 * [Git](https://git-scm.com/) Git - The project uses Git for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [BootstrapCDN](https://getbootstrap.com/) BootstrapCDN - The project uses Bootstrap for simplified process of structuring the website, facilitate in making it responsive and for adding certain elements. It also uses Bootstrap to provide javascript needed for the carousel and the nav bar.
 * [Google Fonts](https://fonts.google.com/)Google Fonts - The project uses Google Fonts for styling fonts.
-* [Icons8](https://icons8.com/)Icons8 - The project uses Icons8 for icons.
 * [Balsamiq](https://balsamiq.com/) Balsamiq - This project uses Balsamiq for creating the wireframes during the design process.
 * [GoogleMaps Styling Wizard](https://mapstyle.withgoogle.com/)Google map in this project is styled using Google Maps Styling wizard.
 * [PicResize](https://picresize.com/) was used to resize large images.
@@ -226,6 +269,8 @@ contacting the site owner with questions, feedback on the site's functionality o
 
 
 ## Testing
+
+Information about testing is provided in separate file, that can be found here: [](/TESTING.md/)
 
 ### Known bugs
 
@@ -254,9 +299,23 @@ contacting the site owner with questions, feedback on the site's functionality o
 
 ## Deployment
 
+This website was developed using GitPod and Git, with repository hosted on GitHub.
+
+### GitHub Pages
+This website was deplyed to GitHub Pages using the following steps:
+Opened up GitHub in browser and signed in using usename and password. Navigated to My repositories, where I clicked on the repository Mileston-Project2. Clicked settings
+in the top navigation and scrolled down to GitHub Pages. Selected Master Branch in the dropdown menu and clicked to confirm this choice. The website was now live on GitHub Pages.
+
+### Making a local clone
+Navigate to GitHub Repository (https://github.com/mmmangooo/Milestone-Project2). Click the green Clone ocr Download button and copy the URL in the dropdown box. Use your IDE 
+of choice to open up a terminal and navigate to your choice of file location. Use the 'git clone' command in the terminal followed by the copied git URL. A clone of the project will 
+now be created locally on your machine.
+
+
 
 ## Credits
 
+* Code Institute student Daisy Mc Girr's webinar on testing
 
 ### Content
 
@@ -292,6 +351,8 @@ contacting the site owner with questions, feedback on the site's functionality o
 
  * Image of forest path on info-page for Tyresta: Malin (last name unknown).
 
+* Icons used on the page are from [Icons8](https://icons8.com/) and [Flaticon](https://www.flaticon.com/)
+
 
 
 
@@ -303,6 +364,8 @@ contacting the site owner with questions, feedback on the site's functionality o
 
 * Contact modal have been set up and style with guidance from [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp) and 
  [CSS-tricks](https://css-tricks.com/considerations-styling-modal/)
+
+* Send button created with, and its code copied from, [CSS Button creator](https://cssbuttoncreator.com/)
 
 
 
