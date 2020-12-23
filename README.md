@@ -266,35 +266,12 @@ contacting the site owner with questions, feedback on the site's functionality o
 * [PicResize](https://picresize.com/) was used to resize large images.
 * [Resize Image.net](https://resizeimage.net/) was also used to resize large images.
 * [EmailJS](https://www.emailjs.com/) is used on this site to provide the funcitonality of sending emails through the contact form.
+* [Autoprefixer]https://autoprefixer.github.io was used to prefix css code.
 
 
 ## Testing
 
 Information about testing is provided in separate file, that can be found here: [](/TESTING.md/)
-
-### Known bugs
-
-#### During development
-
-* Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
-  having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
-  effect to fade the overlay div out, showing the map page underneath.
-
-* The functionality of the user clicking a link inside the info window and by that triggering a function exchanging the content in the info window displayed
-  did not work because the id of the link was not possible to obtain and add to an event listener, since it does not exist prior to the info window 
-  being loaded. After several attempts of solving this, and a lengthy contact with to different people on tutor support, not being able to find a solution
-  to work around this issue, I decided to opt out of this functionality altogether in favor of being able to focus on implementing other functions and
-  design and finish this project on time. 
-
-* Links in navigation bar in not collapsed mode (full screen) became uncklickable at some point during development. Tried finding the error by comparing the navbar code with previously commited
-  code, while the navbar links worked. Also compared code to bootstrap documentation and didn't find the issue. After some help from tutor support, the issue was found to be the nav logo 
-  container overflowing the navbar links. This was solved by setting a fixed width to the nav logo container. 
-
-* Cursor for links had an arrow insted of a pointer on hover on all pages except for index.html. Since index.html doesn't have any links to script files, I concluded
-  that the code responsible for this error must be in the script files and not in css file. The error was solved by adding a general rule (using a:hover) in style.css with
-  attribute cursor and value pointer.
-
-
 
 
 ## Deployment
@@ -307,7 +284,7 @@ Opened up GitHub in browser and signed in using usename and password. Navigated 
 in the top navigation and scrolled down to GitHub Pages. Selected Master Branch in the dropdown menu and clicked to confirm this choice. The website was now live on GitHub Pages.
 
 ### Making a local clone
-Navigate to GitHub Repository (https://github.com/mmmangooo/Milestone-Project2). Click the green Clone ocr Download button and copy the URL in the dropdown box. Use your IDE 
+Navigate to GitHub Repository (https://github.com/mmmangooo/Milestone-Project2). Click the green Code button and copy the URL in the dropdown box. Use your IDE 
 of choice to open up a terminal and navigate to your choice of file location. Use the 'git clone' command in the terminal followed by the copied git URL. A clone of the project will 
 now be created locally on your machine.
 
