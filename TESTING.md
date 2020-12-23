@@ -12,12 +12,22 @@ The page has been manually tested on the functionality of the following:
 
 * Links in navigation menu, including logo link to the left in navigation bar
 
-* 
+* Map pins being clickable and info windows showing correctly
+
+* Contact button launching contact modal on click
+
+* Field requirements of contact form working correctly
+
+* Mail sending in contact form working and email being setting
+
+* Response message showing correctly on contact form being sent
 
 
 
 
 ### User stories testing
+
+1 
 
 
 ### Further testing
@@ -34,7 +44,8 @@ The page has been manually tested on the functionality of the following:
 
 * Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
   having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
-  effect to fade the overlay div out, showing the map page underneath.
+  effect to fade the overlay div out, showing the map page underneath. Having the landing 'page' as an overlay however proved to cause issues with navigation 
+  to map page. The fade effect was therefore chosen to be removed entirely and the landing page was again put in a separate html file.
 
 * The functionality of the user clicking a link inside the info window and by that triggering a function exchanging the content in the info window displayed
   did not work because the id of the link was not possible to obtain and add to an event listener, since it does not exist prior to the info window 
@@ -53,4 +64,10 @@ The page has been manually tested on the functionality of the following:
 #### During testing
 
 * While testing the site on mobile device issues with how the site was displaying on Iphone6S and IphoneX where discovered: Both these models had previously been tested for responsiveness
-  in the dev tools in Chrome web browser without issues. 
+  in the dev tools in Chrome web browser without issues. The following was tried for fixing the issue:
+
+   - Setting meta content value in html head to maximal-scale=1.0 instead of initial-scale=1.0
+   
+   - Removing meta content value width and only having initial-scale=1.0 as the value for content
+
+   - Removing background-image on landing body in CSS, and removing background-size: cover on the same element
