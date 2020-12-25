@@ -85,9 +85,13 @@ Screen:
 
 ![Wireframe of full-screen landing page](./assets/images/full-screen-landing-page.png)
 
+2. As a user, I want to be able to easily navigate to different pages on the site and back again
 
+![Wireframe of navigation bar on mobile](./assets/images/navbar-mobile.png)
 
-2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
+![Wireframe of navigation bar on full screen mode](./assets/images/navbar-fullscreen.png)
+
+3. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
 
 Mobile:
 
@@ -104,7 +108,7 @@ Screen:
 
 
 
-3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
+4. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
  * Prepared fireplaces so I can make warm food for myself and the children
  * Toilets or portable toilets
  * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
@@ -116,7 +120,7 @@ Screen:
 ![Wireframe of info alert box page 2, trail length info](./assets/images/info-alert-box-trails.png)
  
 
-4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
+5. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
   and spark their interest in going there
 
 Mobile:
@@ -132,7 +136,7 @@ Full-screen:
 
 ![Wireframe of full-screen info page](./assets/images/full-screen-info-page.png)
 
-5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
+6. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
   starting point to be added to the site.
 
 ![Wireframe of modal with contact form](./assets/images/contact-modal.png)
@@ -169,10 +173,9 @@ Full-screen:
 
 ## Features
 
-Every page contains a navigation bar and a logo with link to start page, which both stays at the top of the page when user scrolls, as not to be in the way of the content on page
-or make it hard for the user to access the map. Since the pages aren't very long, the user still has easy access to navigation. The navigation bar collapses to hamburger 
-menu on smaller screens to ensure responsiveness. Each page (apart from landing page) also contains a footer with copyright information and a contact button which on click opens 
-contact modal.
+Every page contains a navigation bar and a logo . The navigation bar collapses to hamburger 
+menu on smaller screens to ensure responsiveness. Each page (apart from landing page) also contains a footer with copyright information andlinks to the different pages on the
+site, to provide navigation possibilites to the user from the bottom of the pages.
 
 ### Index/landing
 The index/landing page features a background image of a family walking on a forest road, chosen to create an immediate emotional connection to the purpose of the site 

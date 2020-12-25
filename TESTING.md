@@ -31,6 +31,12 @@ The page has been manually tested on the functionality of the following:
     * The landing page displays an image showing an adult and several children walking in nature, and the heading on this page tells that ypu can find places to hike with your children
       with the help from this site
 
+2. As a user, I want to be able to easily navigate to different pages on the site and back again
+
+    * A navigation bar is present on all pages except from the landing page and it contains links to all pages 
+    * A logo is present in navigation bar, in the top left hand side of the screen, on all pages except for landing page, and this logo when clicked takes the user back to landing pag
+    * The footer contains link to all pages except from landing page, which ensures that the user can navigate to different pages from the bottom of pages as well
+
 2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
     * The map page provides a map showing the area of Södertörn with pins marking different locations from where the user can access hiking trails in this area
     * When the user clicks a pin on the map an info window appears and shows an overview of what services are accessible on that location, providing the user with information aiding 
@@ -65,14 +71,16 @@ The page has been manually tested on the functionality of the following:
 
 * HTML code has been validated using the [W3C Markup Validation](https://validator.w3.org/) with the following result:
 
+* HTML code has been validated using the [W3C HTML Validator](https://validator.w3.org/)
 
+![Result from HTML validator](./assets/images/HTML-validation.PNG)
 
-* CSS code has been validated using the [W3C CSS Validaton - Jigsaw](https://jigsaw.w3.org/css-validator/) with the following result:
+* CSS code has been validated using the [W3C CSS Validator - Jigsaw](https://jigsaw.w3.org/css-validator/) with the following result:
 
 ![Result from CSS validator](./assets/images/CSS-validation.PNG)
 
-
 * Javascript code has been validated using [JSHint](https://jshint.com/) with the following result:
+
 
 ### Known bugs
 
@@ -110,8 +118,6 @@ The page has been manually tested on the functionality of the following:
 
    * The problem was solved by resizing info-pages images again and setting maximum height on images on small screens. For landing page the issue was solved by shrinking all content
      on small screens, adding less vertical padding and setting overflow hidden. 
-
-
 
 * When the HTML code was first run through the validator, it showed an error message on the page for Tyresta-By saying that the page seemed to be in swedish, but the language attribute
   on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.

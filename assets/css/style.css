@@ -49,8 +49,15 @@ p {
 }
 
 .landing-header {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.5rem;
+}
+
+.landing-undertext {
+    font-size: 0.8rem;
+    margin: 0 0 2rem;
+    font-family: "Poppins", sans-serif;
+   
 }
 
 .landing-circle-header {
@@ -82,6 +89,8 @@ p {
 
 /*------------------------------Landing page*/
 
+
+
 .landing-body {
    background-image: url("../images/family-hiking.jpg");
    background-size: cover;
@@ -91,6 +100,7 @@ p {
    padding: 25% 5%;
    text-align: center;
    overflow: hidden;
+   
 }
 
 
@@ -108,6 +118,9 @@ p {
 
 /*--------------------------------- Navbar*/
 
+.navbar-brand {
+    margin: 0.9rem 0;
+}
 
 .nav-logo-container {
     position: absolute;
@@ -118,7 +131,6 @@ p {
 
 .nav-icon {
     width: 40%;
-    margin-top: 0.5rem;
 }
 
 .nav-item {
@@ -159,6 +171,10 @@ letter-spacing: 0.03rem;
 
 .info-window img {
     margin: 1rem 0.5rem;
+}
+
+.info-icon {
+    margin: 0;
 }
 
 .icon-container {
@@ -321,7 +337,7 @@ letter-spacing: 0.03rem;
     width: 95%;
     max-width: 500px;
     height: auto;
-    max-height: 27rem;
+    max-height: 26rem;
     margin: 2rem 0;
     border-radius: 2rem;
     border: 0.15rem solid #946006;
@@ -354,8 +370,13 @@ footer p, span, a {
 }
 
 .copyright-text {
-    margin: 2.5rem 0 1rem;
+    margin: 1rem 0;
     font-size: 0.8rem;
+}
+
+.footer-credit-links {
+    line-height: 0.8rem;
+    margin: 4rem 0;
 }
 
 /*-----------------------------Media queries*/
@@ -427,11 +448,15 @@ footer p, span, a {
     }
 
     .landing-body {
-        padding: 15% 5%;
+        padding: 12% 5%;
     }
 
     .landing-header {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .landing-undertext {
+        font-size: 1.5rem;
     }
 
    .navbar-collapse {
@@ -439,7 +464,8 @@ footer p, span, a {
   }
 
   .nav-icon {
-      width: 70%;
+      width: 65%;
+      margin: 0.3rem;
   }
 
    .map {
