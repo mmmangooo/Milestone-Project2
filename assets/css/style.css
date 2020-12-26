@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300&family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300;400;500&family=Poppins:wght@200;300;400');
 
 a:hover {
     cursor: pointer;
@@ -20,7 +20,8 @@ body {
 /*--------------------------------Headings and text*/
 h1, h2, h3 {
     color: #04d600;
-    font-family: "Cabin", sans-serif;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
 }
@@ -51,13 +52,13 @@ p {
 .landing-header {
     font-size: 1.4rem;
     line-height: 1.5rem;
+    margin: 1.5rem;
 }
 
 .landing-undertext {
     font-size: 0.8rem;
-    margin: 0 0 2rem;
-    font-family: "Poppins", sans-serif;
-   
+    margin: 0 0 4rem;   
+    
 }
 
 .landing-circle-header {
@@ -89,27 +90,37 @@ p {
 
 /*------------------------------Landing page*/
 
-
-
-.landing-body {
+.landing-background {
    background-image: url("../images/family-hiking.jpg");
    background-size: cover;
-   background-attachment: scroll;
    background-repeat: no-repeat;
    height: 100vh;
-   padding: 25% 5%;
    text-align: center;
    overflow: hidden;
-   
+   position: relative;
 }
 
+/*https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css, https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472*/
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.landing-content {
+    margin: 50% 2%;
+}
 
 .landing-circle { 
    width: 12rem;
    height: 12rem;
    background-color: #fcf9edde;
    border-radius: 50%;
-   padding: 2rem 2.5rem 2.5rem;
+   padding: 1.5rem 2.5rem 2.5rem;
    -webkit-box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
            box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
    border: 0.2rem solid #04d600;
@@ -417,8 +428,8 @@ footer p, span, a {
 
 @media screen and (min-width: 768px) {
 
-    .landing-body {
-        padding: 30% 5%;
+    .landing-content{
+        margin: 30% 5%;
     }
 
     .landing-header {
@@ -447,16 +458,16 @@ footer p, span, a {
     font-size: 1rem;
     }
 
-    .landing-body {
-        padding: 12% 5%;
-    }
-
+  .landing-content {
+          margin: 40% 0;
+    transform: translateY(-40%);
+  }
     .landing-header {
         font-size: 2.2rem;
     }
 
     .landing-undertext {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
    .navbar-collapse {
@@ -494,5 +505,11 @@ footer p, span, a {
     max-width: 30rem;
   }
 
+  }
+
+  @media screen and (min-width: 1200px) {
+      .landing-content {
+          margin: 30% 5%;;
+      }
   }
 

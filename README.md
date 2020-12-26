@@ -151,7 +151,7 @@ Full-screen:
   that goes along with the theme of this site being aimed at families with children.
 
 * Typography: The intention behind the chosen fonts is to create an impression of friendliness, playfulness and a 'lightness' that signals youth,
-  because the site is aimed at parents and their children. The font used for headers - 'Cabin' - is easy to read, straighforward and uncomplicated 
+  because the site is aimed at parents and their children. The font used for headers - 'Mulish' - is easy to read, straighforward and uncomplicated 
   and gives a slightly 'childish' and friendly impression. The font used for text elements - 'Poppins' gives an impression of friendliness and 
   provides good readability.
 
