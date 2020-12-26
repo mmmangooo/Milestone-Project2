@@ -22,14 +22,12 @@ h1, h2, h3 {
     color: #04d600;
     font-family: "Mulish", sans-serif;
     font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
 }
 
 h1 {
+    margin: 4rem 0 4rem;
     font-size: 1.8rem;
-    margin: 4rem 0 3rem;
-    letter-spacing: 0.15rem;
 }
 
 h2 {
@@ -64,13 +62,14 @@ p {
 .landing-circle-header {
    color: #f18386;
    margin: 0.2rem;
-   font-size: 1rem;
+   font-size: 0.8rem;
 }
 
 .map-info-header {
     color: #946006;
     font-size: 0.9rem;
     margin: 1.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .info-window-heading {
@@ -80,6 +79,9 @@ p {
 
 .icon-container-header {
     margin: 1rem 0;
+    letter-spacing: 0.1rem;
+    color: #444343;
+    font-size: 1rem;
 }
 
 .contact-header {
@@ -95,7 +97,6 @@ p {
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
-   text-align: center;
    overflow: hidden;
    position: relative;
 }
@@ -103,7 +104,6 @@ p {
 /*https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css, https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472*/
 .overlay {
     position: absolute;
-    content: '';
     top: 0;
     left: 0;
     width: 100%;
@@ -112,15 +112,15 @@ p {
 }
 
 .landing-content {
-    margin: 50% 2%;
+    margin: 25% 2%;
 }
 
 .landing-circle { 
-   width: 12rem;
-   height: 12rem;
+   width: 11rem;
+   height: 11rem;
    background-color: #fcf9edde;
    border-radius: 50%;
-   padding: 1.5rem 2.5rem 2.5rem;
+   padding: 1rem 2.5rem 2.5rem;
    -webkit-box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
            box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
    border: 0.2rem solid #04d600;
@@ -153,15 +153,16 @@ color: #04d600 !important;
 font-family: "M PLUS Rounded 1C", sans-serif;
 font-size: 1.2rem;
 letter-spacing: 0.03rem;
+margin: 0.5rem;
 }
 
 .navbar-collapse {
     text-align: right;
-    margin-top: 4rem;
 }
 
 .navbar-toggler {
     border: none;
+    margin: 0.3rem 0;
 }
 
 
@@ -184,10 +185,6 @@ letter-spacing: 0.03rem;
     margin: 1rem 0.5rem;
 }
 
-.info-icon {
-    margin: 0;
-}
-
 .icon-container {
     margin: 4rem 1rem 0;
     border: 0.05rem solid #946006;
@@ -197,14 +194,49 @@ letter-spacing: 0.03rem;
     padding: 0 0.5rem;
 }
 
-.icon-container-header {
-    font-size: 1rem;
-    color: #444343;
-}
-
 .icon-container p {
     color: #444343;
     font-size: 0.8rem;
+}
+
+
+
+/*-----------------------------Info pages*/
+
+.trail-info {
+    max-width: 16rem;
+    padding: 1rem 1rem;
+    border-radius: 5%;
+    border: 0.15rem solid #946006;
+    -webkit-box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
+            box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+.trail-sign {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+.info-text-container {
+    padding: 2rem;
+}
+
+.info-text{
+    margin-top: 5%;
+    color: #946006;
+}
+
+.info-images {
+    width: 95%;
+    max-width: 31.25rem;
+    height: auto;
+    max-height: 26rem;
+    margin: 2rem 0;
+    border-radius: 2rem;
+    border: 0.15rem solid #946006;
+    padding: 0;
 }
 
 
@@ -242,7 +274,7 @@ letter-spacing: 0.03rem;
 .modal-content {
    border-radius: 2rem;
    background-color: #fcf9ed;
-   border: 2px groove #946006;
+   border: 0.125rem groove #946006;
    -webkit-box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
            box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
    padding: 2rem 1rem
@@ -266,15 +298,15 @@ letter-spacing: 0.03rem;
    background: #946006;
    background-image: -o-linear-gradient(top, #946006, #5E410F);
    background-image: -webkit-gradient(to bottom, #946006, #5E410F);
-   border-radius: 39px;
+   border-radius: 2.4375rem;
    color: #fcf9ed ;
    font-family: sans-serif;
    font-size: 1rem;
    font-weight: 100;
    padding: 0.8rem;
-   -webkit-box-shadow: 1px 1px 20px 0 #000000;
-   box-shadow: 1px 1px 15px 0 #000000;
-   text-shadow: 1px 1px 15px #000000;
+   -webkit-box-shadow: 0.0625rem 0.0625rem 1.25rem 0 #000000;
+   box-shadow: 0.0625rem 0.0625rem 0.9375rem 0 #000000;
+   text-shadow: 0.0625rem 0.0625rem 0.9375rem #000000;
    border: groove #946006 0;
    text-decoration: none;
    display: inline-block;
@@ -283,11 +315,11 @@ letter-spacing: 0.03rem;
 }
 
   .form-send-btn:hover {
-   border: groove #f18386 1px;
+   border: groove #f18386 0.0625rem ;
    background: #f18386;
    background-image: -o-linear-gradient(top, #f3a1a4, #f18386);
    background-image: -webkit-gradient(to bottom, #f3a1a4, #f18386);
-   border-radius: 39px;
+   border-radius: 2.4375rem;
    text-decoration: none;
 }
 
@@ -296,7 +328,7 @@ letter-spacing: 0.03rem;
 }
 
 .close-btn {
-    color: #946006 ;
+    color: #946006;
     font-size: 2rem;
     position: relative;
     right: -1%;
@@ -316,46 +348,6 @@ letter-spacing: 0.03rem;
    }
 
 
-/*-----------------------------Info pages*/
-
-.trail-info {
-    max-width: 16rem;
-    max-height: 24rem;
-    padding: 1rem 1rem;
-    border-radius: 5%;
-    border: 0.15rem solid #946006;
-    -webkit-box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-            box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-    margin: 2rem auto 4rem;
-}
-
-.trail-sign {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
-}
-
-.info-text-container {
-    padding: 2rem;
-}
-
-.info-text{
-    margin-top: 5%;
-    color: #946006;
-}
-
-.info-images {
-    width: 95%;
-    max-width: 500px;
-    height: auto;
-    max-height: 26rem;
-    margin: 2rem 0;
-    border-radius: 2rem;
-    border: 0.15rem solid #946006;
-    padding: 0;
-}
-
-
 /*-----------------------------Footer*/
 
 footer {
@@ -370,7 +362,6 @@ footer p, span, a {
     margin: 1.5rem 0.1rem;
 }
 
-
 .footer-icon {
     width: 6%;
     margin-right: 1.5rem;
@@ -378,6 +369,10 @@ footer p, span, a {
 
 .footer-nav-link {
     margin: 0.1rem;
+}
+
+.footer-container-second {
+    margin: 2rem 0 1.5rem;
 }
 
 .copyright-text {
@@ -394,9 +389,19 @@ footer p, span, a {
 
 @media (min-width: 576px) {
 
+.landing-content {
+    margin: 50% 2%;
+}
+
 .landing-header {
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+.landing-circle { 
+   width: 12rem;
+   height: 12rem;
+   padding: 1.5rem 2.5rem 2.5rem;
 }
 
 .info-window {
@@ -408,10 +413,8 @@ footer p, span, a {
 }
 
 .info-images {
-    margin: 3rem;
-    height: auto;
+    margin-top: 4rem;
 }
-
 .contact-modal {
     bottom: -10rem;
   left: 50%;
@@ -434,10 +437,9 @@ footer p, span, a {
 
     .landing-header {
      font-size: 1.8rem;
+     margin-bottom: 6rem;
    }
-    .trail-info {
-        margin: 6rem auto 4rem;
-    }
+
     .info-images {
         padding: 1rem 0.5rem;
         max-width: 500px;
@@ -450,17 +452,16 @@ footer p, span, a {
 @media screen and (min-width: 992px) {
 
     h1 {
-        margin-bottom: 8rem;
         font-size: 2rem;
     }
 
     p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     }
 
   .landing-content {
-          margin: 40% 0;
-    transform: translateY(-40%);
+          margin: 45% 0;
+          transform: translateY(-45%);
   }
     .landing-header {
         font-size: 2.2rem;
@@ -468,6 +469,12 @@ footer p, span, a {
 
     .landing-undertext {
         font-size: 1.2rem;
+        margin-bottom: 5rem;
+    }
+
+    .landing-circle-header {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
     }
 
    .navbar-collapse {
@@ -503,13 +510,15 @@ footer p, span, a {
 
   .info-images {
     max-width: 30rem;
+    margin: 0;
   }
 
   }
 
   @media screen and (min-width: 1200px) {
-      .landing-content {
-          margin: 30% 5%;;
-      }
+       .landing-content {
+          margin: 30% 0;
+          transform: translateY(-30%);
+  }
   }
 

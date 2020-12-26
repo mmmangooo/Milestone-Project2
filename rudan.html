@@ -24,7 +24,7 @@
                         <img class="nav-icon" src="./assets/images/hiking-icon.png" alt="Icon of hiking girl"></a>
                 </div>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                   <span><img src="./assets/images/hamburger-icon.png" alt="Icon of green navbar toggler, 'hamburger'">
+                    <span><img src="./assets/images/hamburger-icon.png" alt="Icon of green navbar toggler, 'hamburger'">
                     </span>
                 </button>
 
@@ -50,29 +50,33 @@
         </header>
 
 
-        <section class="info-page container-fluid">
+        <section id="info-section" class="container-fluid">
             <h1 class="heading">Rudan</h1>
 
-            <div class="row">
-                <div class="trail-info col-lg-6 col-xl-12 align-self-center">
+            <div class="row align-items-center">
+                <div class="trail-info col-12 col-xl-4">
                     <img class="trail-sign" src="./assets/images/sign.png" alt="icon of trail-sign">
                     <p>Motionsspår 2,3 km och 5km</p>
                     <p>Vandringsleder 1,6 km och 1,7 km</p>
                     <p>Kulturstig 3,4 km</p>
                     <p>Handikapp/barnvagns-anpassad slinga, lätt terräng</p>
                 </div>
-                <img class="info-images col-lg-6 mx-auto" src="./assets/images/lake-bridge.jpg" alt="Lake with bridge"/>
-
-                <img class="info-images col-lg-6 mx-auto" src="./assets/images/kids-on-swing.jpg" alt="Two boys sitting on a large swing in a park"/>
+                 <div class="col-12 col-lg-6 col-xl-4">
+                    <img class="info-images" src="./assets/images/kids-on-swing.jpg" alt="Two boys sitting on a large swing in a park"/>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <img class="info-images" src="./assets/images/lake-bridge.jpg" alt="Lake with bridge"/>
+                </div>
+               
                 <div
-                    class="info-text-container col-lg-6 col-xl-12">
+                    class="info-text-container col-12 col-lg-6 col-xl-12">
                     <!--The information in the text below is found at wikipedia:https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd and at Haninge municipality's webpage: https://www.haninge.se/uppleva-och-gora/friluftsliv-motion/naturreservat-och-friluftsomraden/rudans-friluftsomrade-och-naturreservat/-->
                     <p>Rudans friluftsområde ligger precis bredvid pendeltågsstationen i Handen och är därför ett bra val för den som åker kommunalt, hit är det riktigt lätt att ta sig! 
-                            Mellan de två sjöarna Övre och Nedre Rudan ligger Rudans gård, som är en gammal välbevarad byggnad. Här finns också tillgång till massor av roliga aktiviteter, 
-                            som nyrenoverad lekplats, frisbeegolfbana och hinderbana för barn, så Rudan är ett bra val för den som har barn som gillar mycket aktivitet. Det finns också en 
-                            sandstrand och brygga vid den ena av sjöarna för den som är badsugen, och tillgång till uppvärmda omklädningsrum och toaletter. Det finns många leder att välja 
-                            mellan och det går utmärkt att vandra med barnvagn eftersom det finns tillgänglighetsanpassad slinga här. På vintern kan man också ta med längdskidorna och åka 
-                            i de upplysta spåren med konstsnö (eller riktig snö om man har tur).</p>
+                                                    Mellan de två sjöarna Övre och Nedre Rudan ligger Rudans gård, som är en gammal välbevarad byggnad. Här finns också tillgång till massor av roliga aktiviteter, 
+                                                    som nyrenoverad lekplats, frisbeegolfbana och hinderbana för barn, så Rudan är ett bra val för den som har barn som gillar mycket aktivitet. Det finns också en 
+                                                    sandstrand och brygga vid den ena av sjöarna för den som är badsugen, och tillgång till uppvärmda omklädningsrum och toaletter. Det finns många leder att välja 
+                                                    mellan och det går utmärkt att vandra med barnvagn eftersom det finns tillgänglighetsanpassad slinga här. På vintern kan man också ta med längdskidorna och åka 
+                                                    i de upplysta spåren med konstsnö (eller riktig snö om man har tur).</p>
                 </div>
 
 
@@ -82,7 +86,7 @@
 
 
             <button class="contact-btn" id="contact-open">
-              <img src="./assets/images/envelope-icon.png" alt="Icon of envelope">
+                <img src="./assets/images/envelope-icon.png" alt="Icon of envelope">
                 <span class="contact-btn-text">Kontakt</span>
             </button>
 
@@ -111,13 +115,13 @@
         <footer>
 
             <img class="footer-icon" src="./assets/images/hiking-icon.png" alt="Icon of hiking girl">
-                <a href="map.html">Hem |</a>
-                <a href="tyresta-by.html">Tyresta By |</a>
-                <a href="paradiset.html">Paradiset |</a>
-                <a href="rudan.html">Rudan</a>
-            
-            <div>
-                  <span class="footer-credit-links">
+            <a href="map.html">Hem |</a>
+            <a href="tyresta-by.html">Tyresta By |</a>
+            <a href="paradiset.html">Paradiset |</a>
+            <a href="rudan.html">Rudan</a>
+
+            <div class="ffooter-container-second">
+                <span class="footer-credit-links">
                     <a href="https://icons8.com/">Icons by Icons8</a>
                     and
                     <a href="https://www.flaticon.com/authors/skyclick" title="Skyclick">Skyclick</a>
@@ -128,9 +132,8 @@
                 </span>
                 <p class="copyright-text">© 2020 Isabelle Ängsås
                 </p>
-              
-            </div>
 
+            </div>
 
         </footer>
 

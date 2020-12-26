@@ -73,11 +73,11 @@ The page has been manually tested on the functionality of the following:
 
 * HTML code has been validated using the [W3C HTML Validator](https://validator.w3.org/)
 
-![Result from HTML validator](./assets/images/HTML-validation.PNG)
+![Result from HTML validator](./assets/images/html-validation.png)
 
 * CSS code has been validated using the [W3C CSS Validator - Jigsaw](https://jigsaw.w3.org/css-validator/) with the following result:
 
-![Result from CSS validator](./assets/images/CSS-validation.PNG)
+![Result from CSS validator](./assets/images/css-validation.png)
 
 * Javascript code has been validated using [JSHint](https://jshint.com/) with the following result:
 

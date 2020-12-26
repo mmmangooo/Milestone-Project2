@@ -5,7 +5,7 @@ aimed to display my understanding of Javascript and how it can be used to build 
 
 [A live version of the website can be viewed here](https://mmmangooo.github.io/Milestone-Project2/)
 
-Images of site 
+![Images of site on different screen sizes](./assets/images/amiresponsive.png)
 
 This is an interactive website built for people hiking with children. The primary goal for this website is to make it easy for hikers with children to find 
 information about available services and length of hiking trails for different starting points in the area of Södertörn. The purpose of this is to encourage 
