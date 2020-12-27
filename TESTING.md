@@ -98,6 +98,17 @@ The page has been manually tested on the functionality of the following:
 ![Result from CSS validator](./assets/images/css-validation.png)
 
 * Javascript code has been validated using [JSHint](https://jshint.com/) with the following result:
+    
+    * Script.js
+
+  ![Screenshot of validation result from JSHint for script.js](./assets/images/script-jshint.png)
+    
+    * Map.js:
+
+  ![Screenshot of validation result from JSHint for map.js](./assets/images/map-jshint.png)
+
+* Comments on JSHint results:
+    * The warnings for undefined and unused variables are due to those variables being present in code retrieved through API:s
 
 
 ### Known bugs
@@ -139,6 +150,9 @@ The page has been manually tested on the functionality of the following:
 
 * When the HTML code was first run through the validator, it showed an error message on the page for Tyresta-By saying that the page seemed to be in swedish, but the language attribute
   on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.
+
+* When the javascript code was first run in JSHint, a warning was thrown for each apperance of 'let' in the code, because 'let in new in ES6. This problem was solved by adding a line in the 
+  script files telling that the version of the code is ES6: /*jshint esversion: 6 */ . This solution was found on [Stack Overflow:](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871)
 
 
 ### Out of scope

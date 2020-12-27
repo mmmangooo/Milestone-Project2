@@ -1,3 +1,7 @@
+// Credit for line below, setting javascript version to ES6 for this document, which avoids warnings for 'let' in JSHint: https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871//
+
+/*jshint esversion: 6 */ 
+
 // Credit for Map initialization, markers and styling: Google Maps API Tutorial: https://developers.google.com/maps/documentation/javascript/ and Google maps tutorial made by Code Institute student Eamonn Smythe: (https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)//
 
 

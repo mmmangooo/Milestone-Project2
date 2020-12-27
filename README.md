@@ -298,8 +298,6 @@ now be created locally on your machine.
 * Icons used on the page are from [Icons8](https://icons8.com/) and [Flaticon](https://www.flaticon.com/)
 
 
-
-
  
 ### Code
 
@@ -314,6 +312,9 @@ now be created locally on your machine.
 * Dark layer on background image on landing page: 
   [Thread on stack overflow](https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css) and
   [Webdesign blog](https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472)
+
+* Solution to warnings in JSHint for the variable 'let':
+  [Stack Overflow:](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871)
 
 
 

@@ -1,5 +1,6 @@
+// Credit for line below, setting javascript version to ES6 for this document, which avoids warnings for 'let' in JSHint: https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871//
 
-
+/*jshint esversion: 6 */
 
 /* Contact modal */
 // Credit for modal code https://www.w3schools.com/howto/howto_css_modals.asp
