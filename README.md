@@ -291,7 +291,7 @@ now be created locally on your machine.
 
  * Image of girl kissing horse on info-page for Tyresta: Lucie Hosova.
 
- * Image of autumn tree on info-pages for Paradiset: Malin (last name unknown).
+ * Image of autumn lake on info-pages for Paradiset: Uniq Trek.
 
  * Image of forest path on info-page for Tyresta: Malin (last name unknown).
 
@@ -304,12 +304,16 @@ now be created locally on your machine.
 ### Code
 
 * The Google API:s on the site have been implemented with support from Google Maps API tutorial and 
-[tutorial made by Code Institute student Eamonn Smyth:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
+ [tutorial made by Code Institute student Eamonn Smyth:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
 
 * Contact modal have been set up and style with guidance from [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp) and 
  [CSS-tricks](https://css-tricks.com/considerations-styling-modal/)
 
 * Send button created with, and its code copied from, [CSS Button creator](https://cssbuttoncreator.com/)
+
+* Dark layer on background image on landing page: 
+  [Thread on stack overflow](https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css) 
+  [Webdesign blog](https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472)
 
 
 

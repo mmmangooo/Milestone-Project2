@@ -20,7 +20,7 @@ let locations = [
     {
         lat: 59.16166454309989,
         lng: 18.02274289457959,
-        name: "<h3 class='info-window-heading'>Paradiset</h3>",
+        name: "<h3 class='info-window-header'>Paradiset</h3>",
         information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>",
         
         
@@ -29,7 +29,7 @@ let locations = [
     {
         lat: 59.170135557673994,
         lng: 18.235728632254503,
-        name: "<h3 class='info-window-heading'>Tyresta By</h3>",
+        name: "<h3 class='info-window-header'>Tyresta By</h3>",
         information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
     },
                 
@@ -37,7 +37,7 @@ let locations = [
     {
         lat: 59.16488292914418,
         lng: 18.132294280597314,
-        name: "<h3 class='info-window-heading'>Rudan</h3>",
+        name: "<h3 class='info-window-header'>Rudan</h3>",
         information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a></div></div>",     
        
     }
@@ -81,40 +81,5 @@ let infoObj= [];
              infoObj[0].close();
              infoObj[0].length = 0;
          }
-     }
-
-
-      /*
-
-     // This is where I try to add code for showing another content in the infowindow when a link (backsidelink in locations object) is clicked
-    
-
-       for (let i = 0; i< locations.length; i++) {
-
-         let contentBackString = locations[i].infobackside;
-
-         let infowindowback = new google.maps.InfoWindow({
-           content: contentBackString
-           });
-
-           let backlink = document.getElementById('back-link');
-
-           backlink("click", function() {
-            closeOtherInfo();
-
-            infowindow.open(map, marker);
-            infoObjBack[0] = infowindowback;
-           });
-
-            function closeOtherInfo() {
-         if (infoObj.length > 0) {
-             infoObjBack[0].set("infowindow", null);
-             infoObjBack[0].close();
-             infoObjBack[0].length = 0;
-         }
-        }
-    }*/
-     
-
-     
+     }     
 }

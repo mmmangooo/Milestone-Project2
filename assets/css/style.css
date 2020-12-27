@@ -5,520 +5,508 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300;400;500&family=Poppins:wght@200;300;400');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300;400;500;700&family=Poppins:wght@200;300;400');
 a:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 body {
-    text-align: center;
-    background-color: #fcf9edde;
+	text-align: center;
+	background-color: #fcf9edde;
 }
 
 
-/*--------------------------------Headings and text*/
-h1, h2, h3 {
-    color: #04d600;
-    font-family: "Mulish", sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.15rem;
+/*--------------------------------Headers and text*/
+
+h1,
+h2,
+h3 {
+	color: #04d600;
+	font-family: "Cabin", sans-serif;
+	letter-spacing: 0.2rem;
 }
 
 h1 {
-    margin: 4rem 0 4rem;
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-size: 1.2rem;
-}
-
-h3 {
-    font-size: 1.3rem;
+	margin: 4rem 0 4rem;
+	font-size: 1.8rem;
 }
 
 p {
-    color: #946006;
-    font-size: 0.9rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5rem;
-    margin: 0;
+	color: #946006;
+	font-size: 0.9rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	line-height: 1.5rem;
+	margin: 0;
 }
 
 .landing-header {
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-    margin: 1.5rem;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	margin: 0 1.5rem 2rem 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
 }
 
-.landing-undertext {
-    font-size: 0.8rem;
-    margin: 0 0 4rem;   
-    
+.landing-subheader {
+	font-size: 1rem;
+	margin: 0 1rem 4rem;
 }
 
 .landing-circle-header {
-   color: #f18386;
-   margin: 0.2rem;
-   font-size: 0.8rem;
+	color: #f18386;
+	margin: 0.2rem;
+	font-size: 0.8rem;
+}
+
+.map-header {
+	margin: 2rem 1rem 2rem;
 }
 
 .map-info-header {
-    color: #946006;
-    font-size: 0.9rem;
-    margin: 1.2rem;
-    letter-spacing: 0.1rem;
+	color: #946006;
+	font-size: 0.9rem;
+	margin: 0 0 4rem;
+	letter-spacing: 0.1rem;
 }
 
-.info-window-heading {
-    color: #946006;
-    margin: 0;
+.info-window-header {
+	color: #946006;
+	margin: 0;
 }
 
 .icon-container-header {
-    margin: 1rem 0;
-    letter-spacing: 0.1rem;
-    color: #444343;
-    font-size: 1rem;
+	margin: 1rem 0;
+	letter-spacing: 0.1rem;
+	color: #444343;
+	font-size: 1rem;
 }
 
 .contact-header {
-    font-size: 1.2rem;
-    margin: 2rem 0 1rem;
+	font-size: 1.2rem;
+	margin: 3rem 0 1rem;
 }
 
 
 /*------------------------------Landing page*/
 
 .landing-background {
-   background-image: url("../images/family-hiking.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 100vh;
-   overflow: hidden;
-   position: relative;
+	background-image: url("../images/family-hiking.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
 }
 
-/*https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css, https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472*/
+
+/* Credit for code implementing dark layer on background: https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css and https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472*/
+
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.452);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.452);
 }
 
 .landing-content {
-    margin: 25% 2%;
+	margin: 30% 2%;
 }
 
-.landing-circle { 
-   width: 11rem;
-   height: 11rem;
-   background-color: #fcf9edde;
-   border-radius: 50%;
-   padding: 1rem 2.5rem 2.5rem;
-   -webkit-box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
-           box-shadow: 0 2rem 3rem 0 rgba(0,0,0,0.2), 0 3rem 5rem 0 rgba(0,0,0,0.2);
-   border: 0.2rem solid #04d600;
-   margin: 0 auto;
+.landing-circle {
+	width: 11rem;
+	height: 11rem;
+	background-color: #fcf9edde;
+	border-radius: 50%;
+	padding: 1.3rem 2rem 2.2rem 2rem;
+	-webkit-box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.2), 0 3rem 5rem 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.2), 0 3rem 5rem 0 rgba(0, 0, 0, 0.2);
+	border: 0.2rem solid #04d600;
+	margin: 0 auto;
 }
+
 
 /*--------------------------------- Navbar*/
 
 .navbar-brand {
-    margin: 0.9rem 0;
+	margin: 0.9rem 0;
 }
 
 .nav-logo-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 12rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 12rem;
 }
 
 .nav-icon {
-    width: 40%;
+	width: 40%;
 }
 
 .nav-item {
-background-color: #fcf9edde;
+	background-color: #fcf9edde;
 }
 
 .nav-link {
-color: #04d600 !important;
-font-family: "M PLUS Rounded 1C", sans-serif;
-font-size: 1.2rem;
-letter-spacing: 0.03rem;
-margin: 0.5rem;
+	color: #04d600 !important;
+	font-family: "M PLUS Rounded 1C", sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: 0.03rem;
+	margin: 0.5rem;
 }
 
 .navbar-collapse {
-    text-align: right;
+	text-align: right;
 }
 
 .navbar-toggler {
-    border: none;
-    margin: 0.3rem 0;
+	border: none;
+	margin: 0.3rem 0;
 }
 
 
 /*-----------------------------Map page*/
 
-
 .map {
-    width: 100%;
-    height: 60vh;
-    border: 2px solid #946006;
-    -webkit-box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
-            box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
+	width: 100%;
+	height: 60vh;
+	border: 2px solid #946006;
+	-webkit-box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2), 0 2rem 4rem 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2), 0 2rem 4rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .info-window {
-    padding: 0;
+	padding: 0;
 }
 
 .info-window img {
-    margin: 1rem 0.5rem;
+	margin: 1rem 0.5rem;
 }
 
 .icon-container {
-    margin: 4rem 1rem 0;
-    border: 0.05rem solid #946006;
-    background-color: #fffffff3;
-    max-width: 100vw;
-    overflow: hidden;
-    padding: 0 0.5rem;
+	margin: 4rem 1rem 0;
+	border: 0.05rem solid #946006;
+	background-color: #fffffff3;
+	max-width: 100vw;
+	overflow: hidden;
+	padding: 0 0.5rem;
 }
 
 .icon-container p {
-    color: #444343;
-    font-size: 0.8rem;
+	color: #444343;
+	font-size: 0.8rem;
 }
-
 
 
 /*-----------------------------Info pages*/
 
 .trail-info {
-    max-width: 16rem;
-    padding: 1rem 1rem;
-    border-radius: 5%;
-    border: 0.15rem solid #946006;
-    -webkit-box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-            box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2), 0 1.5rem 3rem 0 rgba(0,0,0,0.2);
-    margin: 0 auto;
+	max-width: 16rem;
+	padding: 1rem 1rem;
+	border-radius: 5%;
+	border: 0.15rem solid #946006;
+	-webkit-box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1.5rem 3rem 0 rgba(0, 0, 0, 0.2);
+	margin: 1rem auto 2rem;
 }
 
 .trail-sign {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
 }
 
 .info-text-container {
-    padding: 2rem;
+	padding: 2rem;
 }
 
-.info-text{
-    margin-top: 5%;
-    color: #946006;
+.info-text {
+	margin-top: 5%;
+	color: #946006;
 }
 
 .info-images {
-    width: 95%;
-    max-width: 31.25rem;
-    height: auto;
-    max-height: 26rem;
-    margin: 2rem 0;
-    border-radius: 2rem;
-    border: 0.15rem solid #946006;
-    padding: 0;
+	width: 95%;
+	max-width: 31.25rem;
+	height: auto;
+	max-height: 26rem;
+	margin: 2rem 0;
+	border-radius: 2rem;
+	border: 0.15rem solid #946006;
+	padding: 0;
 }
 
 
 /*--------------------- Contact modal */
 
-
 .contact-btn {
-   border: 0.15rem solid #946006;
-   border-radius: 100%;
-   -webkit-box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);
-           box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);
-   padding: 2rem 2.7rem;
-   background-color: #fcf9edde;
-   font-weight: bold;
-   margin: 4rem 0 3rem;
+	border: 0.15rem solid #946006;
+	border-radius: 100%;
+	-webkit-box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);
+	box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);
+	padding: 2rem 2.7rem;
+	background-color: #fcf9edde;
+	font-weight: bold;
+	margin: 4rem 0 3rem;
 }
 
 .contact-btn-text {
-    margin: 0.7rem 0 0;
-    color: #946006;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
-    display: block;
+	margin: 0.7rem 0 0;
+	color: #946006;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	display: block;
 }
+
 
 /* Credit for code for styling and positioning modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
 
 .contact-modal {
-    display: none;
-    z-index: 1030;
-    position: absolute;
-    bottom: -40rem;
+	display: none;
+	z-index: 1030;
+	position: absolute;
+	bottom: -40rem;
 }
 
 .modal-content {
-   border-radius: 2rem;
-   background-color: #fcf9ed;
-   border: 0.125rem groove #946006;
-   -webkit-box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
-           box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2), 0 2rem 4rem 0 rgba(0,0,0,0.2);
-   padding: 2rem 1rem
+	border-radius: 2rem;
+	background-color: #fcf9ed;
+	border: 0.125rem groove #946006;
+	-webkit-box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2), 0 2rem 4rem 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2), 0 2rem 4rem 0 rgba(0, 0, 0, 0.2);
+	padding: 2rem 1rem
 }
 
 .modal-content p {
-    font-size: 1rem;
-    margin-top: 3rem;
+	font-size: 1rem;
+	margin-top: 3rem;
 }
 
 .form-control {
-    background-color: #fcf9edde;
-    margin: 1rem 0;
-    border: 0.1rem solid #946006;
+	background-color: #fcf9edde;
+	margin: 1rem 0;
+	border: 0.1rem solid #946006;
 }
+
 
 /* Send button created with, and its code copied from (with some adjustments), this tool: https://cssbuttoncreator.com/ */
 
 .form-send-btn {
-   margin: 1rem 0 2rem;
-   background: #946006;
-   background-image: -o-linear-gradient(top, #946006, #5E410F);
-   background-image: -webkit-gradient(to bottom, #946006, #5E410F);
-   border-radius: 2.4375rem;
-   color: #fcf9ed ;
-   font-family: sans-serif;
-   font-size: 1rem;
-   font-weight: 100;
-   padding: 0.8rem;
-   -webkit-box-shadow: 0.0625rem 0.0625rem 1.25rem 0 #000000;
-   box-shadow: 0.0625rem 0.0625rem 0.9375rem 0 #000000;
-   text-shadow: 0.0625rem 0.0625rem 0.9375rem #000000;
-   border: groove #946006 0;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+	margin: 1rem 0 2rem;
+	background: #946006;
+	background-image: -o-linear-gradient(top, #946006, #5E410F);
+	background-image: -webkit-gradient(to bottom, #946006, #5E410F);
+	border-radius: 2.4375rem;
+	color: #fcf9ed;
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-weight: 100;
+	padding: 0.8rem;
+	-webkit-box-shadow: 0.0625rem 0.0625rem 1.25rem 0 #000000;
+	box-shadow: 0.0625rem 0.0625rem 0.9375rem 0 #000000;
+	text-shadow: 0.0625rem 0.0625rem 0.9375rem #000000;
+	border: groove #946006 0;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
 }
 
-  .form-send-btn:hover {
-   border: groove #f18386 0.0625rem ;
-   background: #f18386;
-   background-image: -o-linear-gradient(top, #f3a1a4, #f18386);
-   background-image: -webkit-gradient(to bottom, #f3a1a4, #f18386);
-   border-radius: 2.4375rem;
-   text-decoration: none;
+.form-send-btn:hover {
+	border: groove #f18386 0.0625rem;
+	background: #f18386;
+	background-image: -o-linear-gradient(top, #f3a1a4, #f18386);
+	background-image: -webkit-gradient(to bottom, #f3a1a4, #f18386);
+	border-radius: 2.4375rem;
+	text-decoration: none;
 }
 
 .contact-response {
-    color: #04d600;
+	color: #04d600;
 }
 
 .close-btn {
-    color: #946006;
-    font-size: 2rem;
-    position: relative;
-    right: -1%;
-    display: inline-block;
-    padding: 0;
-   }
+	color: #946006;
+	font-size: 2rem;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	display: inline-block;
+	padding: 0;
+}
 
 .modal-overlay {
-    display: none;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #4f504de3;
-   }
+	display: none;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #4f504de3;
+}
 
 
 /*-----------------------------Footer*/
 
 footer {
-    font-size: 0.75rem;
-    line-height: 0.5rem;
-    margin: 3rem 0 1rem;
+	line-height: 0.5rem;
+	margin: 3rem 0 1rem;
 }
 
-footer p, span, a {
-    color: #946006;
-    text-decoration: none;
-    margin: 1.5rem 0.1rem;
+footer p,
+span,
+a {
+	color: #946006;
+	text-decoration: none;
+	margin: 1.5rem 0.1rem;
+	font-size: 0.75rem;
 }
 
 .footer-icon {
-    width: 6%;
-    margin-right: 1.5rem;
+	width: 6%;
+	margin-right: 1.5rem;
 }
 
 .footer-nav-link {
-    margin: 0.1rem;
+	margin: 0.1rem;
 }
 
 .footer-container-second {
-    margin: 2rem 0 1.5rem;
+	margin: 2rem 0 1.5rem;
 }
 
 .copyright-text {
-    margin: 1rem 0;
-    font-size: 0.8rem;
+	margin: 1rem 0;
 }
 
 .footer-credit-links {
-    line-height: 0.8rem;
-    margin: 4rem 0;
+	line-height: 0.8rem;
+	margin: 4rem 0 0;
+	font-size: 0.6rem;
 }
+
 
 /*-----------------------------Media queries*/
 
 @media (min-width: 576px) {
-
-.landing-content {
-    margin: 50% 2%;
-}
-
-.landing-header {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-.landing-circle { 
-   width: 12rem;
-   height: 12rem;
-   padding: 1.5rem 2.5rem 2.5rem;
-}
-
-.info-window {
-    padding: 1rem;
-}
-
-.info-window img {
-    margin: 0.5rem 1rem 1rem;
-}
-
-.info-images {
-    margin-top: 4rem;
-}
-.contact-modal {
-    bottom: -10rem;
-  left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-}
-
-.footer-icon {
-    width: 4%;
-}
-
+	.landing-content {
+		margin: 50% 2%;
+	}
+	.landing-header {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	.landing-circle {
+		width: 12rem;
+		height: 12rem;
+		padding: 1.5rem 2.5rem 2.5rem;
+	}
+	.info-window {
+		padding: 1rem;
+	}
+	.info-window img {
+		margin: 0.5rem 1rem 1rem;
+	}
+	.info-images {
+		margin-top: 4rem;
+	}
+	.contact-modal {
+		bottom: -10rem;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.footer-icon {
+		width: 4%;
+	}
 }
 
 @media screen and (min-width: 768px) {
-
-    .landing-content{
-        margin: 30% 5%;
-    }
-
-    .landing-header {
-     font-size: 1.8rem;
-     margin-bottom: 6rem;
-   }
-
-    .info-images {
-        padding: 1rem 0.5rem;
-        max-width: 500px;
-    }
-     .footer-icon {
-      width: 2%;
-  }
+	.landing-content {
+		margin: 30% 5%;
+	}
+	.landing-header {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+	}
+	.info-images {
+		padding: 1rem 0.5rem;
+		max-width: 31.25rem;
+	}
+	.footer-icon {
+		width: 2%;
+	}
 }
 
 @media screen and (min-width: 992px) {
+	h1 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 0.9rem;
+	}
+	.landing-content {
+		margin: 45% 0;
+		transform: translateY(-45%);
+	}
+	.landing-header {
+		font-size: 2.2rem;
+	}
+	.landing-subheader {
+		font-size: 1.2rem;
+		margin-bottom: 5rem;
+	}
+	.landing-circle-header {
+		font-size: 0.9rem;
+		margin-top: 0.5rem;
+	}
+	.navbar-collapse {
+		margin-top: 0.5rem;
+	}
+	.nav-icon {
+		width: 50%;
+		margin: 0.3rem;
+	}
+	.map-header {
+		margin-top: 4rem;
+	}
+	.map {
+		width: 70%;
+		margin: 0 3rem 4rem;
+	}
+	.icon-container {
+		margin: 0 1rem;
+	}
+	.icon-container h3 {
+		margin: 1rem auto;
+	}
+	.trail-info {
+		margin: 0 auto;
+	}
+	.info-text-container {
+		padding: 6rem;
+	}
+	.info-images {
+		max-width: 30rem;
+		margin: 0;
+	}
+	.contact-btn {
+		margin: 6rem 0 3rem;
+	}
+}
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-    font-size: 0.9rem;
-    }
-
-  .landing-content {
-          margin: 45% 0;
-          transform: translateY(-45%);
-  }
-    .landing-header {
-        font-size: 2.2rem;
-    }
-
-    .landing-undertext {
-        font-size: 1.2rem;
-        margin-bottom: 5rem;
-    }
-
-    .landing-circle-header {
-        font-size: 0.9rem;
-        margin-top: 0.5rem;
-    }
-
-   .navbar-collapse {
-    margin-top: 0.5rem;
-  }
-
-  .nav-icon {
-      width: 65%;
-      margin: 0.3rem;
-  }
-
-   .map {
-    width: 70%;
-    margin: 0 3rem 4rem;
-  }    
-
-  .map-info-heading {
-      margin-left: -6rem;
-      font-size: 1rem;
-  }
-
-  .icon-container {
-      margin: 0 1rem;
-  }
-
-  .icon-container h3 {
-      margin: 1rem auto;
-  }
-
-  .info-text-container {
-    padding: 6rem;
-   }
-
-  .info-images {
-    max-width: 30rem;
-    margin: 0;
-  }
-
-  }
-
-  @media screen and (min-width: 1200px) {
-       .landing-content {
-          margin: 30% 0;
-          transform: translateY(-30%);
-  }
-  }
-
+@media screen and (min-width: 1200px) {
+	.landing-content {
+		margin: 30% 0;
+		transform: translateY(-30%);
+	}
+	.map {
+		width: 60%;
+		margin: 2rem 7.5rem;
+	}
+}

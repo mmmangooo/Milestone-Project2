@@ -24,6 +24,7 @@ span.onclick = function() {
     overlay.style.display = 'none';
 };
 
+
 /* Contact form */
 
 // Making an email being sent through email.js on the submission of contact form
