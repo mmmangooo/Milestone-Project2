@@ -10,9 +10,16 @@ a:hover {
 	cursor: pointer;
 }
 
+/* Credit for code making landing page render 100% of viewport height: https://dev.to/admitkard/mobile-issue-with-100vh-height-100-100vh-3-solutions-3nae*/
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
 	text-align: center;
-	background-color: #fcf9edde;
+    background-color: #fcf9edde;
 }
 
 
@@ -43,9 +50,9 @@ p {
 .landing-header {
 	font-size: 1.4rem;
 	line-height: 1.5rem;
-	margin: 0 1.5rem 2rem 1.5rem;
+	margin: 0 1.5rem 1rem 1.5rem;
 	font-weight: 700;
-	letter-spacing: 0.3rem;
+	letter-spacing: 0.2rem;
 }
 
 .landing-subheader {
@@ -94,7 +101,7 @@ p {
 	background-image: url("../images/family-hiking.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -113,7 +120,7 @@ p {
 }
 
 .landing-content {
-	margin: 30% ;
+	margin: 30% 1%;
 }
 
 .landing-circle {
@@ -250,7 +257,7 @@ p {
 	padding: 2rem 2.7rem;
 	background-color: #fcf9edde;
 	font-weight: bold;
-	margin: 4rem 0 3rem;
+	margin: 6rem 0 3rem;
 }
 
 .contact-btn-text {
@@ -267,8 +274,8 @@ p {
 .contact-modal {
 	display: none;
 	z-index: 1030;
-	position: absolute;
-    bottom: -40rem;
+	position: fixed;
+    bottom: 0;
 }
 
 .modal-content {
@@ -415,11 +422,8 @@ a {
 		margin-top: 4rem;
 	}
 	.contact-modal {
-		bottom: -10rem;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		transform: translateX(-50%);
+        left: 50%;
+        transform: translateX(-50%);
 	}
 	.footer-icon {
 		width: 4%;
@@ -437,9 +441,6 @@ a {
 	.info-images {
 		padding: 1rem 0.5rem;
 		max-width: 31.25rem;
-    }
-    .contact-modal {
-        bottom: -30rem;
     }
 	.footer-icon {
 		width: 2%;
