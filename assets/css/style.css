@@ -437,7 +437,10 @@ a {
 	.info-images {
 		padding: 1rem 0.5rem;
 		max-width: 31.25rem;
-	}
+    }
+    .contact-modal {
+        bottom: -30rem;
+    }
 	.footer-icon {
 		width: 2%;
 	}
@@ -497,8 +500,7 @@ a {
 	}
 	.contact-btn {
 		margin: 6rem 0 3rem;
-	}
-}
+    }
 
 @media screen and (min-width: 1200px) {
 	.landing-content {
@@ -509,4 +511,4 @@ a {
 		width: 60%;
 		margin: 2rem 7.5rem;
 	}
-}
+}}

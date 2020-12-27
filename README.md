@@ -312,7 +312,7 @@ now be created locally on your machine.
 * Send button created with, and its code copied from, [CSS Button creator](https://cssbuttoncreator.com/)
 
 * Dark layer on background image on landing page: 
-  [Thread on stack overflow](https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css) 
+  [Thread on stack overflow](https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css) and
   [Webdesign blog](https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472)
 
 
@@ -321,7 +321,7 @@ now be created locally on your machine.
 
 * Thanks to tutor support for helpful guidance with debugging issues
 
-* 
+* Thanks to mentor Sinead O'Brien for valuable input and guidance
 
 
 

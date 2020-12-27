@@ -28,8 +28,11 @@ The page has been manually tested on the functionality of the following:
 ### User stories testing
 
 1. As a first time user, I want to quickly get an overview of what this site is for 
+
     * The landing page displays an image showing an adult and several children walking in nature, and the heading on this page tells that ypu can find places to hike with your children
       with the help from this site
+
+![Image of landing page](./assets/images/landing-page.png)
 
 2. As a user, I want to be able to easily navigate to different pages on the site and back again
 
@@ -37,10 +40,17 @@ The page has been manually tested on the functionality of the following:
     * A logo is present in navigation bar, in the top left hand side of the screen, on all pages except for landing page, and this logo when clicked takes the user back to landing pag
     * The footer contains link to all pages except from landing page, which ensures that the user can navigate to different pages from the bottom of pages as well
 
+![Image of navigation bar](./assets/images/navbar.png)
+![Image of footer navigation links](./assets/images/footer.png)
+
 2. As a hiker with children, I want to easily find suitable hiking trails in the area of Södertörn
+
     * The map page provides a map showing the area of Södertörn with pins marking different locations from where the user can access hiking trails in this area
     * When the user clicks a pin on the map an info window appears and shows an overview of what services are accessible on that location, providing the user with information aiding 
       in a decision about what hiking trail might be suitable
+
+![Image of map with pins](./assets/images/map.png)
+![Image of info-window](./assets/images/info-window.png)
 
 3. As a hiker with children, I want to find out if the starting points/hiking trails provide access to:
  * Prepared fireplaces so I can make warm food for myself and the children
@@ -51,19 +61,27 @@ The page has been manually tested on the functionality of the following:
      * The info windows that appear when the user clicks on a pin on the map contains icons that show if each of the above services are available from the location. The meaning of
        the icons are explained in a text box next to the map.
      * The info pages about the locations contains information about the length of the trails available from each location
-  
+
+![Image of info-window](./assets/images/info-window.png)
+![Image of trail-info](./assets/images/trail-info.png) 
 
 4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
    and spark their interest in going there
+
      * The info pages about each location contains in-depth information and images of that location
      * The information provided is of a suitable length to be read to children without them losing their interest
      * There are only two images on each page and they are chosen to show some the characteristics of the location that could be of interest to a child
 
+![Image of images on info-page](./assets/images/info-images.png) 
+![Image of text on info-page](./assets/images/info-text.png) 
+
 5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
    starting point to be added to the site
+
      * All pages except for the landing page contains a contact button above the footer. By clicking the contact button the user gets access to a contact form which sends emails
        directly to the site administrator
-
+![Image of contact-button](./assets/images/contact-btn.png) 
+![Image of contact-form](./assets/images/contact-form.png) 
        
 
 
