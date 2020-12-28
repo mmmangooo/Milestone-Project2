@@ -144,11 +144,13 @@ Full-screen:
 
 ### Design
 
-* Color scheme: The purpose of the chosen colors are to create both a harmonious impression with colors and contrast that are easy on the eye and 
-  provide good readability, and to give a feeling of happiness and playfulness, as well as relating to the nature and outdoors theme of the website. 
-  To achieve this, the color #fcf9edde was chosen for the backgrounds and #946006 for text element. The two colors together create a warm impression, 
-  as well as relating to the nature team of the site. For contrast, the colors #f18386 and #04d600 were chosen to create a feeling of playfulness 
-  that goes along with the theme of this site being aimed at families with children.
+* Color scheme: The purpose of the colors  chosen is to create both a harmonious impression with colors and contrast that are easy on the eye and 
+  provide good readability, and to create an impression of happiness and playfulness. Another aspect influencing color choices was to relate them to
+  the core theme of the website - nature and outdoors. To achieve this, the color #fcf9edde was chosen for the backgrounds and #946006 for text element. 
+  The two colors together create a warm impression, as well as relating to the nature team of the site. For contrast, the colors #f18386 and #04d600 were 
+  chosen to create a feeling of playfulness that goes along with the theme of this site being aimed at families with children.
+
+  ![Color Palette](./assets/images/color-palette.png)
 
 * Typography: The intention behind the chosen fonts is to create an impression of friendliness, playfulness and a 'lightness' that signals youth,
   because the site is aimed at parents and their children. The font used for headers - 'Mulish' - is easy to read, straighforward and uncomplicated 
