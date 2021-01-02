@@ -158,4 +158,5 @@ The page has been manually tested on the functionality of the following:
 
 ### Out of scope
 
-* Automated testing is not a requirement for the Milestone Project 2
+* Automated testing is not a requirement for the Milestone Project 2, and due to my lacking experience with automated testing in combination with limited time to finish this project,
+  I have chosen not to run any automated tests for this project. 
