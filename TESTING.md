@@ -18,7 +18,7 @@ The page has been manually tested on the functionality of the following:
 
 * Field requirements of contact form working correctly
 
-* Mail sending in contact form working and email being setting
+* Mail sending in contact form working and email being sent
 
 * Response message showing correctly on contact form being sent
 
@@ -57,13 +57,15 @@ The page has been manually tested on the functionality of the following:
  * Prepared fireplaces so I can make warm food for myself and the children
  * Toilets or portable toilets
  * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
- * Hiking rails that you can walk with a child in stroller
+ * Hiking trails that you can walk with a child in stroller
  * Hiking trails with a length that is suitable for my childrens age and stamina
      * When the user clicks a pin on the map, an info window appears that contains icons that show if each of the above services are available from the location. The meaning of
        the icons are explained in a text box next to the map.
+
+       ![Image of info-window](./assets/images/info-window.png)
+
      * The user clicks a link in the info window, or in the navigation bar, and enters an info page about the chosen location. The info page contains information about the length of the trails available from each location
 
-![Image of info-window](./assets/images/info-window.png)
 ![Image of trail-info](./assets/images/trail-info.png) 
 
 4. As a hiker with children, I want to be able to find more in-depth information about and some pictures of the different trails and starting points so I can show them to my children 
@@ -71,26 +73,30 @@ The page has been manually tested on the functionality of the following:
 
      * The user finds in-depth information and images of each location in the info page
      * The user information provided is of a suitable length to be read to children without them losing their interest
+
+     ![Image of text on info-page](./assets/images/info-text.png) 
+
      * The user finds two images on each info page and those images show some characteristics of the location that could be of interest to a child
 
-![Image of images on info-page](./assets/images/info-images.png) 
-![Image of text on info-page](./assets/images/info-text.png) 
+     ![Image of images on info-page](./assets/images/info-images.png) 
+
 
 5. As a user, I want to be able to contact the website administrator to alert them if something on the site is not working, or to suggest another
    starting point to be added to the site
 
      * The user finds a contact button above the footer on all pages except from landing page. 
+
+     ![Image of contact-button](./assets/images/contact-btn.png) 
+
      * When the user clicks the contact button, a modal appears that contains a contact form which the user can fill out to send an email directly to the site administrator
-![Image of contact-button](./assets/images/contact-btn.png) 
-![Image of contact-form](./assets/images/contact-form.png) 
+   
+     ![Image of contact-form](./assets/images/contact-form.png) 
        
 
 
 ### Further testing
 
 * HTML code has been validated using the [W3C Markup Validation](https://validator.w3.org/) with the following result:
-
-* HTML code has been validated using the [W3C HTML Validator](https://validator.w3.org/)
 
 ![Result from HTML validator](./assets/images/html-validation.png)
 
@@ -109,27 +115,37 @@ The page has been manually tested on the functionality of the following:
   ![Screenshot of validation result from JSHint for map.js](./assets/images/map-jshint.png)
 
 * Comments on JSHint results:
-    * The warnings for undefined and unused variables are due to those variables being present in code retrieved through API:s
+    * The warnings about undefined and unused variables are due to those variables being present in code retrieved through API:s
+    * The warning "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, infowindow, map, marker, infoObj)" has been
+      noted but I haven't found a way to solve it without breaking the functionality of the code. I have tried moving the entire function (starting on line 73 in map.js) inside the 
+      loops above, I have tried wrapping all map functions in an outer loop and I have tried declaring all variables inside the function starting on line 73. All these solutions broke
+      the functionality of the code. Since the keyword 'let' is used throghout the code (as opposed to 'var') there should not be any issues with out of scope variables. Because the code
+      is functioning inspite of this warning being showed, and no functioning solution has been found, I have chosen to keep the code the way it is despite of the warning. The following
+      sources have been used when searching for possible solutions:
+
+      [Thread on stack Overflow: JavaScript closure inside loops – simple practical example](https://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example)
+      [Thread on Stack Overflow: Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. What is wrong?](https://stackoverflow.com/questions/46027262/functions-declared-within-loops-referencing-an-outer-scoped-variable-may-lead-to)
+      [Thread in Software Engineering: Is using a function inside a for loop bad practise?] https://softwareengineering.stackexchange.com/questions/314942/is-using-a-function-inside-a-for-loop-bad-practice
 
 
 ### Known bugs
 
 #### During development
 
-* Code for fading landing page to show map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
+* Code for fading out landing page and showing map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
   having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
   effect to fade the overlay div out, showing the map page underneath. Having the landing 'page' as an overlay however proved to cause issues with navigation 
   to map page. The fade effect was therefore chosen to be removed entirely and the landing page was again put in a separate html file.
 
-* The functionality of the user clicking a link inside the info window and by that triggering a function exchanging the content in the info window displayed
-  did not work because the id of the link was not possible to obtain and add to an event listener, since it does not exist prior to the info window 
-  being loaded. After several attempts of solving this, and a lengthy contact with to different people on tutor support, not being able to find a solution
-  to work around this issue, I decided to opt out of this functionality altogether in favor of being able to focus on implementing other functions and
-  design and finish this project on time. 
+* The intended functionality of the user clicking a link inside the info window and by that triggering a function exchanging the content in the info window displayed
+  did not work. When the link in the info window was clicked, nothing happened. This was because the id of the link was not possible to obtain and add to an event listener, 
+  since it does not exist prior to the info window being loaded. After several attempts of solving this, and a lengthy contact with two different people on tutor support, 
+  not being able to find a solution to work around this issue, I decided to opt out of this functionality altogether in favor of being able to focus on implementing other 
+  functions and design and finish this project on time. 
 
-* Links in navigation bar in not collapsed mode (full screen) became uncklickable at some point during development. Tried finding the error by comparing the navbar code with previously commited
-  code, while the navbar links worked. Also compared code to bootstrap documentation and didn't find the issue. After some help from tutor support, the issue was found to be the nav logo 
-  container overflowing the navbar links. This was solved by setting a fixed width to the nav logo container. 
+* Links in navigation bar in not collapsed mode (full screen) became unclickable at some point during development. I tried finding the error by comparing the navbar code with previously 
+  commited code, while the navbar links worked. I also compared code to bootstrap documentation and didn't find the issue. The issue was found to be the nav logo container overflowing 
+  the navbar links. This was solved by setting a fixed width to the nav logo container. 
 
 * Cursor for links had an arrow insted of a pointer on hover on all pages except for index.html. Since index.html doesn't have any links to script files, I concluded
   that the code responsible for this error must be in the script files and not in css file. The error was solved by adding a general rule (using a:hover) in style.css with
@@ -137,8 +153,9 @@ The page has been manually tested on the functionality of the following:
 
 #### During testing
 
-* While testing the site on mobile device issues with how the site was displaying on Iphone6S and IphoneX where discovered: Both these models had previously been tested for responsiveness
-  in the dev tools in Chrome web browser without issues. The following was tried for fixing the issue:
+* While testing the site on mobile device issues with how the site was displaying on Iphone6S and IphoneX where discovered: The landing page had vertical overflow, the images on 
+  info pages where vertically stretched and the text box on the map page had the text overflowing and causing horizontal scrollbar on the page.
+  Both these IPhone models had previously been tested for responsiveness in the dev tools in Chrome web browser without issues. The following was tried for fixing the issues:
 
    * Setting meta content value in html head to maximal-scale=1.0 instead of initial-scale=1.0
    
@@ -153,7 +170,8 @@ The page has been manually tested on the functionality of the following:
   on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.
 
 * When the javascript code was first run in JSHint, a warning was thrown for each apperance of 'let' in the code, because 'let in new in ES6. This problem was solved by adding a line in the 
-  script files telling that the version of the code is ES6: /*jshint esversion: 6 */ . This solution was found on [Stack Overflow:](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871)
+  script files telling that the version of the code is ES6: /*jshint esversion: 6 */. This solution was found on [Stack Overflow:](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871)
+  I later found out that there is an option in JSHint declaring that the code used is ES6, so the above solution was removed from the code and this solution was used instead.
 
 
 ### Out of scope

@@ -112,7 +112,7 @@ Screen:
  * Prepared fireplaces so I can make warm food for myself and the children
  * Toilets or portable toilets
  * Wind shelters if it starts to rain heavily or becomes very windy and the children needs shelter to stay warm
- * Hiking rails that you can walk with a child in stroller
+ * Hiking trails that you can walk with a child in stroller
  * Hiking trails with a length that is suitable for my childrens age and stamina
  
 ![Wireframe of info alert box](./assets/images/info-alert-box.png)
@@ -147,13 +147,13 @@ Full-screen:
 * Color scheme: The purpose of the colors  chosen is to create both a harmonious impression with colors and contrast that are easy on the eye and 
   provide good readability, and to create an impression of happiness and playfulness. Another aspect influencing color choices was to relate them to
   the core theme of the website - nature and outdoors. To achieve this, the color #fcf9edde was chosen for the backgrounds and #946006 for text element. 
-  The two colors together create a warm impression, as well as relating to the nature team of the site. For contrast, the colors #f18386 and #04d600 were 
-  chosen to create a feeling of playfulness that goes along with the theme of this site being aimed at families with children.
+  The two colors together create a warm impression, as well as relating to the nature theme of the site. For contrast, the colors #f18386 and #04d600 were 
+  chosen to create a feeling of playfulness that goes along with the fact that this site being aimed at families with children.
 
   ![Color Palette](./assets/images/color-palette.png)
 
 * Typography: The intention behind the chosen fonts is to create an impression of friendliness, playfulness and a 'lightness' that signals youth,
-  because the site is aimed at parents and their children. The font used for headers - 'Mulish' - is easy to read, straighforward and uncomplicated 
+  because the site is aimed at parents and their children. The font used for headers - 'Cabin' - is easy to read, straighforward and uncomplicated 
   and gives a slightly 'childish' and friendly impression. The font used for text elements - 'Poppins' gives an impression of friendliness and 
   provides good readability.
 
@@ -169,20 +169,20 @@ Full-screen:
 
 * The contact-button for opening contact form was originally placed in bottom-left corner to create F-shaped reading pattern on the page, and it was fixed to the 
   screen to follow the user when scrolling. However, this proved to clutter the pages, particularly on smaller screens, and hide the important content on page.
-  Therefore the contact-button was moved to the footer and staying at the bottom while user scrolls.
+  Therefore the contact-button was moved to just above the footer and staying at the bottom while user scrolls.
 
 
 
 ## Features
 
-Every page contains a navigation bar and a logo . The navigation bar collapses to hamburger 
-menu on smaller screens to ensure responsiveness. Each page (apart from landing page) also contains a footer with copyright information andlinks to the different pages on the
-site, to provide navigation possibilites to the user from the bottom of the pages.
+Every page except for landing page contains a navigation bar and a logo . The navigation bar collapses to hamburger 
+menu on smaller screens to ensure responsiveness. Each page (apart from landing page) also contains a footer with copyright information and links to the different pages on the
+site, to provide navigation possibilites to the user from the bottom of the pages also.
 
 ### Index/landing
 The index/landing page features a background image of a family walking on a forest road, chosen to create an immediate emotional connection to the purpose of the site 
 (which is to encourage people to go hiking with children) through this visual impression of a hiking activity together. In the middle of
-the landing overlay is the name of the site and a short sentence explaining the functionality of the site, to immediately tell the user what this site is for.
+the landing page is the name of the site and a short sentence explaining the functionality of the site, to immediately tell the user what this site is for.
 Below the name is an invite to enter the page, with a colorful logo of a child hiking. The purpose of this is to create a welcoming feeling, and the icon is chosen 
 to enhance the impression of this site as being aimed at parents and families with children, as well as creating a feeling of playfulness. When this link is clicked, 
 the user is taken to the home/map page.
@@ -191,8 +191,8 @@ the user is taken to the home/map page.
 The home/map page features a map of Södertörn, with pins visible at a few hiking starting points. The map takes up most of this page, which is because it constitutes
 the most part of the purpose and functionality of this site, and therefore should also immideately catch the viewers attention. On the top left of the page is a logo,
 the same logo that is shown on the landing overlay, which is made to create a feeling of familiarness and act as a reminder of the purpose of the site (hiking with children).
-Since humans (in most western cultures, which is what this site is aimed for) reads from left to right, the logo on the top left is going to draw the viewers attention 
-after the map, and the next thing that catches the eyes is the navigation bar on the top right. After reading the top 'line', the viewer's eyes will move down to the 
+Since humans (in most western cultures, which is what this site is aimed for) reads from left to right, the logo on the top left should draw the viewers attention 
+after the map, and the next thing that catches the eyes should be the navigation bar on the top right. After reading the top 'line', the viewer's eyes will move down to the 
 left to find the next 'line' to read, where they find the text explaining how to use the map. This design is aimed at making the site intuitively easy to understand 
 for the user and ensure that the user immediatly finds the functionality they are looking for.
 
@@ -201,19 +201,19 @@ for the user and ensure that the user immediatly finds the functionality they ar
 When a user clicks a pin on the map, an information window appears. This window contains icons representing the services available on the location clicked, for example
 prepared fireplaces or toilets. This is made so that the user can get an immediate overview of the services available at each location just by clicking one time, thus 
 facilitating the user's decision-making on where to go hiking. The infowindows also contains a link that takes the user to a page with more detailed information about 
-that particular location. This is made to provide the user with more in-depth information if needed, without passing to much information in to the first displayed 
+that particular location. This is made to provide the user with more in-depth information if needed, without passing too much information in to the first displayed 
 info-window and deteriorate its purpose of being easy to overview.
 
 ### Information pages
 
 There are one information page for each location (starting point) on the map, and these pages are accessible both from the link in the info window described above
-and from the navigation menu. The information pages contain information about the length and terrain-difficulty of the hiking trails available, more in-depth information about the different locations, and a few pictures aimed at showing what the sites
-look like. The purpose of this is to provide more information if needed to make a decision about where to go, but also to help create an interest in both the adult and
-the child/-ren to visit the location. 
+and from the navigation menus. The information pages contain information about the length and terrain-difficulty of the hiking trails available, more in-depth information about 
+the location, and a few pictures aimed at showing whatit looks like there. The purpose of this is to provide more information if needed to make a decision about where to go, but 
+also to help create an interest in both the adult and the child/-ren to visit the location. 
 
 ### Contact modal
 
-A contact modal accessible through a contact button is placed in the footer of all pages (except from landing page). In the contact modal there
+A contact modal accessible through a contact button is placed above the footer of all pages (except from landing page). In the contact modal there
 is a form when filled out sends an email to the site owner through EmailJS email service. This functionality is included to provide the user with a quick way of 
 contacting the site owner with questions, feedback on the site's functionality or tips on other hiking startpoints to add to the site.
 
@@ -235,7 +235,7 @@ contacting the site owner with questions, feedback on the site's functionality o
 * [PicResize](https://picresize.com/) was used to resize large images.
 * [Resize Image.net](https://resizeimage.net/) was also used to resize large images.
 * [EmailJS](https://www.emailjs.com/) is used on this site to provide the funcitonality of sending emails through the contact form.
-* [Autoprefixer]https://autoprefixer.github.io was used to prefix css code.
+* [Autoprefixer](https://autoprefixer.github.io) was used to prefix css code.
 
 
 ## Testing
@@ -303,8 +303,8 @@ now be created locally on your machine.
  
 ### Code
 
-* The Google API:s on the site have been implemented with support from Google Maps API tutorial and 
-  [tutorial made by Code Institute student Eamonn Smyth:](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
+* The Google API:s on the site have been implemented with support from [Google Maps API tutorial](https://developers.google.com/maps/documentation/javascript/adding-a-google-map) and 
+  [this tutorial made by Code Institute student Eamonn Smyth](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)
 
 * Contact modal have been set up and style with guidance from [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp) and 
   [CSS-tricks](https://css-tricks.com/considerations-styling-modal/)
