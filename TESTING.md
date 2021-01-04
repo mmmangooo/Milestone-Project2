@@ -119,8 +119,8 @@ The page has been manually tested on the functionality of the following:
 * Comments on JSHint results:
     * The warnings about undefined and unused variables are due to those variables being present in code retrieved through API:s
     * The warning "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, infowindow, map, marker, infoObj)" has been
-      noted but I haven't found a way to solve it without breaking the functionality of the code. I have tried moving the entire function (starting on line 73 in map.js) inside the 
-      loops above, I have tried wrapping all map functions in an outer loop and I have tried declaring all variables inside the function starting on line 73. All these solutions broke
+      noted but I haven't found a way to solve it without breaking the functionality of the code. I have tried moving the entire function (starting on line 77 in map.js) inside the 
+      loops above, I have tried wrapping all map functions in an outer loop and I have tried declaring all variables inside the function starting on line 77. All these solutions broke
       the functionality of the code. Since the keyword 'let' is used throghout the code (as opposed to 'var') there should not be any issues with out of scope variables. Because the code
       is functioning inspite of this warning being showed, and no functioning solution has been found, I have chosen to keep the code the way it is despite of the warning. The following
       sources have been used when searching for possible solutions:
@@ -128,6 +128,7 @@ The page has been manually tested on the functionality of the following:
       [Thread on stack Overflow: JavaScript closure inside loops – simple practical example](https://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example)
       [Thread on Stack Overflow: Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. What is wrong?](https://stackoverflow.com/questions/46027262/functions-declared-within-loops-referencing-an-outer-scoped-variable-may-lead-to)
       [Thread in Software Engineering: Is using a function inside a for loop bad practise?] https://softwareengineering.stackexchange.com/questions/314942/is-using-a-function-inside-a-for-loop-bad-practice
+
 
 #### Usability and performance testing
 
@@ -175,7 +176,6 @@ The page has been manually tested on the functionality of the following:
 
 * When the HTML code was first run through the validator, it showed an error message on the page for Tyresta-By saying that the page seemed to be in swedish, but the language attribute
   on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.
-
 
 * When the javascript code was first run in JSHint, a warning was thrown for each apperance of 'let' in the code, because 'let in new in ES6. This problem was solved by adding a line in the 
   script files telling that the version of the code is ES6: /*jshint esversion: 6 */. This solution was found on [Stack Overflow:](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871)
