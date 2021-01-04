@@ -134,9 +134,43 @@ The page has been manually tested on the functionality of the following:
 
 * This website has been tested for usability and performance using the [Lighthouse tool](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=sv).
 * The results from testing with this tool wa the following:
+
     * Landing page:
 
-    ![Test result in Lighhouse for landing page](./assets/images/lighthouse-landing.png)
+    ![Test result in Lighthouse for landing page](./assets/images/lighthouse-landing.png)
+
+    * Map page:
+
+    ![Test result in Lighthouse for map page](./assets/images/lighthouse-map.png)
+
+    * Tyresta By:
+    
+    ![Test result in Lighthouse for Tyresta By info page](./assets/images/lighthouse-tyrestaby.png)
+
+    * Paradiset:
+
+    ![Test result in Lighthouse for Paradiset info page](./assets/images/lighthouse-paradiset.png)
+
+    * Rudan:
+
+    ![Test result in Lighthouse for Rudan info page](./assets/images/lighthouse-rudan.png)
+
+* Comments on performance results: 
+
+    * The main reason for the site being slowed down is render-blocking resources - mostly the Bootstrap CDN and scripts from API services:
+
+    ![Test result on performance in map page](./assets/images/lighthouse-performance.png)
+
+    * The performance have been bettered by adding defer properties to script tags for libraries/API services
+
+    * The map page has the lowest result on performance because it carries the most scripts from libraries/API services
+
+    * The CDN script tag for EmailJS could not have a async or defer property set to it because the script source needs to be loaded before the email 
+     function is called in the head of the page
+
+    * The Bootstrap CDN can not be deffered or asynced either because that delayes the loading of important page styling
+
+    * I have not found any other solution for bettering the performance than the ones described above
 
 ### Known bugs 
 

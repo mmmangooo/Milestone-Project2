@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300;400;500;700&family=Poppins:wght@200;300;400');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@300;400;500;700&family=Poppins:wght@200;300;400&display=swap');
 a:hover {
 	cursor: pointer;
 }
@@ -32,7 +32,6 @@ h3 {
 	color: #946006;
 	font-family: "Cabin", sans-serif;
     letter-spacing: 0.2rem;
-    font-display: swap;
 }
 
 h1 {
@@ -501,7 +500,7 @@ a {
 		padding: 6rem;
 	}
 	.info-images {
-		max-width: 30rem;
+		max-width: 28rem;
 		margin: 0;
 	}
 
