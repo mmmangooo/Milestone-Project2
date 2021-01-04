@@ -34,7 +34,7 @@ h3 {
 }
 
 h1 {
-	margin: 4rem 0 4rem;
+	margin: 3rem 0 3rem;
 	font-size: 1.8rem;
 }
 
@@ -255,9 +255,9 @@ p {
 	-webkit-box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);
 	box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.055), 0 2rem 3rem 0 rgba(0, 0, 0, 0.096);
 	padding: 1.8rem 2.5rem;
-	background-color: #fcf9edde;
+	background-color: #fcf9ed;
 	font-weight: bold;
-    margin: 6rem 0 3rem;
+    margin: 5rem 0 3rem;
 }
 
 .contact-btn-text {
@@ -362,6 +362,8 @@ p {
 footer {
 	line-height: 0.5rem;
     margin: 3rem 0 1rem;
+    padding: 3rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 footer p,
@@ -370,7 +372,7 @@ a {
 	color:#946006;
 	text-decoration: none;
 	margin: 1.5rem 0.1rem;
-	font-size: 0.75rem;
+	font-size: 0.8rem;
 }
 
 .footer-icon {
@@ -383,15 +385,9 @@ a {
 }
 
 .copyright-text {
-	margin: 3rem 0 1rem 0;
+    margin: 3rem 0 1rem 0;
+    font-size: 0.85rem;
 }
-
-.footer-credit-links {
-	line-height: 0.8rem;
-	margin: 4rem 0 0;
-	font-size: 0.6rem;
-}
-
 
 /*-----------------------------Media queries*/
 
@@ -435,7 +431,7 @@ a {
 		margin-bottom: 2rem;
 	}
 	.info-images {
-		padding: 1rem 0.5rem;
+		padding: 0.5rem;
 		max-width: 31.25rem;
     }
 	.footer-icon {
@@ -445,7 +441,8 @@ a {
 
 @media screen and (min-width: 992px) {
 	h1 {
-		font-size: 2rem;
+        font-size: 2rem;
+        margin: 3rem 0 4rem;
 	}
 	p {
 		font-size: 0.9rem;
@@ -495,13 +492,6 @@ a {
 		max-width: 30rem;
 		margin: 0;
 	}
-	.contact-btn {
-        position: absolute;
-        bottom: -12rem;
-        right: 3rem;
-        padding: 1.2rem 2rem;
-    }
-
 
 @media screen and (min-width: 1200px) {
 	.landing-content {
@@ -511,5 +501,12 @@ a {
 	.map {
 		width: 60%;
 		margin: 2rem 7.5rem;
-	}
+    }
+	.contact-btn {
+        position: absolute;
+        bottom: -14rem;
+        right: 3rem;
+        padding: 1.2rem 2rem;
+    }
+    
 }}
