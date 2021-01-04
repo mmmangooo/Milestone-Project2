@@ -37,8 +37,7 @@ let locations = [
         <img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/>
         <a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>`
     },
-                
-        
+                  
     {
         lat: 59.16488292914418,
         lng: 18.132294280597314,

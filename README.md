@@ -18,10 +18,12 @@ This site contains interactive elements such as on click showed elements, geogra
 All parts of the site is mobile friendly and responsive.
 
 
-__Business and client goals__
+__Societal and user goals__
 
-The business goals of this website is to:
-* Encourage people to go hiking with their children 
+The societal improvement goals of this website is to:
+
+* Encourage people to go hiking with their children - bettering their health by physical exercise, bettering their parent-child bond through mutual experiences and bettering their 
+  commitment to preserving nature and making climate-friendly choices by strengthening their bond to nature
 
 The clients goal of this website is to:
 
@@ -228,17 +230,18 @@ contacting the site owner with questions, feedback on the site's functionality o
 ## Technologies used
 
 * This project uses HTML, CSS ans JavaScript programming languages
-* [GitPod](https://www.gitpod.io/) GitPod - The developer used GitPod for their IDE while building the website
-* [GitHub](http://github.com)GitHub - This project uses GitHub to store the projects code after being pushed from Git.
-* [Git](https://git-scm.com/) Git - The project uses Git for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-* [BootstrapCDN](https://getbootstrap.com/) BootstrapCDN - The project uses Bootstrap for simplified process of structuring the website, facilitate in making it responsive and for adding certain elements. It also uses Bootstrap to provide javascript needed for the carousel and the nav bar.
-* [Google Fonts](https://fonts.google.com/)Google Fonts - The project uses Google Fonts for styling fonts.
-* [Balsamiq](https://balsamiq.com/) Balsamiq - This project uses Balsamiq for creating the wireframes during the design process.
-* [GoogleMaps Styling Wizard](https://mapstyle.withgoogle.com/)Google map in this project is styled using Google Maps Styling wizard.
+* [GitPod](https://www.gitpod.io/) was used as an IDE for building this website
+* [GitHub](http://github.com)GitHub was used to store the projects code after being pushed from Git.
+* [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [BootstrapCDN](https://getbootstrap.com/) was used for simplified process of structuring the website, facilitate in making it responsive and for adding certain elements. 
+* [Google Fonts](https://fonts.google.com/) was used for styling fonts.
+* [Balsamiq](https://balsamiq.com/) was used for creating the wireframes during the design process.
+* [GoogleMaps Styling Wizard](https://mapstyle.withgoogle.com/) was used in this project for styling the google map.
 * [PicResize](https://picresize.com/) was used to resize large images.
 * [Resize Image.net](https://resizeimage.net/) was also used to resize large images.
 * [EmailJS](https://www.emailjs.com/) is used on this site to provide the funcitonality of sending emails through the contact form.
 * [Autoprefixer](https://autoprefixer.github.io) was used to prefix css code.
+* [Tiny PNG Image compressor](https://tinypng.com/) was usd to compress images.
 
 
 ## Testing
@@ -252,13 +255,19 @@ This website was developed using GitPod and Git, with repository hosted on GitHu
 
 ### GitHub Pages
 This website was deplyed to GitHub Pages using the following steps:
-Opened up GitHub in browser and signed in using usename and password. Navigated to My repositories, where I clicked on the repository Mileston-Project2. Clicked settings
-in the top navigation and scrolled down to GitHub Pages. Selected Master Branch in the dropdown menu and clicked to confirm this choice. The website was now live on GitHub Pages.
+
+1. Opened up GitHub in browser and signed in using usename and password. 
+2. Navigated to My repositories, where I clicked on the repository Mileston-Project2. 
+3. Clicked settings in the top navigation and scrolled down to GitHub Pages. 
+4. Selected Master Branch in the dropdown menu and clicked to confirm this choice. 
+5. The website was now live on GitHub Pages.
 
 ### Making a local clone
-Navigate to GitHub Repository (https://github.com/mmmangooo/Milestone-Project2). Click the green Code button and copy the URL in the dropdown box. Use your IDE 
-of choice to open up a terminal and navigate to your choice of file location. Use the 'git clone' command in the terminal followed by the copied git URL. A clone of the project will 
-now be created locally on your machine.
+1. Navigate to GitHub Repository (https://github.com/mmmangooo/Milestone-Project2). 
+2. Click the green Code button and copy the URL in the dropdown box. 
+3. Use your IDE of choice to open up a terminal and navigate to your choice of file location. 
+4. Use the 'git clone' command in the terminal followed by the copied git URL. 
+5. A clone of the project will now be created locally on your machine.
 
 
 
@@ -268,7 +277,7 @@ now be created locally on your machine.
 
 ### Content
 
-* The information in the information pages for the starting points (Tyresta By, Paradiset and Rudan) has been found on the following websites:
+* The information text in the information pages for the starting points was written by Isabelle Ängsås. The information provided in the text was found in the following sources:
 
 [Rudans gård, Wikipedia](https://sv.wikipedia.org/wiki/Rudans_g%C3%A5rd)
 
@@ -286,21 +295,21 @@ now be created locally on your machine.
 
 * All images are from [Unsplash](https://unsplash.com) and the photograpers are:
 
- * The background image displayed on the landing page: Juliane Liebermann.
+    * The background image displayed on the landing page: Juliane Liebermann.
 
- * Image of red cottage window on info-page for Paradiset: Andreas Eriksson.
+    * Image of red cottage window on info-page for Paradiset: Andreas Eriksson.
 
- * Image of kids in a swing on info-page for Rudan: Rashid Sadykov.
+    * Image of kids in a swing on info-page for Rudan: Rashid Sadykov.
 
- * Image of lake with bridge on info-page for Rudan: Aaron Burden. 
+    * Image of lake with bridge on info-page for Rudan: Aaron Burden. 
 
- * Image of girl kissing horse on info-page for Tyresta: Lucie Hosova.
+    * Image of girl kissing horse on info-page for Tyresta: Lucie Hosova.
 
- * Image of autumn lake on info-pages for Paradiset: Uniq Trek.
+    * Image of autumn lake on info-pages for Paradiset: Uniq Trek.
 
- * Image of forest path on info-page for Tyresta: Malin (last name unknown).
+    * Image of forest path on info-page for Tyresta: Malin (last name unknown).
 
-* Icons used on the page are from [Icons8](https://icons8.com/) and [Flaticon](https://www.flaticon.com/)
+    * Icons used on the page are from [Icons8](https://icons8.com/) and [Flaticon](https://www.flaticon.com/)
 
 
  
