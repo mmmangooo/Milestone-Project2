@@ -1,13 +1,12 @@
-// Credit for line below, setting javascript version to ES6 for this document, which avoids warnings for 'let' in JSHint: https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871//
-
-
-// Credit for Map initialization, markers and styling: Google Maps API Tutorial: https://developers.google.com/maps/documentation/javascript/ and Google maps tutorial made by Code Institute student Eamonn Smythe: (https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)//
+/* Credit for Map initialization, markers and styling: Google Maps API Tutorial: 
+   https://developers.google.com/maps/documentation/javascript/ and Google maps tutorial made by 
+   Code Institute student Eamonn Smythe: (https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)*/
 
 
 
 // Initializes showing the map on the page, setting appropriate zoom and coordinates to show the area of Södertörn
-function initMap() {
-    let map = new google.maps.Map(document.getElementById("map"), {
+function initMap() {                                                  //'initMap' is flagged as unused variable in JSHint, see details in TESTING.md
+    let map = new google.maps.Map(document.getElementById("map"), {   //'google' is flagged as undefined variable in JSHint, see details in TESTING.md
         zoom: 11,
         center: {
             lat: 59.14630249180509,
@@ -24,16 +23,19 @@ let locations = [
         lat: 59.16166454309989,
         lng: 18.02274289457959,
         name: "<h3 class='info-window-header'>Paradiset</h3>",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>",
-        
-        
+        information: `<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/>
+        <img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/>
+        <div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='paradiset.html'>Mer information om Paradiset</a></div></div>`
     },
   
     {
         lat: 59.170135557673994,
         lng: 18.235728632254503,
         name: "<h3 class='info-window-header'>Tyresta By</h3>",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/><a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>",
+        information: `<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/>
+        <img src='https://img.icons8.com/ios-glyphs/28/000000/pavilion.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/>
+        <img src='https://img.icons8.com/windows/32/000000/stroller.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/>
+        <a href='tyresta-by.html'>Mer information om Tyresta By</a></div></div>`
     },
                 
         
@@ -41,8 +43,10 @@ let locations = [
         lat: 59.16488292914418,
         lng: 18.132294280597314,
         name: "<h3 class='info-window-header'>Rudan</h3>",
-        information: "<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/><img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/><img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/> <a href='rudan.html'> Mer information om Rudan</a></div></div>",     
-       
+        information: `<div class='info-window'><img src='https://img.icons8.com/ios-glyphs/30/000000/campfire.png'/>
+        <img src='https://img.icons8.com/ios/30/000000/outdoor-toilet.png'/><img src='https://img.icons8.com/windows/32/000000/stroller.png'/>
+        <img src='https://img.icons8.com/fluent-systems-regular/28/000000/playground.png'/><div><img src='https://img.icons8.com/android/20/000000/info.png'/> 
+        <a href='rudan.html'> Mer information om Rudan</a></div></div>`     
     }
 ];
 
@@ -71,7 +75,7 @@ let infoObj= [];
     
 
     /* Tells the page to show the infowindow when location is clicked */ 
-        marker.addListener("click", function () {
+        marker.addListener("click", function () {          //Warning thrown in JSHint for code starting on this line, see TESTING.md for details
            closeOtherInfo();
 
             infowindow.open(map, marker);

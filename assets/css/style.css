@@ -10,7 +10,8 @@ a:hover {
 	cursor: pointer;
 }
 
-/* Credit for code making landing page render 100% of viewport height: https://dev.to/admitkard/mobile-issue-with-100vh-height-100-100vh-3-solutions-3nae*/
+/* Credit for code making landing page render 100% of viewport height: 
+https://dev.to/admitkard/mobile-issue-with-100vh-height-100-100vh-3-solutions-3nae*/
 
 html, body {
     height: 100%;
@@ -108,7 +109,9 @@ p {
 }
 
 
-/* Credit for code implementing dark layer on background: https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css and https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472*/
+/* Credit for code implementing dark layer on background: 
+https://stackoverflow.com/questions/5770341/i-do-not-want-to-inherit-the-child-opacity-from-the-parent-in-css and 
+https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472*/
 
 .overlay {
 	position: absolute;
@@ -270,7 +273,9 @@ p {
 }
 
 
-/* Credit for code for styling and positioning modal: https://css-tricks.com/considerations-styling-modal/ and https://www.w3schools.com/howto/howto_css_modals.asp*/
+/* Credit for code for styling and positioning modal: 
+https://css-tricks.com/considerations-styling-modal/ 
+and https://www.w3schools.com/howto/howto_css_modals.asp*/
 
 .contact-modal {
 	display: none;
@@ -300,7 +305,8 @@ p {
 }
 
 
-/* Send button created with, and its code copied from (with some adjustments), this tool: https://cssbuttoncreator.com/ */
+/* Send button created with, and its code copied from (with some adjustments), 
+   this tool: https://cssbuttoncreator.com/ */
 
 .form-send-btn {
 	margin: 1rem 0 2rem;

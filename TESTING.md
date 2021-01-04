@@ -128,9 +128,7 @@ The page has been manually tested on the functionality of the following:
       [Thread in Software Engineering: Is using a function inside a for loop bad practise?] https://softwareengineering.stackexchange.com/questions/314942/is-using-a-function-inside-a-for-loop-bad-practice
 
 
-### Known bugs
-
-#### During development
+### Known bugs 
 
 * Code for fading out landing page and showing map page failed to work. With help from tutor support I decided to change the way of creating landing page from 
   having a separate index.html and map.html respectively, to creating a landing page by using an overlay div. This allowed for the use of jquery fadeOut 
@@ -143,6 +141,8 @@ The page has been manually tested on the functionality of the following:
   not being able to find a solution to work around this issue, I decided to opt out of this functionality altogether in favor of being able to focus on implementing other 
   functions and design and finish this project on time. 
 
+### Solved bugs  
+
 * Links in navigation bar in not collapsed mode (full screen) became unclickable at some point during development. I tried finding the error by comparing the navbar code with previously 
   commited code, while the navbar links worked. I also compared code to bootstrap documentation and didn't find the issue. The issue was found to be the nav logo container overflowing 
   the navbar links. This was solved by setting a fixed width to the nav logo container. 
@@ -150,8 +150,6 @@ The page has been manually tested on the functionality of the following:
 * Cursor for links had an arrow insted of a pointer on hover on all pages except for index.html. Since index.html doesn't have any links to script files, I concluded
   that the code responsible for this error must be in the script files and not in css file. The error was solved by adding a general rule (using a:hover) in style.css with
   attribute cursor and value pointer.
-
-#### During testing
 
 * While testing the site on mobile device issues with how the site was displaying on Iphone6S and IphoneX where discovered: The landing page had vertical overflow, the images on 
   info pages where vertically stretched and the text box on the map page had the text overflowing and causing horizontal scrollbar on the page.
@@ -168,6 +166,7 @@ The page has been manually tested on the functionality of the following:
 
 * When the HTML code was first run through the validator, it showed an error message on the page for Tyresta-By saying that the page seemed to be in swedish, but the language attribute
   on the page is set to english. This error was solved by setting language attribute to swedish in the p tag containing the info text.
+
 
 * When the javascript code was first run in JSHint, a warning was thrown for each apperance of 'let' in the code, because 'let in new in ES6. This problem was solved by adding a line in the 
   script files telling that the version of the code is ES6: /*jshint esversion: 6 */. This solution was found on [Stack Overflow:](https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871)

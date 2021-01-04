@@ -177,7 +177,8 @@ Full-screen:
 
 Every page except for landing page contains a navigation bar and a logo . The navigation bar collapses to hamburger 
 menu on smaller screens to ensure responsiveness. Each page (apart from landing page) also contains a footer with copyright information and links to the different pages on the
-site, to provide navigation possibilites to the user from the bottom of the pages also.
+site, to provide navigation possibilites to the user from the bottom of the pages also. In the bottom of the footer there are links to the sites where the icons used on the sides
+are from. These links are a requirement from the sites in order for the icons to be permitted to be used. 
 
 ### Index/landing
 The index/landing page features a background image of a family walking on a forest road, chosen to create an immediate emotional connection to the purpose of the site 
@@ -216,6 +217,8 @@ also to help create an interest in both the adult and the child/-ren to visit th
 A contact modal accessible through a contact button is placed above the footer of all pages (except from landing page). In the contact modal there
 is a form when filled out sends an email to the site owner through EmailJS email service. This functionality is included to provide the user with a quick way of 
 contacting the site owner with questions, feedback on the site's functionality or tips on other hiking startpoints to add to the site.
+
+
 
 ### Features left to implement
 
@@ -301,7 +304,7 @@ now be created locally on your machine.
 
 
  
-### Code
+### Code sources
 
 * The Google API:s on the site have been implemented with support from [Google Maps API tutorial](https://developers.google.com/maps/documentation/javascript/adding-a-google-map) and 
   [this tutorial made by Code Institute student Eamonn Smyth](https://slack-files.com/T0L30B202-F01DRAEPEH5-16d0e0a646)

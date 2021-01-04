@@ -1,7 +1,3 @@
-// Credit for line below, setting javascript version to ES6 for this document, which avoids warnings for 'let' in JSHint: https://stackoverflow.com/questions/37247474/es6-in-jshint-jshintrc-has-esversion-but-still-getting-warning-using-atom/42865871//
-
-/*jshint esversion: 6 */
-
 /* Contact modal */
 // Credit for modal code https://www.w3schools.com/howto/howto_css_modals.asp
 
@@ -30,8 +26,8 @@ span.onclick = function() {
 
 // Making an email being sent through email.js on the submission of contact form
 
-function sendMail(contactForm) {
-emailjs.send('default_service', 'template_hhpfrte', {
+function sendMail(contactForm) {                       //'sendMail' is being flagged as unused variable in JSHint, see TESTING.md for details
+emailjs.send('default_service', 'template_hhpfrte', {  //'emailjs' is being flagged as undefined variable in JSHint, see TESTING.md for details
     'from_name': contactForm.name.value,
     'form_email': contactForm.emailaddress.value,
     'message': contactForm.message.value
