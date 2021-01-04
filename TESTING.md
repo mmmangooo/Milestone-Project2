@@ -96,6 +96,8 @@ The page has been manually tested on the functionality of the following:
 
 ### Further testing
 
+#### Validation
+
 * HTML code has been validated using the [W3C Markup Validation](https://validator.w3.org/) with the following result:
 
 ![Result from HTML validator](./assets/images/html-validation.png)
@@ -127,6 +129,13 @@ The page has been manually tested on the functionality of the following:
       [Thread on Stack Overflow: Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. What is wrong?](https://stackoverflow.com/questions/46027262/functions-declared-within-loops-referencing-an-outer-scoped-variable-may-lead-to)
       [Thread in Software Engineering: Is using a function inside a for loop bad practise?] https://softwareengineering.stackexchange.com/questions/314942/is-using-a-function-inside-a-for-loop-bad-practice
 
+#### Usability and performance testing
+
+* This website has been tested for usability and performance using the [Lighthouse tool](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=sv).
+* The results from testing with this tool wa the following:
+    * Landing page:
+
+    ![Test result in Lighhouse for landing page](./assets/images/lighthouse-landing.png)
 
 ### Known bugs 
 
