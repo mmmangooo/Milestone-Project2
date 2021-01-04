@@ -34,7 +34,7 @@ h3 {
 }
 
 h1 {
-	margin: 3rem 0 3rem;
+	margin: 2rem 0 3rem;
 	font-size: 1.8rem;
 }
 
@@ -79,7 +79,8 @@ p {
 
 .info-window-header {
 	color: #946006;
-	margin: 0;
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 .icon-container-header {
@@ -481,7 +482,10 @@ a {
 	}
 	.icon-container h3 {
 		margin: 1rem auto;
-	}
+    }
+    .info-window-header {
+        font-size: 1.5rem;
+    }
 	.trail-info {
 		margin: 0 auto;
 	}

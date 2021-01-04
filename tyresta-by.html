@@ -107,11 +107,12 @@
                 <div class="modal-content" id="modal-content">
                     <span class="close-btn" id="close-btn">&times;</span>
 
-                    <h3 class="contact-header">Välkommen att kontakta oss med tips, frågor eller feedback!</h3>
-                    <form onsubmit="return sendMail(this);"><input type="text" name="name" id="fullname" class="form-control" placeholder="Ditt namn" required>
+                    <h2 class="contact-header">Välkommen att kontakta oss med tips, frågor eller feedback!</h2>
+                         <form onsubmit="return sendMail(this);"><label for="fullname"></label><input type="text" name="name" id="fullname" class="form-control" placeholder="Ditt namn" required>
+                        <label for="emailaddress"></label>
                         <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Din mailadress" required>
-                        <textarea rows="6" name="message" id="message" class="form-control" placeholder="Meddelande" required></textarea>
-                        <button type="submit" class="form-send-btn">Skicka</button>
+                        <label for="message"></label><textarea rows="6" name="message" id="message" class="form-control" placeholder="Meddelande" required></textarea>
+                        <button type="submit" class="form-send-btn">Skicka!</button>
                     </form>
                     <div id="success-alert" class="contact-response" style="display:none">Ditt email har skickats!</div>
                     <div id="error-alert" class="contact-response" style="display:none">Något gick fel, ditt email skickades inte.</div>

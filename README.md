@@ -160,7 +160,7 @@ Full-screen:
 * Imagery: Images on this site mainly playes the role of engaging the user's emotions and trigger a lust to go hiking with their children. The images
   are chosen to display feelings of connectedness, enjoying nature and being together.
 
-#### Differences to original design
+#### Differences between wireframes and implemented design
 
 * In the original design, the info windows had the functionality of a link that when clicked activated an animation of a card flipping over, 
   and the info window then showing a different information. This information would consist of the length and terrain difficulty of that starting point.
