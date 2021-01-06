@@ -264,7 +264,7 @@ https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-a
 	padding: 1.8rem 2.5rem;
 	background-color: #fcf9ed;
 	font-weight: bold;
-	margin: 5rem 0 3rem;
+	margin: 5rem 0 2rem;
 }
 
 .contact-btn-text {
@@ -373,7 +373,7 @@ footer {
 	line-height: 0.5rem;
 	margin: 3rem 0 1rem;
 	padding: 3rem 0 0 0;
-	margin: 3rem 0 0 0;
+	margin: 2rem 0 0 0;
 }
 
 footer p,
@@ -513,7 +513,7 @@ a {
 		}
 		.map {
 			width: 60%;
-			margin: 2rem 7.5rem 8rem;
+			margin: 2rem 7.5rem 6rem;
         }
         .contact-btn {
             padding: 2rem 2.8rem;
