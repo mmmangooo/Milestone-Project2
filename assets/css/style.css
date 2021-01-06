@@ -513,13 +513,10 @@ a {
 		}
 		.map {
 			width: 60%;
-			margin: 2rem 7.5rem;
-		}
-		.contact-btn {
-			position: absolute;
-			bottom: -14rem;
-			right: 3rem;
-			padding: 1.2rem 2rem;
-		}
+			margin: 2rem 7.5rem 8rem;
+        }
+        .contact-btn {
+            padding: 2rem 2.8rem;
+        }
 	}
 }
