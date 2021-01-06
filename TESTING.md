@@ -6,7 +6,7 @@
 
 ## Testing
 
-The page has been manually tested on the functionality of the following:
+The site has been manually tested on the functionality of the following:
 
 * Link from landing page to map page
 
@@ -21,6 +21,9 @@ The page has been manually tested on the functionality of the following:
 * Mail sending in contact form working and email being sent
 
 * Response message showing correctly on contact form being sent
+
+* Responsivity on different devices and screen sizes have been tested for all pages on this site. This has been done in the Chrome developer tool, and on different 
+  devices with help from family and friends viewing the site on their phones (mostly different models of Iphone but also Samsung). 
 
 
 

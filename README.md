@@ -242,6 +242,7 @@ contacting the site owner with questions, feedback on the site's functionality o
 * [EmailJS](https://www.emailjs.com/) is used on this site to provide the funcitonality of sending emails through the contact form.
 * [Autoprefixer](https://autoprefixer.github.io) was used to prefix css code.
 * [Tiny PNG Image compressor](https://tinypng.com/) was usd to compress images.
+* [Free formatter CSS beautifier](https://www.freeformatter.com/css-beautifier.html) was used to ensure CSS is properly indented and formatted.
 
 
 ## Testing

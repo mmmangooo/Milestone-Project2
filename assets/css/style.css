@@ -10,17 +10,19 @@ a:hover {
 	cursor: pointer;
 }
 
+
 /* Credit for code making landing page render 100% of viewport height: 
 https://dev.to/admitkard/mobile-issue-with-100vh-height-100-100vh-3-solutions-3nae*/
 
-html, body {
-    height: 100%;
-    min-height: 100%;
+html,
+body {
+	height: 100%;
+	min-height: 100%;
 }
 
 body {
 	text-align: center;
-    background-color: #fcf9edde;
+	background-color: #fcf9edde;
 }
 
 
@@ -31,7 +33,7 @@ h2,
 h3 {
 	color: #946006;
 	font-family: "Cabin", sans-serif;
-    letter-spacing: 0.2rem;
+	letter-spacing: 0.2rem;
 }
 
 h1 {
@@ -49,7 +51,7 @@ p {
 }
 
 .landing-header {
-    color: #04d600;
+	color: #04d600;
 	font-size: 1.4rem;
 	line-height: 1.5rem;
 	margin: 0 1.5rem 1rem 1.5rem;
@@ -57,10 +59,10 @@ p {
 }
 
 .landing-subheader {
-    color: #04d600;
+	color: #04d600;
 	font-size: 1rem;
-    margin: 0 1rem 4rem;
-    letter-spacing: 0.1rem;
+	margin: 0 1rem 4rem;
+	letter-spacing: 0.1rem;
 }
 
 .landing-circle-header {
@@ -81,8 +83,8 @@ p {
 }
 
 .info-window-header {
-    margin: 0;
-    font-size: 1.2rem;
+	margin: 0;
+	font-size: 1.2rem;
 }
 
 .icon-container-header {
@@ -120,8 +122,8 @@ https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-a
 	left: 0;
 	width: 100%;
 	height: 100%;
-    background-color: rgba(0, 0, 0, 0.452);
-    overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.452);
+	overflow: hidden;
 }
 
 .landing-content {
@@ -262,15 +264,15 @@ https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-a
 	padding: 1.8rem 2.5rem;
 	background-color: #fcf9ed;
 	font-weight: bold;
-    margin: 5rem 0 3rem;
+	margin: 5rem 0 3rem;
 }
 
 .contact-btn-text {
 	margin: 0.8rem 0 0;
 	color: #946006;
 	letter-spacing: 0.1rem;
-    display: block;
-    font-family: "Poppins", sans-serif;
+	display: block;
+	font-family: "Poppins", sans-serif;
 }
 
 
@@ -282,7 +284,7 @@ and https://www.w3schools.com/howto/howto_css_modals.asp*/
 	display: none;
 	z-index: 1030;
 	position: fixed;
-    bottom: 0;
+	bottom: 0;
 }
 
 .modal-content {
@@ -369,15 +371,15 @@ and https://www.w3schools.com/howto/howto_css_modals.asp*/
 
 footer {
 	line-height: 0.5rem;
-    margin: 3rem 0 1rem;
-    padding: 3rem 0 0 0;
-    margin: 3rem 0 0 0;
+	margin: 3rem 0 1rem;
+	padding: 3rem 0 0 0;
+	margin: 3rem 0 0 0;
 }
 
 footer p,
 span,
 a {
-	color:#946006;
+	color: #946006;
 	text-decoration: none;
 	margin: 1.5rem 0.1rem;
 	font-size: 0.8rem;
@@ -393,9 +395,10 @@ a {
 }
 
 .copyright-text {
-    margin: 3rem 0 1rem 0;
-    font-size: 0.85rem;
+	margin: 3rem 0 1rem 0;
+	font-size: 0.85rem;
 }
+
 
 /*-----------------------------Media queries*/
 
@@ -422,8 +425,8 @@ a {
 		margin-top: 4rem;
 	}
 	.contact-modal {
-        left: 50%;
-        transform: translateX(-50%);
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.footer-icon {
 		width: 4%;
@@ -441,7 +444,7 @@ a {
 	.info-images {
 		padding: 0.5rem;
 		max-width: 31.25rem;
-    }
+	}
 	.footer-icon {
 		width: 2%;
 	}
@@ -449,8 +452,8 @@ a {
 
 @media screen and (min-width: 992px) {
 	h1 {
-        font-size: 2rem;
-        margin: 3rem 0 4rem;
+		font-size: 2rem;
+		margin: 3rem 0 4rem;
 	}
 	p {
 		font-size: 0.9rem;
@@ -489,10 +492,10 @@ a {
 	}
 	.icon-container h3 {
 		margin: 1rem auto;
-    }
-    .info-window-header {
-        font-size: 1.5rem;
-    }
+	}
+	.info-window-header {
+		font-size: 1.5rem;
+	}
 	.trail-info {
 		margin: 0 auto;
 	}
@@ -503,21 +506,20 @@ a {
 		max-width: 28rem;
 		margin: 0;
 	}
-
-@media screen and (min-width: 1200px) {
-	.landing-content {
-		margin: 30% 0;
-		transform: translateY(-30%);
+	@media screen and (min-width: 1200px) {
+		.landing-content {
+			margin: 30% 0;
+			transform: translateY(-30%);
+		}
+		.map {
+			width: 60%;
+			margin: 2rem 7.5rem;
+		}
+		.contact-btn {
+			position: absolute;
+			bottom: -14rem;
+			right: 3rem;
+			padding: 1.2rem 2rem;
+		}
 	}
-	.map {
-		width: 60%;
-		margin: 2rem 7.5rem;
-    }
-	.contact-btn {
-        position: absolute;
-        bottom: -14rem;
-        right: 3rem;
-        padding: 1.2rem 2rem;
-    }
-    
-}}
+}
